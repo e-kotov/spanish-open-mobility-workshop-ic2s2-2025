@@ -1,0 +1,38 @@
+---
+title: "Workshop Introduction"
+
+authors:
+  - name: Egor Kotov
+    url: https://www.ekotov.pro/
+    orcid: 0000-0001-6690-5345
+    affiliations:
+      - ref: mpidr
+      - ref: upf
+  - name: Johannes Mast
+    url: https://orcid.org/0000-0001-6595-5834
+    orcid: 0000-0001-6595-5834
+    affiliations:
+      - ref: dlr
+
+affiliations:
+  - id: mpidr
+    name: Max Planck Institute for Demographic Research
+    city: Rostock
+    country: Germany
+  - id: upf
+    name: Universitat Pompeu Fabra
+    city: Barcelona
+    country: Spain
+  - id: dlr
+    name: The German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt, DLR)
+    city: Munich
+    country: Germany
+---
+
+<br><br>
+
+This website provides supporting materials for the workshop **Analysing big open human mobility data and contrasting it with access to opportunities using R** which is part of the [11th International Conference on Computational Social Science](https://www.ic2s2-2025.org/){target="_blank"} held in Norrköping, Sweden on July 21-24, 2025. This tutorial is [licensed under CC0](license.qmd).
+
+Workshop participants will use [spanishoddata](https://github.com/rOpenSpain/spanishoddata) R package [@r-spanishoddata] to access open human mobilty flows [@mitms_mobility_web] derived form mobile phones in Spain.
+
+Stay tuned for updates!
