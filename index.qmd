@@ -9,10 +9,11 @@ authors:
       - ref: mpidr
       - ref: upf
   - name: Johannes Mast
-    url: https://orcid.org/0000-0001-6595-5834
+    url: https://www.linkedin.com/in/johannes-mast-9bb53b219/
     orcid: 0000-0001-6595-5834
     affiliations:
       - ref: dlr
+    image: images/photo/Egor_Kotov_portrait_1000x1000.jpg
 
 affiliations:
   - id: mpidr
@@ -27,12 +28,20 @@ affiliations:
     name: The German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt, DLR)
     city: Munich
     country: Germany
+
+bibliography: references.bib
 ---
 
 <br><br>
 
-This website provides supporting materials for the workshop **Analysing big open human mobility data and contrasting it with access to opportunities using R** which is part of the [11th International Conference on Computational Social Science](https://www.ic2s2-2025.org/){target="_blank"} held in Norrköping, Sweden on July 21-24, 2025. This tutorial is [licensed under CC0](license.qmd).
+This website provides supporting materials for the workshop **Analyzing the relationship between human mobility and access to opportunities using R and big open data** which is part of the [11th International Conference on Computational Social Science](https://www.ic2s2-2025.org/){target="_blank"} held in Norrköping, Sweden on July 21-24, 2025. This tutorial is [licensed under CC0](license.qmd).
 
-Workshop participants will use [spanishoddata](https://github.com/rOpenSpain/spanishoddata) R package [@r-spanishoddata] to access open human mobilty flows [@mitms_mobility_web] derived form mobile phones in Spain.
+Large-scale human mobility datasets provide unprecedented opportunities to analyze movement patterns, generating critical insights for many fields of research. Until recently, access to human mobility data was a privilege of a few researchers. Thanks to countries like Spain that pioneered to make high resolution aggregated human mobility data open, such data is becoming increasingly accessible, and similar mobility data may soon be widely available as part of official statistics across the European Union (thanks to the [`Multi-MNO`](https://cros.ec.europa.eu/landing-page/multi-mno-project){target="_blank"} project). However, the complexity and sheer volume of this data present practical challenges related to data acquisition, efficient processing, geographic disaggregation, network representation, and interactive visualization.
+
+The workshop addresses these challenges by showcasing end-to-end workflows that harness state-of-the-art R packages and methods. Participants will learn how to acquire and manage multi-gigabyte mobility datasets, combine and compare the actual mobility flows and the access to opportunities, and create informative mobility flows visualizations.
+
+Spanish open mobility data is used as a case study. This data contains anonymized and grouped flows between more than 3500 locations in Spain with hourly intervals across 3 full years. Thanks to the inclusion of several demographic variables, this data presents a universe of opportunities for analysis and research questions to explore.
+
+Workshop participants will use [{spanishoddata}](https://github.com/rOpenSpain/spanishoddata){target="_blank"} R package [@r-spanishoddata] to access open human mobilty flows [@mitms_mobility_web] derived from mobile phones in Spain. They will analyse the data using cutting edge [`{duckdb}`](https://r.duckdb.org/){target="_blank"} [@r-duckdb] and make static and interactive visualisations with [`{flowmapper}`](https://github.com/JohMast/flowmapper){target="_blank"} [@r-flowmapper], [`{flowmapblue}`](https://flowmapblue.github.io/flowmapblue.R/){target="_blank"} [@r-flowmapblue].
 
 Stay tuned for updates!

@@ -5,7 +5,7 @@ project:
 
 lang: en
 website:
-  title: "Analysing big open human mobility data and contrasting it with access to opportunities using R"
+  title: "Analyzing the relationship between human mobility and access to opportunities using R and big open data"
   site-url: https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/
   repo-url: https://github.com/e-kotov/spanish-open-mobility-workshop-ic2s2-2025
   page-navigation: true
