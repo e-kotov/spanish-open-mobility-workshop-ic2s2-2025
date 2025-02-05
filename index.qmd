@@ -34,7 +34,7 @@ bibliography: references.bib
 
 <br><br>
 
-This website provides supporting materials for the workshop **Analyzing the relationship between human mobility and access to opportunities using R and big open data** which is part of the [11th International Conference on Computational Social Science](https://www.ic2s2-2025.org/){target="_blank"} held in Norrköping, Sweden on July 21-24, 2025. This tutorial is [licensed under CC0](license.qmd).
+This website provides supporting materials for the workshop **Mobility Flows and Accessibility Using R and Big Open Data** which is part of the [11th International Conference on Computational Social Science](https://www.ic2s2-2025.org/){target="_blank"} held in Norrköping, Sweden on July 21-24, 2025. This tutorial is [licensed under CC0](license.qmd).
 
 Large-scale human mobility datasets provide unprecedented opportunities to analyze movement patterns, generating critical insights for many fields of research. Until recently, access to human mobility data was a privilege of a few researchers. Thanks to countries like Spain that pioneered to make high resolution aggregated human mobility data open, such data is becoming increasingly accessible, and similar mobility data may soon be widely available as part of official statistics across the European Union (thanks to the [`Multi-MNO`](https://cros.ec.europa.eu/landing-page/multi-mno-project){target="_blank"} project). However, the complexity and sheer volume of this data present practical challenges related to data acquisition, efficient processing, geographic disaggregation, network representation, and interactive visualization.
 
