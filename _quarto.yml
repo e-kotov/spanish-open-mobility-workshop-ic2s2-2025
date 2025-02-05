@@ -13,7 +13,7 @@ website:
       border: true
       left: "Authors: Egor Kotov & Johannes Mast" 
       center:
-        - text: "CC BY 4.0"
+        - text: "CC0 1.0"
           href: license.qmd
       right: 
         - icon: github
