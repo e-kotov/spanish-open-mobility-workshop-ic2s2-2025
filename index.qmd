@@ -1,38 +1,12 @@
 ---
 title: "Workshop Introduction"
 
-authors:
-  - name: Egor Kotov
-    url: https://www.ekotov.pro/
-    orcid: 0000-0001-6690-5345
-    affiliations:
-      - ref: mpidr
-      - ref: upf
-  - name: Johannes Mast
-    url: https://www.linkedin.com/in/johannes-mast-9bb53b219/
-    orcid: 0000-0001-6595-5834
-    affiliations:
-      - ref: dlr
-    image: images/photo/Egor_Kotov_portrait_1000x1000.jpg
-
-affiliations:
-  - id: mpidr
-    name: Max Planck Institute for Demographic Research
-    city: Rostock
-    country: Germany
-  - id: upf
-    name: Universitat Pompeu Fabra
-    city: Barcelona
-    country: Spain
-  - id: dlr
-    name: The German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt, DLR)
-    city: Munich
-    country: Germany
-
 bibliography: references.bib
 ---
 
 <br><br>
+
+![](media/card.png){width=70% style="display: block; margin-left: auto; margin-right: auto;"}
 
 This website provides supporting materials for the workshop **Mobility Flows and Accessibility Using R and Big Open Data** which is part of the [11th International Conference on Computational Social Science](https://www.ic2s2-2025.org/){target="_blank"} held in Norrköping, Sweden on July 21-24, 2025. This tutorial is [licensed under CC0](license.qmd).
 

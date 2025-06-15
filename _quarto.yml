@@ -2,12 +2,19 @@ project:
   type: website
   output-dir: docs
 
+resources: 
+  - media/*
 
 lang: en
 website:
   title: "Mobility Flows and Accessibility Using R and Big Open Data"
   site-url: https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/
   repo-url: https://github.com/e-kotov/spanish-open-mobility-workshop-ic2s2-2025
+  open-graph:
+    title: "Mobility Flows and Accessibility Using R and Big Open Data"
+    image: media/card.png
+    image-alt: "Workshop on Mobility Flows and Accessibility Using R and Big Open Data, IC2S2 2025 conference, Norrköping, Sweden, July 21, 2025. Tutors: Egor Kotov & Johannes Mast"
+    description: "Workshop on Mobility Flows and Accessibility Using R and Big Open Data, IC2S2 2025 conference, Norrköping, Sweden, July 21, 2025. Tutors: Egor Kotov & Johannes Mast. This workshop will teach you how to use the R package spanishoddata to access open human mobility data and how to aggregate it with duckdb. We will also explore how to visualize mobility flows and accessibility using R package flowmapper and flowmapblue."
   page-navigation: true
   page-footer: 
       border: true
@@ -33,6 +40,9 @@ website:
 
 format:
   html:
+    link-external-icon: true
+    link-external-newwindow: true
+    link-external-filter: 'ekotov\.pro'
     theme:
       light: zephyr
       dark: slate
@@ -59,3 +69,40 @@ editor_options:
 
 execute:
   freeze: auto
+
+
+authors:
+  - name: Egor Kotov
+    url: https://www.ekotov.pro/
+    orcid: 0000-0001-6690-5345
+    affiliations:
+      - ref: mpidr
+      - ref: upf
+  - name: Johannes Mast
+    url: https://www.linkedin.com/in/johannes-mast-9bb53b219/
+    orcid: 0000-0001-6595-5834
+    affiliations:
+      - ref: dlr
+      - ref: jmu
+
+affiliations:
+  - id: mpidr
+    name: Max Planck Institute for Demographic Research
+    city: Rostock
+    country: Germany
+    url: https://www.demogr.mpg.de/en
+  - id: upf
+    name: Universitat Pompeu Fabra
+    city: Barcelona
+    country: Spain
+    url: https://www.upf.edu/en/web/politiques/home
+  - id: dlr
+    name: The German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt, DLR)
+    city: Munich
+    country: Germany
+    url: https://www.dlr.de
+  - id: jmu
+    name: Julius-Maximilians-Universität Würzburg (JMU)
+    city: Würzburg
+    country: Germany
+    url: https://www.uni-wuerzburg.de/en/
