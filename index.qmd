@@ -4,7 +4,6 @@ title: "Workshop Introduction"
 bibliography: references.bib
 ---
 
-<br><br>
 
 ![](media/card.png){width=70% style="display: block; margin-left: auto; margin-right: auto;"}
 
@@ -14,7 +13,32 @@ Large-scale human mobility datasets provide unprecedented opportunities to analy
 
 The workshop addresses these challenges by showcasing end-to-end workflows that harness state-of-the-art R packages and methods. Participants will learn how to acquire and manage multi-gigabyte mobility datasets on consumer level laptops, combine and compare the actual mobility flows and the access to opportunities, and create informative mobility flows visualizations.
 
+```{=html}
+<figure class="video" style="width:70%; margin: auto;">
+  <video autoplay muted loop playsinline controls style="width:100%; height:auto;">
+    <source src="media/mobility-data-slides/flowmapblue-standard-time.mp4" type="video/mp4">
+  </video>
+    <figcaption style="text-align:center; margin-bottom:0.5em;">
+    Hourly daily mobility flows for almost 5 full years
+  </figcaption>
+</figure>
+```
+
 Spanish open mobility data is used as a case study. This data contains anonymized and grouped flows between more than 3500 locations in Spain with hourly intervals across 3 full years. Thanks to the inclusion of several demographic variables, this data presents a universe of opportunities for analysis and research questions to explore.
+
+
+```{=html}
+<figure class="video" style="width:70%; margin: auto;">
+  <video autoplay muted loop playsinline controls style="width:100%; height:auto;">
+    <source src="media/mobility-data-slides/spain-folding-flows.mp4" type="video/mp4">
+  </video>
+      <figcaption style="text-align:center; margin-bottom:0.5em;">
+    Mobility flows covering all of Spain and beyond
+  </figcaption>
+</figure>
+```
+
+
 
 Workshop participants will use [{spanishoddata}](https://github.com/rOpenSpain/spanishoddata){target="_blank"} R package [@r-spanishoddata] to access open human mobilty flows [@mitms_mobility_web] derived from mobile phones in Spain. They will analyse the data using cutting edge [`{duckdb}`](https://r.duckdb.org/){target="_blank"} [@r-duckdb] and make static and interactive visualisations with [`{flowmapper}`](https://github.com/JohMast/flowmapper){target="_blank"} [@r-flowmapper], [`{flowmapblue}`](https://flowmapblue.github.io/flowmapblue.R/){target="_blank"} [@r-flowmapblue].
 
