@@ -124,8 +124,8 @@ citation:
   # url: https://www.ekotov.pro/spanish-open-mobility-workshop-ic2s2-2025/
   # container-title: "IC2S2 2025 Workshop: Mobility Flows and Accessibility Using R and Big Open Data"
   issued: 2025-07-21
-  # doi: 10.5281/zenodo.15794849 # TODO
-# doi: 10.5281/zenodo.15794849 # TODO
+  doi: 10.5281/zenodo.16238597
+doi: 10.5281/zenodo.16238597
 google-scholar: true
 
 editor: source

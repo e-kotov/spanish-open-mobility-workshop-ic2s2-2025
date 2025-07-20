@@ -12,5 +12,8 @@ title: "IC2S2 2025 Workshop: Mobility Flows and Accessibility Using R and Big Op
 repository-code: "https://github.com/e-kotov/spanish-open-mobility-workshop-ic2s2-2025"
 url: "https://www.ekotov.pro/spanish-open-mobility-workshop-ic2s2-2025/"
 version: "0.9.0"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.16238597
 date-released: "2025-07-21"
 license: "CC-BY-SA-4.0"
