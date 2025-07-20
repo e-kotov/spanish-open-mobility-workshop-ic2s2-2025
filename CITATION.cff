@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use these workshop materials or this website, please cite it using the following metadata."
+type: dataset
+authors:
+  - family-names: "Kotov"
+    given-names: "Egor"
+    orcid: "https://orcid.org/0000-0001-6690-5345"
+  - family-names: "Mast"
+    given-names: "Johannes"
+    orcid: "https://orcid.org/0000-0001-6595-5834"
+title: "IC2S2 2025 Workshop: Mobility Flows and Accessibility Using R and Big Open Data"
+repository-code: "https://github.com/e-kotov/spanish-open-mobility-workshop-ic2s2-2025"
+url: "https://www.ekotov.pro/spanish-open-mobility-workshop-ic2s2-2025/"
+version: "0.9.0"
+date-released: "2025-07-21"
+license: "CC-BY-SA-4.0"
