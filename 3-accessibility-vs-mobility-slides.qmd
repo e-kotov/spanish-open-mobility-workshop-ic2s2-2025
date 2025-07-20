@@ -299,7 +299,7 @@ CC BY 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/voila
 ![](media/accessibility-vs-mobility-slides/tph-overview.png){fig-align="center"}
 
 ::: footer
-CC BY-SA 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/voila/render/mobitrans/transportpoverty/TransportPovertyHub.ipynb) #TODO
+CC BY-SA 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/voila/render/mobitrans/transportpoverty/TransportPovertyHub.ipynb)
 :::
 
 ## Transport Poverty Hub
@@ -310,7 +310,7 @@ CC BY-SA 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/vo
 
 
 ::: footer
-CC BY-SA 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/voila/render/mobitrans/transportpoverty/TransportPovertyHub.ipynb) #TODO
+CC BY-SA 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/voila/render/mobitrans/transportpoverty/TransportPovertyHub.ipynb)
 :::
 
 ## Transport Poverty Hub
@@ -321,7 +321,7 @@ CC BY-SA 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/vo
 
 
 ::: footer
-CC BY-SA 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/voila/render/mobitrans/transportpoverty/TransportPovertyHub.ipynb) #TODO
+CC BY-SA 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/voila/render/mobitrans/transportpoverty/TransportPovertyHub.ipynb)
 :::
 
 # A few words about rasters
