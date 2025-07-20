@@ -75,9 +75,8 @@ execute:
   error: false
 ---
 
-<!-- ===== Time vs Distance ===== -->
 
-## Distance vs Time
+## Distance
 
 <div style="position: relative; left: -10%; width: 110%;">
 ![](media/accessibility-vs-mobility-slides/msk-dist.png){fig-align="center"}
@@ -88,7 +87,7 @@ execute:
 :::
 
 
-## Distance vs Time
+## Time
 <div style="position: relative; left: -10%; width: 110%;">
 ![](media/accessibility-vs-mobility-slides/msk-time.png){fig-align="center"}
 </div>
