@@ -1,19 +1,864 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Workshop Introduction",
+    "objectID": "2-flow-vis-slides-container.html",
+    "href": "2-flow-vis-slides-container.html",
+    "title": "2a. 📽️ Slides: Visualization of Mobility Flows Using flowmapper and flowmapblue",
     "section": "",
-    "text": "This website provides supporting materials for the workshop Mobility Flows and Accessibility Using R and Big Open Data which is part of the 11th International Conference on Computational Social Science held in Norrköping, Sweden on July 21-24, 2025. This tutorial is licensed under CC0.\nLarge-scale human mobility datasets provide unprecedented opportunities to analyze movement patterns, generating critical insights for many fields of research. Until recently, access to human mobility data was a privilege of a few researchers. Thanks to countries like Spain that pioneered to make high resolution aggregated human mobility data open, such data is becoming increasingly accessible, and similar mobility data may soon be widely available as part of official statistics across the European Union (thanks to the Multi-MNO project). However, the complexity and sheer volume of this data present practical challenges related to data acquisition, efficient processing, geographic disaggregation, network representation, and interactive visualization.\nThe workshop addresses these challenges by showcasing end-to-end workflows that harness state-of-the-art R packages and methods. Participants will learn how to acquire and manage multi-gigabyte mobility datasets on consumer level laptops, combine and compare the actual mobility flows and the access to opportunities, and create informative mobility flows visualizations.\n\n  \n    \n  \n    \n    Hourly daily mobility flows for almost 5 full years\n  \n\nSpanish open mobility data is used as a case study. This data contains anonymized and grouped flows between more than 3500 locations in Spain with hourly intervals across 3 full years. Thanks to the inclusion of several demographic variables, this data presents a universe of opportunities for analysis and research questions to explore.\n\n  \n    \n  \n      \n    Mobility flows covering all of Spain and beyond\n  \n\nWorkshop participants will use {spanishoddata} R package (Kotov, Lovelace, and Vidal-Tortosa 2024) to access open human mobilty flows (Ministerio de Transportes y Movilidad Sostenible (MITMS) 2024) derived from mobile phones in Spain. They will analyse the data using cutting edge {duckdb} (Mühleisen and Raasveldt 2024) and make static and interactive visualisations with {flowmapper} (Mast 2024), {flowmapblue} (Boyandin 2024).\nStay tuned for updates!\n\n\n\n\nReferences\n\nBoyandin, Ilya. 2024. Flowmap.blue Widget for r. https://doi.org/10.32614/CRAN.package.flowmapblue.\n\n\nKotov, Egor, Robin Lovelace, and Eugeni Vidal-Tortosa. 2024. Spanishoddata. https://doi.org/10.32614/CRAN.package.spanishoddata.\n\n\nMast, Johannes. 2024. Flowmapper: Draw Flows (Migration, Goods, Money, Information) on ’Ggplot2’ Plots. https://github.com/JohMast/flowmapper.\n\n\nMinisterio de Transportes y Movilidad Sostenible (MITMS). 2024. “Estudio de La Movilidad Con Big Data (Study of Mobility with Big Data).” https://www.transportes.gob.es/ministerio/proyectos-singulares/estudio-de-movilidad-con-big-data.\n\n\nMühleisen, Hannes, and Mark Raasveldt. 2024. Duckdb: DBI Package for the DuckDB Database Management System. https://doi.org/10.32614/CRAN.package.duckdb.",
+    "text": "Click on the slide and press F key to go fullscreen or open the slides in new tab.\n\n\n\nCitationBibTeX citation:@online{kotov2025,\n  author = {Kotov, Egor and Mast, Johannes},\n  title = {IC2S2 2025 {Workshop:} {Mobility} {Flows} and {Accessibility}\n    {Using} {R} and {Big} {Open} {Data}},\n  date = {2025-07-21},\n  url = {https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/2-flow-vis-slides-container.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nKotov, Egor, and Johannes Mast. 2025. “IC2S2 2025 Workshop:\nMobility Flows and Accessibility Using R and Big Open Data.” July\n21, 2025. https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/2-flow-vis-slides-container.html.",
     "crumbs": [
-      "Workshop Introduction"
+      "2a. 📽️ Slides: Flows Visualisation"
     ]
   },
   {
-    "objectID": "license.html",
-    "href": "license.html",
-    "title": "License",
+    "objectID": "3-accessibility-vs-mobility-slides.html#distance-vs-time",
+    "href": "3-accessibility-vs-mobility-slides.html#distance-vs-time",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Distance vs Time",
+    "text": "Distance vs Time\n\n\n\n\n\n\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#distance-vs-time-1",
+    "href": "3-accessibility-vs-mobility-slides.html#distance-vs-time-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Distance vs Time",
+    "text": "Distance vs Time\n\n\n\n\n\n\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#distance-based-urban-density",
+    "href": "3-accessibility-vs-mobility-slides.html#distance-based-urban-density",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Distance based urban density",
+    "text": "Distance based urban density\n\n\n\n\n\n\n\n\n\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#time-based-urban-density",
+    "href": "3-accessibility-vs-mobility-slides.html#time-based-urban-density",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Time based urban density",
+    "text": "Time based urban density\n\n\n\n\n\n\n\n\n\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#accessibility-in-2019",
+    "href": "3-accessibility-vs-mobility-slides.html#accessibility-in-2019",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "🚗 Accessibility in 2019",
+    "text": "🚗 Accessibility in 2019\nNumber of people reachable by 🚗 in X minutes, no traffic\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#accessibility-in-2019-1",
+    "href": "3-accessibility-vs-mobility-slides.html#accessibility-in-2019-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "🚗 Accessibility in 2019",
+    "text": "🚗 Accessibility in 2019\nNumber of people reachable by 🚗 in X minutes, no traffic\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#accessibility-in-2019-2",
+    "href": "3-accessibility-vs-mobility-slides.html#accessibility-in-2019-2",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "🚗 Accessibility in 2019",
+    "text": "🚗 Accessibility in 2019\nNumber of people reachable by 🚗 in X minutes, no traffic\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#accessibility-in-2019-3",
+    "href": "3-accessibility-vs-mobility-slides.html#accessibility-in-2019-3",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "🚇+🚌 Accessibility in 2019",
+    "text": "🚇+🚌 Accessibility in 2019\nNumber of people reachable by 🚇+🚌 in X minutes, no traffic\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#accessibility-in-2019-4",
+    "href": "3-accessibility-vs-mobility-slides.html#accessibility-in-2019-4",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "🚇+🚌 Accessibility in 2019",
+    "text": "🚇+🚌 Accessibility in 2019\nNumber of people reachable by 🚇+🚌 in X minutes, no traffic\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#accessibility-in-2019-5",
+    "href": "3-accessibility-vs-mobility-slides.html#accessibility-in-2019-5",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "🚇+🚌 Accessibility in 2019",
+    "text": "🚇+🚌 Accessibility in 2019\nNumber of people reachable by 🚇+🚌 in X minutes, no traffic\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#vs-accessibility-in-2019-30-minutes",
+    "href": "3-accessibility-vs-mobility-slides.html#vs-accessibility-in-2019-30-minutes",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "🚗 vs 🚇+🚌 Accessibility in 2019: 30 minutes",
+    "text": "🚗 vs 🚇+🚌 Accessibility in 2019: 30 minutes\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#vs-accessibility-in-2019-50-minutes",
+    "href": "3-accessibility-vs-mobility-slides.html#vs-accessibility-in-2019-50-minutes",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "🚗 vs 🚇+🚌 Accessibility in 2019: 50 minutes",
+    "text": "🚗 vs 🚇+🚌 Accessibility in 2019: 50 minutes\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#vs-accessibility-in-2019-30-vs-70-minutes",
+    "href": "3-accessibility-vs-mobility-slides.html#vs-accessibility-in-2019-30-vs-70-minutes",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "🚗 vs 🚇+🚌 Accessibility in 2019: 30 vs 70 minutes",
+    "text": "🚗 vs 🚇+🚌 Accessibility in 2019: 30 vs 70 minutes\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#variations-in-accessibility",
+    "href": "3-accessibility-vs-mobility-slides.html#variations-in-accessibility",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Variations in accessibility",
+    "text": "Variations in accessibility\n\n\nCalculations and images by Egor Kotov and Ruslan Goncharov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#variations-in-accessibility-by-time-of-day",
+    "href": "3-accessibility-vs-mobility-slides.html#variations-in-accessibility-by-time-of-day",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Variations in accessibility by time of day",
+    "text": "Variations in accessibility by time of day\n\n\nCalculations and images by Egor Kotov and Ruslan Goncharov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#time-based-urban-density-1",
+    "href": "3-accessibility-vs-mobility-slides.html#time-based-urban-density-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Time based urban density",
+    "text": "Time based urban density\n\n\n\n\n\n\n\n\n\n\n\nCalculations and images by Egor Kotov"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#transport-poverty-hub",
+    "href": "3-accessibility-vs-mobility-slides.html#transport-poverty-hub",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Transport Poverty Hub",
+    "text": "Transport Poverty Hub\n\n\nCC BY 4.0, Transport poverty hub"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#transport-poverty-hub-1",
+    "href": "3-accessibility-vs-mobility-slides.html#transport-poverty-hub-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Transport Poverty Hub",
+    "text": "Transport Poverty Hub\nAccessibility (Opportunities) with Public Transport\n\n\nCC BY-SA 4.0, Transport poverty hub #TODO"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#transport-poverty-hub-2",
+    "href": "3-accessibility-vs-mobility-slides.html#transport-poverty-hub-2",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Transport Poverty Hub",
+    "text": "Transport Poverty Hub\nAccessibility (Opportunities) with Public Transport in Norrköping\n\n\nCC BY-SA 4.0, Transport poverty hub #TODO"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#transport-poverty-hub-3",
+    "href": "3-accessibility-vs-mobility-slides.html#transport-poverty-hub-3",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Transport Poverty Hub",
+    "text": "Transport Poverty Hub\nAccessibility (Opportunities) with Public Transport in Madrid\n\n\nCC BY-SA 4.0, Transport poverty hub #TODO"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#raster-geospatial-data",
+    "href": "3-accessibility-vs-mobility-slides.html#raster-geospatial-data",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Raster geospatial data",
+    "text": "Raster geospatial data\n\n\nLdecola, CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0, via Wikimedia Commons"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#raster-geospatial-data-1",
+    "href": "3-accessibility-vs-mobility-slides.html#raster-geospatial-data-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Raster geospatial data",
+    "text": "Raster geospatial data"
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides.html#raster-geospatial-data-cube",
+    "href": "3-accessibility-vs-mobility-slides.html#raster-geospatial-data-cube",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Raster geospatial data cube",
+    "text": "Raster geospatial data cube\n\n\nImage: Pebesma E, Bivand R (2023). Spatial Data Science: With applications in R. Chapman and Hall/CRC, London. doi:10.1201/9780429459016, https://r-spatial.org/book/. Warning, the image license is Apache."
+  },
+  {
+    "objectID": "1-mobility-data-slides-container.html",
+    "href": "1-mobility-data-slides-container.html",
+    "title": "1a. 📽️ Slides: Getting the Open Human Mobility Data in a Reproducible Way using spanishoddata and aggregating it with duckdb",
     "section": "",
-    "text": "Creative Commons Legal Code\nCC0 1.0 Universal\nCREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE\nLEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN\nATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS\nINFORMATION ON AN \"AS-IS\" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES\nREGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS\nPROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM\nTHE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED\nHEREUNDER.\nStatement of Purpose\nThe laws of most jurisdictions throughout the world automatically confer exclusive Copyright and Related Rights (defined below) upon the creator and subsequent owner(s) (each and all, an “owner”) of an original work of authorship and/or a database (each, a “Work”).\nCertain owners wish to permanently relinquish those rights to a Work for the purpose of contributing to a commons of creative, cultural and scientific works (“Commons”) that the public can reliably and without fear of later claims of infringement build upon, modify, incorporate in other works, reuse and redistribute as freely as possible in any form whatsoever and for any purposes, including without limitation commercial purposes. These owners may contribute to the Commons to promote the ideal of a free culture and the further production of creative, cultural and scientific works, or to gain reputation or greater distribution for their Work in part through the use and efforts of others.\nFor these and/or other purposes and motivations, and without any expectation of additional consideration or compensation, the person associating CC0 with a Work (the “Affirmer”), to the extent that he or she is an owner of Copyright and Related Rights in the Work, voluntarily elects to apply CC0 to the Work and publicly distribute the Work under its terms, with knowledge of his or her Copyright and Related Rights in the Work and the meaning and intended legal effect of CC0 on those rights.\n\nCopyright and Related Rights. A Work made available under CC0 may be protected by copyright and related or neighboring rights (“Copyright and Related Rights”). Copyright and Related Rights include, but are not limited to, the following:\n\n\nthe right to reproduce, adapt, distribute, perform, display, communicate, and translate a Work;\nmoral rights retained by the original author(s) and/or performer(s);\npublicity and privacy rights pertaining to a person’s image or likeness depicted in a Work;\nrights protecting against unfair competition in regards to a Work, subject to the limitations in paragraph 4(a), below;\nrights protecting the extraction, dissemination, use and reuse of data in a Work;\ndatabase rights (such as those arising under Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, and under any national implementation thereof, including any amended or successor version of such directive); and\nother similar, equivalent or corresponding rights throughout the world based on applicable law or treaty, and any national implementations thereof.\n\n\nWaiver. To the greatest extent permitted by, but not in contravention of, applicable law, Affirmer hereby overtly, fully, permanently, irrevocably and unconditionally waives, abandons, and surrenders all of Affirmer’s Copyright and Related Rights and associated claims and causes of action, whether now known or unknown (including existing as well as future claims and causes of action), in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the “Waiver”). Affirmer makes the Waiver for the benefit of each member of the public at large and to the detriment of Affirmer’s heirs and successors, fully intending that such Waiver shall not be subject to revocation, rescission, cancellation, termination, or any other legal or equitable action to disrupt the quiet enjoyment of the Work by the public as contemplated by Affirmer’s express Statement of Purpose.\nPublic License Fallback. Should any part of the Waiver for any reason be judged legally invalid or ineffective under applicable law, then the Waiver shall be preserved to the maximum extent permitted taking into account Affirmer’s express Statement of Purpose. In addition, to the extent the Waiver is so judged Affirmer hereby grants to each affected person a royalty-free, non transferable, non sublicensable, non exclusive, irrevocable and unconditional license to exercise Affirmer’s Copyright and Related Rights in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the “License”). The License shall be deemed effective as of the date CC0 was applied by Affirmer to the Work. Should any part of the License for any reason be judged legally invalid or ineffective under applicable law, such partial invalidity or ineffectiveness shall not invalidate the remainder of the License, and in such case Affirmer hereby affirms that he or she will not (i) exercise any of his or her remaining Copyright and Related Rights in the Work or (ii) assert any associated claims and causes of action with respect to the Work, in either case contrary to Affirmer’s express Statement of Purpose.\nLimitations and Disclaimers.\n\n\nNo trademark or patent rights held by Affirmer are waived, abandoned, surrendered, licensed or otherwise affected by this document.\nAffirmer offers the Work as-is and makes no representations or warranties of any kind concerning the Work, express, implied, statutory or otherwise, including without limitation warranties of title, merchantability, fitness for a particular purpose, non infringement, or the absence of latent or other defects, accuracy, or the present or absence of errors, whether or not discoverable, all to the greatest extent permissible under applicable law.\nAffirmer disclaims responsibility for clearing rights of other persons that may apply to the Work or any use thereof, including without limitation any person’s Copyright and Related Rights in the Work. Further, Affirmer disclaims responsibility for obtaining any necessary consents, permissions or other rights required for any use of the Work.\nAffirmer understands and acknowledges that Creative Commons is not a party to this document and has no duty or obligation with respect to this CC0 or use of the Work."
+    "text": "Click on the slide and press F key to go fullscreen or open the slides in new tab.\n\n\n\nCitationBibTeX citation:@online{kotov2025,\n  author = {Kotov, Egor and Mast, Johannes},\n  title = {IC2S2 2025 {Workshop:} {Mobility} {Flows} and {Accessibility}\n    {Using} {R} and {Big} {Open} {Data}},\n  date = {2025-07-21},\n  url = {https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/1-mobility-data-slides-container.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nKotov, Egor, and Johannes Mast. 2025. “IC2S2 2025 Workshop:\nMobility Flows and Accessibility Using R and Big Open Data.” July\n21, 2025. https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/1-mobility-data-slides-container.html.",
+    "crumbs": [
+      "1a. 📽️ Slides: Getting and aggregating the data"
+    ]
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-tutorial.html",
+    "href": "3-accessibility-vs-mobility-tutorial.html",
+    "title": "3b. 📊 Tutorial: Accessibility and its Relation to Actual Mobility",
+    "section": "",
+    "text": "Accessibility and its relation to actual mobility\nIn this part of the tutorial, we want to analyse the relationship between (A) the mobility that is measured in certain places, and (B) the accessibility of these places.\nAs data on accessibility may naturally come in raster format, we first familiarize ourselves with raster data and common raster operations.",
+    "crumbs": [
+      "3b. 📊 Tutorial: Accessibility vs Mobility"
+    ]
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-tutorial.html#about-raster-data",
+    "href": "3-accessibility-vs-mobility-tutorial.html#about-raster-data",
+    "title": "3b. 📊 Tutorial: Accessibility and its Relation to Actual Mobility",
+    "section": "3.1 About raster data",
+    "text": "3.1 About raster data\nRasters represent geographic information in a regular grid format, where each cell (or pixel) contains a value representing some attribute at that location. In the case of our accessibility data, each raster cell indicates the number of people who can reach the cell within a certain time frame using public transport.\nIn R, rasters are commonly handled using the terra package, which provides functions for reading, saving, visualizing, and common raster operations.\nTo learn more about the capabilities of terra, we recommend this guide. About the handling of rasters in general, a useful source is the QGIS documentation.",
+    "crumbs": [
+      "3b. 📊 Tutorial: Accessibility vs Mobility"
+    ]
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-tutorial.html#load-the-accessibility-data",
+    "href": "3-accessibility-vs-mobility-tutorial.html#load-the-accessibility-data",
+    "title": "3b. 📊 Tutorial: Accessibility and its Relation to Actual Mobility",
+    "section": "3.2 Load the accessibility data",
+    "text": "3.2 Load the accessibility data\nWe can load the raster, which is stored on the github repository, using the terra::rast() function:\n\nacc &lt;- rast(\n  \"https://github.com/e-kotov/acc-madrid-2025/raw/refs/heads/main/outputs/raster/acc_raster.tif\"\n)\n\nCalling this raster objects reveals some crucial characteristics of the raster, such as:\n\nresolution\nextent\ncoordinate reference system (CRS)\n\n\nacc\n\nclass       : SpatRaster \nsize        : 137, 127, 18  (nrow, ncol, nlyr)\nresolution  : 1000, 1000  (x, y)\nextent      : 3082000, 3209000, 1973000, 2110000  (xmin, xmax, ymin, ymax)\ncoord. ref. : ETRS89-extended / LAEA Europe (EPSG:3035) \nsource      : acc_raster.tif \nnames       : total_10, total_20, total_30, total_40, total_50, total_60, ... \nmin values  :        0,        0,        0,        0,        0,        0, ... \nmax values  :    43599,   210354,   578168,  1180170,  2007105,  2441784, ... \nNote the entries in the “names” field. These are the layers of the raster. Rasters often have several layers which match in extent and resolution, but contain different information in the values of the pixels. We can list all layers of the accessibility raster by calling names().\n\nnames(acc)\n\n[1] \"total_10\"   \"total_20\"   \"total_30\"   \"total_40\"   \"total_50\"   \"total_60\"  \n [7] \"males_10\"   \"males_20\"   \"males_30\"   \"males_40\"   \"males_50\"   \"males_60\"  \n[13] \"females_10\" \"females_20\" \"females_30\" \"females_40\" \"females_50\" \"females_60\"\nThe names show that the different layers refer to accessibility at different scales (10 minutes, 20 minutes,…) and for different genders (male, female, and total).\nRaster layers can be visualized using the plot() function. Additionally, besides the base R plot function, we can also use ggplot2 to visualize rasters. This allows us to conveniently adjust the design and add other ggplot geoms using the ggplot syntax. To visualize rasters in ggplot, we use the geom_spatraster() function from the tidyterra package. Note that we specify the fill aesthetic to correspond to “total_40” which is the layer of the raster we want to visualize.\n\np_acc &lt;-\n  ggplot() +\n  geom_spatraster(data = acc, aes(fill = total_40)) +\n  scale_fill_viridis_c(na.value = \"NA\") +\n  coord_sf() +\n  labs(title = \"Accessibility within 40 minutes\", \"by public transport\") +\n  theme_bw()\n\np_acc\n\n\n\n\nAccessibility raster.",
+    "crumbs": [
+      "3b. 📊 Tutorial: Accessibility vs Mobility"
+    ]
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-tutorial.html#optional-cropping-and-masking-rasters",
+    "href": "3-accessibility-vs-mobility-tutorial.html#optional-cropping-and-masking-rasters",
+    "title": "3b. 📊 Tutorial: Accessibility and its Relation to Actual Mobility",
+    "section": "3.3 Optional: Cropping and masking rasters",
+    "text": "3.3 Optional: Cropping and masking rasters\nRasters can be cropped and masked to focus on a specific area of interest. Cropping reduces the extent of the raster to a specified bounding box, while masking removes values outside a specified polygon.\nThis is useful when working with large rasters that cover a wide area, but you are only interested in a smaller region, such as the Madrid metropolitan area. Firstly, it speeds up processing, and secondly, it improves visualization.\nTo illustrate this, we will crop and mask our accessibility raster to the extent of the zones. To do this, the coordinate reference system (CRS) of the raster and the vector data must match. The st_transform() function from the sf package is used to transform the CRS of the vector data to match that of the raster.\n\n# Transform the CRS of the madrid zones to match the CRS of the accessibility raster\nmadrid_zones &lt;-\n  madrid_zones |&gt;\n  st_transform(crs(acc))\n\n# Crop and mask the raster using the madrid zones\nacc_cropped &lt;- crop(acc, madrid_zones)\nacc_masked &lt;- mask(acc, madrid_zones)\nacc_cropped_masked &lt;- mask(acc_cropped, madrid_zones)\n\nThe code chunk below illustrates the effect of cropping and masking on the accessibility raster.\n\nlibrary(patchwork)\n\np_uncropped &lt;-\n  ggplot() +\n  geom_spatraster(data = acc, aes(fill = total_40)) +\n  scale_fill_viridis_c(na.value = \"NA\") +\n  geom_sf(data = madrid_zones, fill = NA, color = \"red\") +\n  theme_bw() +\n  ggtitle(\"Original\")\n\np_cropped &lt;-\n  ggplot() +\n  geom_spatraster(data = acc_cropped, aes(fill = total_40)) +\n  scale_fill_viridis_c(na.value = \"NA\") +\n  geom_sf(data = madrid_zones, fill = NA, color = \"red\") +\n  theme_bw() +\n  ggtitle(\"Cropped\")\n\np_masked &lt;-\n  ggplot() +\n  geom_spatraster(data = acc_masked, aes(fill = total_40)) +\n  scale_fill_viridis_c(na.value = \"NA\") +\n  geom_sf(data = madrid_zones, fill = NA, color = \"red\") +\n  theme_bw() +\n  ggtitle(\"Masked\")\n\np_cropped_masked &lt;-\n  ggplot() +\n  geom_spatraster(data = acc_cropped_masked, aes(fill = total_40)) +\n  scale_fill_viridis_c(na.value = \"NA\") +\n  geom_sf(data = madrid_zones, fill = NA, color = \"red\") +\n  theme_bw() +\n  ggtitle(\"Cropped & Masked\")\n\np_combined &lt;-\n  ((p_uncropped | p_cropped) / (p_masked | p_cropped_masked)) &\n  theme(legend.position = \"none\")\n\np_combined\n\n\n\n\nAccessibility rasters, cropped and masked.",
+    "crumbs": [
+      "3b. 📊 Tutorial: Accessibility vs Mobility"
+    ]
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-tutorial.html#optional-raster-calculations",
+    "href": "3-accessibility-vs-mobility-tutorial.html#optional-raster-calculations",
+    "title": "3b. 📊 Tutorial: Accessibility and its Relation to Actual Mobility",
+    "section": "3.4 Optional: Raster calculations",
+    "text": "3.4 Optional: Raster calculations\nIt is also possible to perform calculations on rasters (raster algebra) in which case the output is a new raster object.\nAs an example (not necessary for our main goal) we can calculate the log gender ratio of the accessibility. To do this, we apply several operations using the original raster layers males_40 and females_40 as inputs.\n\n# calculate the log of the gender ratio\nlog_gender_ratio &lt;- log(\n  (1 + acc_cropped_masked$males_40) / (1 + acc_cropped_masked$females_40)\n)\n\nThe output is a new raster object, which we can use by itself, or add as a new layer to the original raster.\n\n# This raster can also be added as a layer to the original raster\nacc_cropped_masked$log_gender_ratio &lt;- log_gender_ratio\n\nWe can also visualize it.\n\n# Visualise the created raster\np_ratio &lt;-\n  ggplot() +\n  geom_spatraster(data = acc_cropped_masked, aes(fill = log_gender_ratio)) +\n  scale_fill_gradient2(\n    \"Log Gender Ratio\",\n    high = \"orange\",\n    low = \"cornflowerblue\",\n    midpoint = 0,\n    mid = \"gray90\",\n    na.value = \"NA\"\n  ) +\n  theme_bw()\n\np_ratio\n\n\n\n\nAccessibility rasters, cropped and masked.",
+    "crumbs": [
+      "3b. 📊 Tutorial: Accessibility vs Mobility"
+    ]
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-tutorial.html#find-median-accessibility-per-mitms-zone",
+    "href": "3-accessibility-vs-mobility-tutorial.html#find-median-accessibility-per-mitms-zone",
+    "title": "3b. 📊 Tutorial: Accessibility and its Relation to Actual Mobility",
+    "section": "3.5 Find median accessibility per MITMS zone",
+    "text": "3.5 Find median accessibility per MITMS zone\nRasters are regular and do not conform to the boundaries of administrative units. The flow data, however, is aggregated to the MITMS zones, and this is also the level at which we want to conduct our analysis.\nFor this analysis, we therefore want to compute the accessibility at zone level - meaning that we are taking our accessibility data from raster to vector level.\nOne way of doing this is by using the terra::extract() function, which extracts values from a raster at specified locations (polygons of MITMS zones, in this case). Note that we specify to use the median as the aggregation function fun (fun = median). If you are interested, you can check the documentation of extract() to see which other functions are possible.\n\nmadrid_with_acc &lt;- terra::extract(\n  acc_cropped_masked,\n  madrid_zones |&gt; select(id, name, population),\n  fun = median,\n  na.rm = TRUE,\n  bind = TRUE\n) |&gt;\n  st_as_sf()\n\n\np_acc_agg &lt;-\n  madrid_with_acc |&gt;\n  ggplot() +\n  geom_sf(aes(fill = total_40 + 0.1)) +\n  scale_fill_viridis_c(\n    trans = \"log10\",\n    breaks = trans_breaks(\"log10\", function(x) 10^x),\n    labels = function(x) {\n      # for the minimum break, set to 0; otherwise keep the true value\n      x_adj &lt;- ifelse(x == min(x), 0, x)\n      label_comma()(x_adj)\n    },\n    guide = guide_colorbar(\n      title.position = \"top\",\n      barwidth = unit(0.5, \"cm\"),\n      barheight = unit(5, \"cm\")\n    )\n  ) +\n  labs(\n    title = \"Median accessibility per MITMS zone\",\n    fill = \"Accessibility\\n(Number of people\\nwithin 40 minutes,\\npublic transport)\\n(log10 scale,\\nbut real values in labels)\",\n  ) +\n  theme_bw()\n\np_acc_agg\n\n\n\n\nAccessibility, aggregated to MITMS zones.",
+    "crumbs": [
+      "3b. 📊 Tutorial: Accessibility vs Mobility"
+    ]
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-tutorial.html#calculate-incoming-flows-for-each-zone",
+    "href": "3-accessibility-vs-mobility-tutorial.html#calculate-incoming-flows-for-each-zone",
+    "title": "3b. 📊 Tutorial: Accessibility and its Relation to Actual Mobility",
+    "section": "5.1 Calculate incoming flows for each zone",
+    "text": "5.1 Calculate incoming flows for each zone\nTo answer this question, we aggregate all incoming trips per zone, using the summarise() function on a dataframe grouped by (destination) zone.\n\nincoming_flows &lt;-\n  flows_madrid |&gt;\n  group_by(id_destination) |&gt;\n  summarise(\n    n_trips = sum(n_trips, na.rm = TRUE),\n    .groups = \"drop\"\n  ) |&gt;\n  rename(id = id_destination)",
+    "crumbs": [
+      "3b. 📊 Tutorial: Accessibility vs Mobility"
+    ]
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-tutorial.html#compare-incoming-flows-to-accessibility",
+    "href": "3-accessibility-vs-mobility-tutorial.html#compare-incoming-flows-to-accessibility",
+    "title": "3b. 📊 Tutorial: Accessibility and its Relation to Actual Mobility",
+    "section": "5.2 Compare incoming flows to accessibility",
+    "text": "5.2 Compare incoming flows to accessibility\nWe then use a left_join() to combine the accessibility data with the incoming flows data. This allows us to compare the number of incoming trips to the accessibility values for each zone.\n\nmadrid_acc_vs_incoming_flows &lt;-\n  madrid_with_acc |&gt;\n  left_join(incoming_flows, by = \"id\") |&gt;\n  mutate(\n    n_trips = replace_na(n_trips, 0),\n    acc_per_trip = total_40 / n_trips\n  )\n\n\nhead(madrid_acc_vs_incoming_flows, 3)\n\nSimple feature collection with 110 features and 24 fields\nGeometry type: POLYGON\nDimension:     XY\nBounding box:  xmin: 3129032 ymin: 2011345 xmax: 3189834 ymax: 2042368\nProjected CRS: ETRS89-extended / LAEA Europe\n       id                          name population total_10 total_20 total_30 total_40\n1   28002                       Ajalvir       4676        0      0.0      389      746\n2   28004                     Álamo, El       9908        0      0.5     1305     3611\n3 2800501 Alcalá de Henares distrito 01      31061    18663  21148.0    88021   123321\n  total_50 total_60 males_10 males_20 males_30 males_40 males_50 males_60 females_10\n1     4795   5593.0        0        0      185    388.0   2507.0   2888.0          0\n2     6852   9656.5        0        0      652   1761.5   3453.5   4800.5          0\n3   169026 173764.0     8954    10098    42186  59361.0  81802.0  84076.0       9714\n  females_20 females_30 females_40 females_50 females_60 log_gender_ratio   n_trips\n1          0        207        358     2290.0       2703       0.08025696  25838.59\n2          0        653       1848     3397.5       4852      -0.01009685  17599.04\n3      11049      45839      63968    87233.0      89703      -0.07474430 102803.92\n                        geometry acc_per_trip\n1 POLYGON ((3179265 2041811, ...   0.02887154\n2 POLYGON ((3133896 2014643, ...   0.20518168\n3 POLYGON ((3189071 2031143, ...   1.19957493",
+    "crumbs": [
+      "3b. 📊 Tutorial: Accessibility vs Mobility"
+    ]
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-tutorial.html#visual-analysis-scatterplot",
+    "href": "3-accessibility-vs-mobility-tutorial.html#visual-analysis-scatterplot",
+    "title": "3b. 📊 Tutorial: Accessibility and its Relation to Actual Mobility",
+    "section": "5.3 Visual analysis: Scatterplot",
+    "text": "5.3 Visual analysis: Scatterplot\nTo test for an overall relationship between accessibility (acc_per_trip) and incoming flows (n_trips), we can use a scatter plot. Because of the large population differences between zone, we use a log scale for both axes. This allows us to visualize the relationship more clearly.\n\np_compr &lt;-\n  ggplot(madrid_acc_vs_incoming_flows, aes(x = total_40, y = n_trips)) +\n  geom_point(alpha = 0.6) +\n  geom_smooth(method = \"lm\", color = \"blue\", se = FALSE) +\n  scale_x_log10(\n    breaks = trans_breaks(\"log10\", function(x) 10^x),\n    labels = label_comma(),\n    minor_breaks = NULL\n  ) +\n  scale_y_log10(\n    breaks = trans_breaks(\"log10\", function(x) 10^x),\n    labels = label_comma(),\n    minor_breaks = NULL\n  ) +\n  annotation_logticks(sides = \"bl\") +\n  theme_bw(base_size = 12) +\n  theme(\n    axis.title = element_text(face = \"bold\"),\n    axis.text = element_text(color = \"gray20\")\n  ) +\n  labs(\n    title = \"Accessibility vs Incoming Flows\",\n    x = \"Accessibility (people within 40 min using public transport)\",\n    y = \"Incoming flows (number of trips)\"\n  )\n\np_compr\n\n\n\n\nScatterplot comparing accessibility and mobility\n\n\nVisually, it seems there is a relationship, but it is quite weak.",
+    "crumbs": [
+      "3b. 📊 Tutorial: Accessibility vs Mobility"
+    ]
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-tutorial.html#visual-analysis-map",
+    "href": "3-accessibility-vs-mobility-tutorial.html#visual-analysis-map",
+    "title": "3b. 📊 Tutorial: Accessibility and its Relation to Actual Mobility",
+    "section": "5.4 Visual analysis: Map",
+    "text": "5.4 Visual analysis: Map\nNote that the madrid_acc_vs_incoming_flows (the object holding the zones and the aggregated flows and accessibility values) still also has a geometry column, making it a spatial object capable of spatial operations and visualizations. This allows us to, for example, visualize the ratio of trips versus the accessibility. Are there any spatial patterns?\n\np_compr_spatial &lt;-\n  ggplot(madrid_acc_vs_incoming_flows) +\n  geom_sf(aes(fill = acc_per_trip), col = \"NA\") +\n  scale_fill_gradient(\n    \"Accessibility\\nper trip\",\n    low = \"blue\",\n    high = \"red\",\n    na.value = \"NA\",\n    trans = \"sqrt\"\n  ) +\n  theme_bw() +\n  ggtitle(\"Accessibility versus incoming flows\")\n\np_compr_spatial\n\n\n\n\nMap comparing accessibility and mobility\n\n\nSuch a spatial visualization allows us to identify spatial patterns and outliers. In other words, they allow us to see the spatial aspect of relationships between variables. In practice, it is always a good idea to use both spatial and non-spatial visualizations.",
+    "crumbs": [
+      "3b. 📊 Tutorial: Accessibility vs Mobility"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "👋 Workshop Introduction",
+    "section": "",
+    "text": "This website provides supporting materials for the workshop Mobility Flows and Accessibility Using R and Big Open Data which is part of the 11th International Conference on Computational Social Science held in Norrköping, Sweden on July 21-24, 2025. This tutorial is licensed under CC BY SA 4.0.\nLarge-scale human mobility datasets provide unprecedented opportunities to analyze movement patterns, generating critical insights for many fields of research. Until recently, access to human mobility data was a privilege of a few researchers. Thanks to countries like Spain that pioneered to make high resolution aggregated human mobility data open, such data is becoming increasingly accessible, and similar mobility data may soon be widely available as part of official statistics across the European Union (thanks to the Multi-MNO project). However, the complexity and sheer volume of this data present practical challenges related to data acquisition, efficient processing, geographic disaggregation, network representation, and interactive visualization.\nThe workshop addresses these challenges by showcasing end-to-end workflows that harness state-of-the-art R packages and methods. Participants will learn how to acquire and manage multi-gigabyte mobility datasets on consumer level laptops, combine and compare the actual mobility flows and the access to opportunities, and create informative mobility flows visualizations.\n\n  \n    \n  \n    \n    Hourly daily mobility flows for almost 5 full years\n  \n\nSpanish open mobility data is used as a case study. This data contains anonymized and grouped flows between more than 3500 locations in Spain with hourly intervals across 3 full years. Thanks to the inclusion of several demographic variables, this data presents a universe of opportunities for analysis and research questions to explore.\n\n  \n    \n  \n      \n    Mobility flows covering all of Spain and beyond\n  \n\nWorkshop participants will use {spanishoddata} R package (Kotov, Lovelace, and Vidal-Tortosa 2024) to access open human mobilty flows (Ministerio de Transportes y Movilidad Sostenible (MITMS) 2024) derived from mobile phones in Spain. They will analyse the data using cutting edge {duckdb} (Mühleisen and Raasveldt 2024) and make static and interactive visualisations with {flowmapper} (Mast 2024), {flowmapblue} (Boyandin 2024).\nStay tuned for updates!\n\nProjected Timeline\n\n\n\nActivity\nTime\n\n\n\n\n1. Getting the Open Human Mobility Data in a Reproducible Way using spanishoddata and aggregating the data using duckdb\n55\n\n\n2. Visualization of Mobility Flows Using flowmapper and flowmapblue\n40\n\n\nBreak\n10\n\n\n3. Accessibility and its Relation to Actual Mobility\n75\n\n\n\n\n\n\n\n\nReferences\n\nBoyandin, Ilya. 2024. Flowmap.blue Widget for r. https://doi.org/10.32614/CRAN.package.flowmapblue.\n\n\nKotov, Egor, Robin Lovelace, and Eugeni Vidal-Tortosa. 2024. Spanishoddata. https://doi.org/10.32614/CRAN.package.spanishoddata.\n\n\nMast, Johannes. 2024. Flowmapper: Draw Flows (Migration, Goods, Money, Information) on ’Ggplot2’ Plots. https://github.com/JohMast/flowmapper.\n\n\nMinisterio de Transportes y Movilidad Sostenible (MITMS). 2024. “Estudio de La Movilidad Con Big Data (Study of Mobility with Big Data).” https://www.transportes.gob.es/ministerio/proyectos-singulares/estudio-de-movilidad-con-big-data.\n\n\nMühleisen, Hannes, and Mark Raasveldt. 2024. Duckdb: DBI Package for the DuckDB Database Management System. https://doi.org/10.32614/CRAN.package.duckdb.\n\nCitationBibTeX citation:@online{kotov2025,\n  author = {Kotov, Egor and Mast, Johannes},\n  title = {IC2S2 2025 {Workshop:} {Mobility} {Flows} and {Accessibility}\n    {Using} {R} and {Big} {Open} {Data}},\n  date = {2025-07-21},\n  url = {https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nKotov, Egor, and Johannes Mast. 2025. “IC2S2 2025 Workshop:\nMobility Flows and Accessibility Using R and Big Open Data.” July\n21, 2025. https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/.",
+    "crumbs": [
+      "👋 Workshop Introduction"
+    ]
+  },
+  {
+    "objectID": "includes/note-binder.html",
+    "href": "includes/note-binder.html",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "",
+    "text": "If you are using our provided Binder container in a web browser to follow the tutorial, do not try to analyze more than 2 days at once, as it will likely crash the instance. In this case, even the magic of DuckDB does not help overcome the 2GB memory limit. If you computer has 4-8 GB of RAM, you should be good to go.\n\n\n\n\n\n\nCitationBibTeX citation:@online{kotov2025,\n  author = {Kotov, Egor and Mast, Johannes},\n  title = {IC2S2 2025 {Workshop:} {Mobility} {Flows} and {Accessibility}\n    {Using} {R} and {Big} {Open} {Data}},\n  date = {2025-07-21},\n  url = {https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/includes/note-binder.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nKotov, Egor, and Johannes Mast. 2025. “IC2S2 2025 Workshop:\nMobility Flows and Accessibility Using R and Big Open Data.” July\n21, 2025. https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/includes/note-binder.html."
+  },
+  {
+    "objectID": "includes/get-in-touch.html",
+    "href": "includes/get-in-touch.html",
+    "title": "Get in touch",
+    "section": "",
+    "text": "Get in touch\n\n\n\nEgor Kotov\n      \n\n  \n  \n    \n  \n\n  \n  \n    \n  \n\n  \n  \n    \n  \n\n  more…\n\n\n\nJohannes Mast\n   \n\n  \n  \n    \n  \n\n  \n  \n    \n  \n\n  \n  \n    \n  \n\n  more…\n\n\n\n\nLogos are the property of their respective owners.\n\n\n\n\n\nCitationBibTeX citation:@online{kotov2025,\n  author = {Kotov, Egor and Mast, Johannes},\n  title = {IC2S2 2025 {Workshop:} {Mobility} {Flows} and {Accessibility}\n    {Using} {R} and {Big} {Open} {Data}},\n  date = {2025-07-21},\n  url = {https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/includes/get-in-touch.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nKotov, Egor, and Johannes Mast. 2025. “IC2S2 2025 Workshop:\nMobility Flows and Accessibility Using R and Big Open Data.” July\n21, 2025. https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/includes/get-in-touch.html."
+  },
+  {
+    "objectID": "1-mobility-data-tutorial.html#get-the-zone-boundaries-data",
+    "href": "1-mobility-data-tutorial.html#get-the-zone-boundaries-data",
+    "title": "1b. 📊 Tutorial: Getting the Open Human Mobility Data in a Reproducible Way using spanishoddata and aggregating it with duckdb",
+    "section": "2.1 Get the zone boundaries data",
+    "text": "2.1 Get the zone boundaries data\n\nzones &lt;- spod_get_zones(zones = \"districts\", ver = 2)\n\n\nglimpse(zones)\n\nRows: 3,909\nColumns: 10\n$ id                   &lt;chr&gt; \"01001\", \"01002\", \"01004_AM\", \"01009_AM\", \"01010\", \"01017_AM\", \"01028_AM\", \"01…\n$ name                 &lt;chr&gt; \"Alegría-Dulantzi\", \"Amurrio\", \"Artziniega agregacion de municipios\", \"Asparre…\n$ population           &lt;dbl&gt; 2925, 10307, 3005, 4599, 2951, 4314, 7515, 18009, 3418, 3771, 5029, 2636, 4466…\n$ census_sections      &lt;chr&gt; \"0100101001; 0100101002\", \"0100201001; 0100201002; 0100201003; 0100201004; 010…\n$ census_districts     &lt;chr&gt; \"0100101\", \"0100201\", \"0100401; 0104201\", \"0100901; 0101301; 0102101; 0102701;…\n$ municipalities       &lt;chr&gt; \"01001\", \"01002\", \"01004; 01042\", \"01009; 01013; 01021; 01027; 01053; 01061\", …\n$ municipalities_mitma &lt;chr&gt; \"01001\", \"01002\", \"01004_AM\", \"01009_AM\", \"01010\", \"01017_AM\", \"01028_AM\", \"01…\n$ luas_mitma           &lt;chr&gt; \"01001\", \"01002\", \"01004_AM\", \"01009_AM\", \"01010\", \"01017_AM\", \"01028_AM\", \"01…\n$ district_ids_in_v1   &lt;chr&gt; \"01001_AM\", \"01002\", \"01010_AM\", \"01001_AM\", \"01010_AM\", \"01043_AM\", \"01031_AM…\n$ geometry             &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((538090.2 47..., MULTIPOLYGON (((501984.9 47..., M…\n\ngg_zones &lt;- zones |&gt;\n  st_simplify(dTolerance = 400) |&gt;\n  ggplot() +\n  geom_sf(linewidth = 0.2)\n\ngg_zones\n\n\n\n\nMITMS data zone boundaries",
+    "crumbs": [
+      "1b. 📊 Tutorial: Getting and aggregating the data"
+    ]
+  },
+  {
+    "objectID": "1-mobility-data-tutorial.html#get-the-flows-data",
+    "href": "1-mobility-data-tutorial.html#get-the-flows-data",
+    "title": "1b. 📊 Tutorial: Getting the Open Human Mobility Data in a Reproducible Way using spanishoddata and aggregating it with duckdb",
+    "section": "2.2 Get the flows data",
+    "text": "2.2 Get the flows data\n\n2.2.1 Define the dates\nLet us get a few days of data.\nWe can get all dates that are available in the data:\n\navailable_dates &lt;- spod_get_valid_dates(ver = 2)\n\nDefine the dates of interest, for example May 2nd and May 9th, 2024, and check if they are available in the data:\n\ndates &lt;- c(\"2024-05-02\", \"2024-05-09\")\nall(dates %in% available_dates)\n\nTRUE\n\n\n\n\n\n\nIf you are using our provided Binder container in a web browser to follow the tutorial, do not try to analyze more than 2 days at once, as it will likely crash the instance. In this case, even the magic of DuckDB does not help overcome the 2GB memory limit. If you computer has 4-8 GB of RAM, you should be good to go.\n\n\n\nNote that some dates may be missing:\n\n\"2024-11-09\" %in% available_dates\n\nFALSE\n\n\n\n\n\n\nWarning\n\n\n\nDue to mobile network outages, the data on certain dates is missing. Kindly keep this in mind when calculating mean monthly or weekly flows.\nPlease check the original data page for currently known missing dates. You can use spod_get_valid_dates() function to get all available dates as shown above.\n\n\nThe code below will download the requested dates and create the flows table.\n\n\n\n\n\n\nIf you are using our pre-converted data from SSD\n\n\n\n\n\nIf you are using the files copied from the SSD passed around during the workshop (kindly, remember to return it), you can instead use spod_connect() function to load the pre-converted data in DuckDB format that is optimized for speed. In this case you will be able to quickly analyze multiple dates available in respective folders of the SSD. Open the *.Rproj file in the root of the folder you copied and see some starter code in start-here.R to point the spod_connect() towards a *.duckdb file.\n\n\n\nFolder\nDates\n\n\n\n\n5GB_2023_15-aug-15-sep_od_distr\n15 August — 15 September 2023\n\n\n10GB_2023_aug-sep_od_distr\n1 August — 30 September 2023\n\n\n15GB_2023_jul-aug-sep_od_distr\n1 July — 30 September 2023\n\n\n60GB_2023_od_distr\n1 January — 31 December 2023\n\n\n\n\n\n\n\nflows &lt;- spod_get(\n  type = \"origin-destination\",\n  zones = \"districts\",\n  dates = dates\n)\n\n\n\n\n\n\n\nTip\n\n\n\nFor the 4 requested dates, the spod_get() call above will download just under 1 GB of data. If you need to download more days, you will have to set the max_download_size_gb argument in spod_get(). This is a precaution against downloading too much data at once.\n\n\nYou can now print the table to preview it:\n\nflows\n\nflows\n# Source:   table&lt;od_csv_clean_filtered&gt; [?? x 20]\n# Database: DuckDB v1.3.1 [root@Darwin 24.5.0:R 4.5.1/:memory:]\n   date        hour id_origin id_destination distance activity_origin   activity_destination study_possible_origin\n   &lt;date&gt;     &lt;int&gt; &lt;fct&gt;     &lt;fct&gt;          &lt;fct&gt;    &lt;fct&gt;             &lt;fct&gt;                &lt;lgl&gt;                \n 1 2024-05-02    21 01002     01001          10-50    frequent_activity home                 FALSE                \n 2 2024-05-02     0 01009_AM  01001          10-50    frequent_activity home                 FALSE                \n 3 2024-05-02    13 01009_AM  01001          10-50    frequent_activity home                 FALSE                \n 4 2024-05-02    15 01009_AM  01001          10-50    frequent_activity home                 FALSE                \n 5 2024-05-02    17 01009_AM  01001          10-50    frequent_activity home                 FALSE                \n 6 2024-05-02    19 01009_AM  01001          10-50    frequent_activity home                 FALSE                \n 7 2024-05-02    20 01009_AM  01001          10-50    frequent_activity home                 FALSE                \n 8 2024-05-02    21 01009_AM  01001          10-50    frequent_activity home                 FALSE                \n 9 2024-05-02    22 01009_AM  01001          10-50    frequent_activity home                 FALSE                \n10 2024-05-02    15 01017_AM  01001          10-50    frequent_activity home                 FALSE                \n# ℹ more rows\n# ℹ 12 more variables: study_possible_destination &lt;lgl&gt;, residence_province_ine_code &lt;fct&gt;,\n#   residence_province_name &lt;fct&gt;, income &lt;fct&gt;, age &lt;fct&gt;, sex &lt;fct&gt;, n_trips &lt;dbl&gt;, trips_total_length_km &lt;dbl&gt;,\n#   year &lt;int&gt;, month &lt;int&gt;, day &lt;int&gt;, time_slot &lt;int&gt;\n# ℹ Use `print(n = ...)` to see more rows\nOr use glimpse() to view its structure:\n\nglimpse(flows)\n\nRows: ??\nColumns: 20\nDatabase: DuckDB v1.3.1 [root@Darwin 24.5.0:R 4.5.1/:memory:]\n$ date                        &lt;date&gt; 2024-05-02, 2024-05-02, 2024-05-02, 2024-05-02, 2024-05-02, 2024-05-02, 2024-0…\n$ hour                        &lt;int&gt; 21, 0, 13, 15, 17, 19, 20, 21, 22, 15, 12, 16, 6, 11, 12, 17, 18, 22, 15, 19, 2…\n$ id_origin                   &lt;fct&gt; 01002, 01009_AM, 01009_AM, 01009_AM, 01009_AM, 01009_AM, 01009_AM, 01009_AM, 01…\n$ id_destination              &lt;fct&gt; 01001, 01001, 01001, 01001, 01001, 01001, 01001, 01001, 01001, 01001, 01001, 01…\n$ distance                    &lt;fct&gt; 10-50, 10-50, 10-50, 10-50, 10-50, 10-50, 10-50, 10-50, 10-50, 10-50, 10-50, 10…\n$ activity_origin             &lt;fct&gt; frequent_activity, frequent_activity, frequent_activity, frequent_activity, fre…\n$ activity_destination        &lt;fct&gt; home, home, home, home, home, home, home, home, home, home, home, home, home, h…\n$ study_possible_origin       &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FA…\n$ study_possible_destination  &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FA…\n$ residence_province_ine_code &lt;fct&gt; 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01,…\n$ residence_province_name     &lt;fct&gt; \"Araba/Álava\", \"Araba/Álava\", \"Araba/Álava\", \"Araba/Álava\", \"Araba/Álava\", \"Ara…\n$ income                      &lt;fct&gt; 10-15, 10-15, 10-15, 10-15, 10-15, 10-15, 10-15, 10-15, 10-15, 10-15, 10-15, 10…\n$ age                         &lt;fct&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…\n$ sex                         &lt;fct&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,…\n$ n_trips                     &lt;dbl&gt; 2.340, 2.241, 2.421, 4.646, 2.421, 5.209, 2.306, 2.340, 5.601, 2.421, 2.306, 3.…\n$ trips_total_length_km       &lt;dbl&gt; 104.404, 28.306, 29.898, 65.224, 29.898, 95.034, 30.615, 40.013, 101.662, 28.39…\n$ year                        &lt;int&gt; 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2024, 2…\n$ month                       &lt;int&gt; 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5…\n$ day                         &lt;int&gt; 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2…\n$ time_slot                   &lt;int&gt; 21, 0, 13, 15, 17, 19, 20, 21, 22, 15, 12, 16, 6, 11, 12, 17, 18, 22, 15, 19, \n\n\n\n\n\n\nTip\n\n\n\nstr() and summary() will not work on this data in a way that you might expect, as it is not an ordinary data.frame, but a special tbl_* table object that is actually powered by DuckDB via {duckdb} R package in the background, but pretends to be a tibble (from {tibble}/{dplyr}/{tidyverse}).\n\nclass(flows)\n\n[1] \"tbl_duckdb_connection\" \"tbl_dbi\"               \"tbl_sql\"              \n[4] \"tbl_lazy\"              \"tbl\"   \n\n\n\n\n\n\n\n\nTip\n\n\n\nThe meaning of all the variables is explained in the codebook.\n\n\n\n\n\n\n\n\nGetting data even faster\n\n\n\n\n\nIf you only need total daily flows between municipalties without any extra information, you can save time by getting pre-aggregated reduced size data directly from the interactive map hosted by the Ministry of Transport and Sustainable Mobility. To do this, kindly refer to the “Quicky get daily data” vignette. However, this is not recommended for studies that require the code to be reproducible, as the API may change at any time. You can use this functionality for quick mobility estimates and in classroom for experiments.\n\n\n\n\n\n2.2.2 Data verification\nWhen mobility data files are downloaded with spod_get() or spod_download(), they are automatically checked by file size against known size of the remote files to prevent currupted downloads and preserve data integrity. However, if you would like to do an extra check you can use spod_check_files() with the same arguments you used for spod_get() or spod_download().\n\nfile_check &lt;- spod_check_files(\n  type = \"origin-destination\",\n  zones = \"districts\",\n  dates = dates\n)\n\nData version detected from dates: 2\nUsing existing disk cache: /path/to/your/working/dir/data/metadata_cache/metadata_s3_v2_2025-07-02.rds\nAll checked files are consistent.\n\nall(file_check$local_file_consistent)\n\nTRUE\nIf the some files were corrupted, you could easily find out which ones with:\n\nfile_check |&gt;\n  filter(local_file_consistent == FALSE)\n\nAnd you would be able to fix this by simply re-running the call to spod_get() or spod_download().",
+    "crumbs": [
+      "1b. 📊 Tutorial: Getting and aggregating the data"
+    ]
+  },
+  {
+    "objectID": "1-mobility-data-tutorial.html#aggregation-examples",
+    "href": "1-mobility-data-tutorial.html#aggregation-examples",
+    "title": "1b. 📊 Tutorial: Getting the Open Human Mobility Data in a Reproducible Way using spanishoddata and aggregating it with duckdb",
+    "section": "3.1 Aggregation examples",
+    "text": "3.1 Aggregation examples\nBelow you will find examples in pure R using {dplyr}/{dbplyr} and equivalent SQL queries, but also executed from R, so that you can run them. For any sequence of {dplyr}/{dbplyr} functions, you can always view the equivalent SQL query by replacing collect() with show_query(), for example:\n\nflows |&gt;\n  summarise(\n    n_trips = sum(n_trips, na.rm = TRUE),\n    .groups = \"drop\"\n  ) |&gt;\n  show_query()\n\nGives you:\n&lt;SQL&gt;\nSELECT SUM(n_trips) AS n_trips\nFROM od_csv_clean_filtered\n\n3.1.1 Count the total number of over all days\n\nRSQL\n\n\n\nflows |&gt;\n  summarise(\n    n_trips = sum(n_trips, na.rm = TRUE),\n    .groups = \"drop\"\n  ) |&gt;\n  collect()\n\n\n\n\nDBI::dbGetQuery(\n  conn = dbplyr::remote_con(flows),\n  statement = glue::glue(\n    \"\n  SELECT SUM(n_trips) AS n_trips\n  FROM {dbplyr::remote_name(flows)}\n  \"\n  )\n)\n\n\n\n\n# A tibble: 1 × 1    \n     n_trips\n       &lt;dbl&gt;\n1 293442773.\n\n\n3.1.2 Count total number of trips per day\n\nRSQL\n\n\n\nflows |&gt;\n  group_by(date) |&gt;\n  summarise(\n    n_trips = sum(n_trips, na.rm = TRUE),\n    .groups = \"drop\"\n  ) |&gt;\n  collect()\n\n\n\n\nDBI::dbGetQuery(\n  conn = dbplyr::remote_con(flows),\n  statement = glue::glue(\n    \"\n  SELECT date, SUM(n_trips) AS n_trips\n  FROM {dbplyr::remote_name(flows)}\n  GROUP BY date\n  ORDER BY date\n  \"\n  )\n)\n\n\n\n\n# A tibble: 2 × 2    \n  date          n_trips\n  &lt;date&gt;          &lt;dbl&gt;\n1 2024-05-02 143086514.\n2 2024-05-09 150356260.\n\n\n3.1.3 Count total number of work trips in the morning hours by women vs men\n\nRSQL\n\n\n\nm_vs_f_morning_commute &lt;- flows |&gt;\n  filter(!is.na(sex), hour %in% 6:10) |&gt;\n  group_by(date, sex) |&gt;\n  summarise(\n    n_trips = sum(n_trips, na.rm = TRUE),\n    .groups = \"drop\"\n  ) |&gt;\n  arrange(date, sex) |&gt;\n  collect()\n\nm_vs_f_morning_commute\n\n\n\n\nDBI::dbGetQuery(\n  conn = dbplyr::remote_con(flows),\n  statement = glue::glue(\n    \"\n  SELECT date, sex, SUM(n_trips) AS n_trips\n  FROM {dbplyr::remote_name(flows)}\n  WHERE hour BETWEEN 6 AND 10\n  GROUP BY date, sex\n  ORDER BY date, sex\n  \"\n  )\n)\n\n\n\n\n# A tibble: 4 × 3\n  date       sex      n_trips\n  &lt;date&gt;     &lt;fct&gt;      &lt;dbl&gt;\n1 2024-05-02 female  9997030.\n2 2024-05-02 male    9492141.\n3 2024-05-09 female 11417441.\n4 2024-05-09 male   10838305.\nPlot it\n\nm_vs_f_morning_commute_plot &lt;- m_vs_f_morning_commute |&gt;\n  ggplot(aes(x = date, y = n_trips, color = sex)) +\n  geom_line() +\n  theme_light() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\nm_vs_f_morning_commute_plot\n\n\n\n\n\n\n\nFor the 2 days we selected, the plot would of course look weird, so we show the plot below for a couple more days.",
+    "crumbs": [
+      "1b. 📊 Tutorial: Getting and aggregating the data"
+    ]
+  },
+  {
+    "objectID": "includes/note-ssd-data.html",
+    "href": "includes/note-ssd-data.html",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "",
+    "text": "If you are using our pre-converted data from SSD\n\n\n\n\n\nIf you are using the files copied from the SSD passed around during the workshop (kindly, remember to return it), you can instead use spod_connect() function to load the pre-converted data in DuckDB format that is optimized for speed. In this case you will be able to quickly analyze multiple dates available in respective folders of the SSD. Open the *.Rproj file in the root of the folder you copied and see some starter code in start-here.R to point the spod_connect() towards a *.duckdb file.\n\n\n\nFolder\nDates\n\n\n\n\n5GB_2023_15-aug-15-sep_od_distr\n15 August — 15 September 2023\n\n\n10GB_2023_aug-sep_od_distr\n1 August — 30 September 2023\n\n\n15GB_2023_jul-aug-sep_od_distr\n1 July — 30 September 2023\n\n\n60GB_2023_od_distr\n1 January — 31 December 2023\n\n\n\n\n\n\n\n\n\nCitationBibTeX citation:@online{kotov2025,\n  author = {Kotov, Egor and Mast, Johannes},\n  title = {IC2S2 2025 {Workshop:} {Mobility} {Flows} and {Accessibility}\n    {Using} {R} and {Big} {Open} {Data}},\n  date = {2025-07-21},\n  url = {https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/includes/note-ssd-data.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nKotov, Egor, and Johannes Mast. 2025. “IC2S2 2025 Workshop:\nMobility Flows and Accessibility Using R and Big Open Data.” July\n21, 2025. https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/includes/note-ssd-data.html."
+  },
+  {
+    "objectID": "includes/rdocdump.html",
+    "href": "includes/rdocdump.html",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "",
+    "text": "Tip\n\n\n\nFeel free to consult any LLM you prefer for code examples. You can also use the {rdocdump} R package to export all documentation and vignettes from {spanishoddata} or other packages into a single text file—and then feed that to your model for richer code suggestions. This helps a lot for the packages that are newer then the model training cut-off date, or the ones that were recently updated with new features.\nQuick Start: rdocdump\n# Install\ninstall.packages(\"rdocdump\")\n\n# Dump spanishoddata docs + vignettes to TXT\nrdocdump::rdd_to_txt(\n  pkg         = \"spanishoddata\",\n  file        = \"spanishoddata_docs.txt\",\n  content     = c(\"docs\", \"vignettes\"),\n  force_fetch = TRUE,\n  keep_files  = \"none\"\n)\nNow just attach the spanishoddata_docs.txt file saved into the current project/working directory to your LLM prompt and ask for code examples using the data from the package.\n\n\n\n\n\nCitationBibTeX citation:@online{kotov2025,\n  author = {Kotov, Egor and Mast, Johannes},\n  title = {IC2S2 2025 {Workshop:} {Mobility} {Flows} and {Accessibility}\n    {Using} {R} and {Big} {Open} {Data}},\n  date = {2025-07-21},\n  url = {https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/includes/rdocdump.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nKotov, Egor, and Johannes Mast. 2025. “IC2S2 2025 Workshop:\nMobility Flows and Accessibility Using R and Big Open Data.” July\n21, 2025. https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/includes/rdocdump.html."
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flow-graphs",
+    "href": "2-flow-vis-slides.html#flow-graphs",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Flow graphs",
+    "text": "Flow graphs\n\n\nBy Jarfuls of Tweed - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=130341554"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flow-graphs-1",
+    "href": "2-flow-vis-slides.html#flow-graphs-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Flow graphs",
+    "text": "Flow graphs\n\n\nCC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=625398"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#line-plots",
+    "href": "2-flow-vis-slides.html#line-plots",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Line plots",
+    "text": "Line plots\n\n\nhttps://ropenspain.github.io/spanishoddata"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#edge-bundling-of-individual-tracks",
+    "href": "2-flow-vis-slides.html#edge-bundling-of-individual-tracks",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Edge Bundling of Individual Tracks",
+    "text": "Edge Bundling of Individual Tracks\n\n\n\n\n\n\n\n\n\n\n{edgebundle} - an R package for edge-bundle visualisations\n\n\n\n\nhttps://schochastics.github.io/edgebundle/"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#animation-of-individual-tracks",
+    "href": "2-flow-vis-slides.html#animation-of-individual-tracks",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Animation of Individual Tracks",
+    "text": "Animation of Individual Tracks\n\n\n\n\n\n\n\n\n\n\n\n{moveVis} - an R package for animal movement, can also be used to illustrate\n\n\nhttps://movevis.org/"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flow-maps",
+    "href": "2-flow-vis-slides.html#flow-maps",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Flow maps",
+    "text": "Flow maps\n“[may well be] the best statistical graphic ever drawn” – E. Tufte\n\n\nBy Charles Minard (1781–1870) - see upload log, Public Domain, https://commons.wikimedia.org/w/index.php?curid=297925"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flow-maps-1",
+    "href": "2-flow-vis-slides.html#flow-maps-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Flow maps",
+    "text": "Flow maps\n\n\nVisualization of Origin-Destination Data.\nDirected edges between nodes.\nPositions of nodes correspond to geographic space.\nVariations express differences in flow strength\n\nsize / thickness\ncolor\n…\n\n\n\n\n\n\n\n\n\n\n\nOften bidirectional.\nPositions of nodes correspond to geographic space – this makes it different than flow graphs or diagrams. And it allows to express very intuitively the spatial dimension of mobility, making it useful for geographic applications."
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flow-maps-2",
+    "href": "2-flow-vis-slides.html#flow-maps-2",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Flow maps",
+    "text": "Flow maps\n\n\nVisualization of Origin-Destination Data.\nDirected edges between nodes.\nPositions of nodes correspond to geographic space.\nVariations express differences in flow strength\n\nsize / thickness\ncolor\n…\n\n\n\n\n\n\n\n\n\n\n\nOften bidirectional.\nPositions of nodes correspond to geographic space – this makes it different than flow graphs or diagrams. And it allows to express very intuitively the spatial dimension of mobility, making it useful for geographic applications."
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flowmapblue",
+    "href": "2-flow-vis-slides.html#flowmapblue",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "{flowmapblue}",
+    "text": "{flowmapblue}\n\n\n\nAvailable as a web version and as an R package\nInteractive visualisations\nPart of the flowmap suite, continously developed"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flowmapper",
+    "href": "2-flow-vis-slides.html#flowmapper",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "{flowmapper}",
+    "text": "{flowmapper}\n\n\n\nInspired by {flowmapblue}\nStatic visualisations within the {ggplot2} framework\nCapacity to export as spatial objects"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flowmapper-ggplot2-framework",
+    "href": "2-flow-vis-slides.html#flowmapper-ggplot2-framework",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "flowmapper – ggplot2 framework",
+    "text": "flowmapper – ggplot2 framework"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flowmapper-clustering",
+    "href": "2-flow-vis-slides.html#flowmapper-clustering",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "flowmapper – Clustering",
+    "text": "flowmapper – Clustering"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flowmapper-customization",
+    "href": "2-flow-vis-slides.html#flowmapper-customization",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "flowmapper – Customization",
+    "text": "flowmapper – Customization"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flowmapper-adding-raster-basemaps",
+    "href": "2-flow-vis-slides.html#flowmapper-adding-raster-basemaps",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "flowmapper – Adding Raster Basemaps",
+    "text": "flowmapper – Adding Raster Basemaps"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flowmapper---comparative-flow-maps",
+    "href": "2-flow-vis-slides.html#flowmapper---comparative-flow-maps",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Flowmapper - Comparative Flow Maps",
+    "text": "Flowmapper - Comparative Flow Maps"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#flowmapper---exporting-as-spatial-object",
+    "href": "2-flow-vis-slides.html#flowmapper---exporting-as-spatial-object",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Flowmapper - Exporting as Spatial Object",
+    "text": "Flowmapper - Exporting as Spatial Object\n\n\n\n \n\n \n\n\nLogos are the property of their respective owners."
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#hands-on-example",
+    "href": "2-flow-vis-slides.html#hands-on-example",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Hands-on example",
+    "text": "Hands-on example\nLocation:\n\nMadrid, Spain\n\nTime:\n\nMay 2nd, 2024\nMay 9th, 2024\n\n\nPhoto credit: Justraveling.com, https://www.justraveling.com/free-photos-5/"
+  },
+  {
+    "objectID": "2-flow-vis-slides.html#lets-get-started",
+    "href": "2-flow-vis-slides.html#lets-get-started",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Let’s get started!",
+    "text": "Let’s get started!\n\nPhoto credit: Justraveling.com, https://www.justraveling.com/free-photos-5/\nLogos are the property of their respective owners."
+  },
+  {
+    "objectID": "2-flow-vis-tutorial.html",
+    "href": "2-flow-vis-tutorial.html",
+    "title": "2b. 📊 Tutorial: Visualization of Mobility Using flowmapper and flowmapblue",
+    "section": "",
+    "text": "Visualization of Mobility using flowmapper & flowmapblue",
+    "crumbs": [
+      "2b. 📊 Tutorial: Flows Visualisation"
+    ]
+  },
+  {
+    "objectID": "2-flow-vis-tutorial.html#loading-the-data",
+    "href": "2-flow-vis-tutorial.html#loading-the-data",
+    "title": "2b. 📊 Tutorial: Visualization of Mobility Using flowmapper and flowmapblue",
+    "section": "1.1 Loading the data",
+    "text": "1.1 Loading the data\nWe will download data for the city of Madrid, for two days: May 2nd and May 9th, 2024. May 2nd is a holiday in Madrid, so we can expect different mobility patterns compared to a regular Thursday like May 9th.\n\ndates &lt;- c(\"2024-05-02\", \"2024-05-09\")\n\n\n\n\n\n\n\nIf you are using our provided Binder container in a web browser to follow the tutorial, do not try to analyze more than 2 days at once, as it will likely crash the instance. In this case, even the magic of DuckDB does not help overcome the 2GB memory limit. If you computer has 4-8 GB of RAM, you should be good to go.\n\n\n\nFor these days, we download the data using spod_get().\n\n\n\n\n\n\nIf you are using our pre-converted data from SSD\n\n\n\n\n\nIf you are using the files copied from the SSD passed around during the workshop (kindly, remember to return it), you can instead use spod_connect() function to load the pre-converted data in DuckDB format that is optimized for speed. In this case you will be able to quickly analyze multiple dates available in respective folders of the SSD. Open the *.Rproj file in the root of the folder you copied and see some starter code in start-here.R to point the spod_connect() towards a *.duckdb file.\n\n\n\nFolder\nDates\n\n\n\n\n5GB_2023_15-aug-15-sep_od_distr\n15 August — 15 September 2023\n\n\n10GB_2023_aug-sep_od_distr\n1 August — 30 September 2023\n\n\n15GB_2023_jul-aug-sep_od_distr\n1 July — 30 September 2023\n\n\n60GB_2023_od_distr\n1 January — 31 December 2023\n\n\n\n\n\n\n\nflows &lt;- spod_get(\n  type = \"origin-destination\",\n  zones = \"districts\",\n  dates = dates\n)\n\nThese are origin-destination flows, which contain several million rows. For creating flow maps, we are interested in the total number of flows between each pair of districts. Therefore, we count the number of trips between each pair of origin and destination districts. The result is a data frame with three columns: o (origin), d (destination), and value (number of trips).\n\ntotal_flow_counts &lt;-\n  flows |&gt;\n  group_by(o = id_origin, d = id_destination) |&gt;\n  summarise(value = sum(n_trips, na.rm = TRUE), .groups = \"drop\") |&gt;\n  arrange(desc(o), d, value) |&gt;\n  collect()\n\nhead(total_flow_counts)\n\n# A tibble: 6 × 3    \n  o        d        value\n  &lt;fct&gt;    &lt;fct&gt;    &lt;dbl&gt;\n1 31260_AM 01017_AM 32.8 \n2 31260_AM 01028_AM 27.7 \n3 31260_AM 01036     3.92\n4 31260_AM 01051     2.51\n5 31260_AM 0105902  22.3 \n6 31260_AM 0105903   6.24\nBesides the flow data, we also want the spatial boundaries of the districts for visualisation purposes. We can access these districts using the spod_get_zones() function, and we can filter for the Madrid region using the luas_mitma column, which contains the name of the region.\nBecause we first want to work with flowmapblue, which expects inputs to be in the WGS84 coordinate reference system, we transform the districts to the WGS84 system (EPSG:4326).\n\nzones &lt;- spod_get_zones(zones = \"districts\", ver = 2)\n\nzones_madrid_4326 &lt;- zones |&gt;\n  filter(luas_mitma == \"GAU Madrid\") |&gt;\n  st_transform(4326) # flowmapblue assumes coordinates in wgs84\n\nFor these districts, we extract the centroids, which will be used as the position of the nodes in all the graph visualisations we will be able to create.\n\nzones_madrid_coords_4326 &lt;-\n  zones_madrid_4326 |&gt;\n  st_centroid() |&gt;\n  st_coordinates() |&gt;\n  as.data.frame() |&gt;\n  mutate(name = zones_madrid_4326$id) |&gt;\n  rename(x = X, y = Y)\n\nFor visualising the Madrid regions, we only keep flows which both originate and end in the Madrid region.\n\ntotal_flow_counts_m &lt;-\n  total_flow_counts |&gt;\n  filter(o %in% zones_madrid_4326$id & d %in% zones_madrid_4326$id)\n\nhead(total_flow_counts_m)\n\n# A tibble: 6 × 3\n  o     d       value\n  &lt;fct&gt; &lt;fct&gt;   &lt;dbl&gt;\n1 28903 28002    78.0\n2 28903 28004    58.6\n3 28903 2800501 131. \n4 28903 2800502 168. \n5 28903 2800503 156. \n6 28903 2800504 177.",
+    "crumbs": [
+      "2b. 📊 Tutorial: Flows Visualisation"
+    ]
+  },
+  {
+    "objectID": "2-flow-vis-tutorial.html#setting-the-mapbox-token",
+    "href": "2-flow-vis-tutorial.html#setting-the-mapbox-token",
+    "title": "2b. 📊 Tutorial: Visualization of Mobility Using flowmapper and flowmapblue",
+    "section": "2.1 Setting the mapbox token",
+    "text": "2.1 Setting the mapbox token\nWe will use the flowmapblue library to create an interactive flow map. This package uses Mapbox for rendering the background basemap, so we need to set a Mapbox access token. You can get a free token by signing up at Mapbox.\n\n\n\n\n\n\nTip\n\n\n\nYou can also copy our API key for MapBox from this doc, but it will only work on the day of the workshop, so we recommend you to get your own free token if you plan to keep on using {flowmapblue} after the workshop.\n\n\n\n# Sys.setenv(MAPBOX_TOKEN = your_mapbox_token)",
+    "crumbs": [
+      "2b. 📊 Tutorial: Flows Visualisation"
+    ]
+  },
+  {
+    "objectID": "2-flow-vis-tutorial.html#creating-the-flowmap",
+    "href": "2-flow-vis-tutorial.html#creating-the-flowmap",
+    "title": "2b. 📊 Tutorial: Visualization of Mobility Using flowmapper and flowmapblue",
+    "section": "2.2 Creating the flowmap",
+    "text": "2.2 Creating the flowmap\nWe then load the flowmapblue library.\n\nlibrary(flowmapblue)\n\nflowmapblue expects data in a specific format:\n\nA flows data frame, which should contain the columns origin, dest, and count.\nAlocations data frame, which should contain the columns id, lon, and lat.\n\nWe have everything we need already, we just need to rename the columns in our data frames to match these expectations.\n\ntotal_flow_counts_m &lt;-\n  total_flow_counts_m |&gt;\n  mutate(origin = o, dest = d, count = value)\n\nzones_madrid_coords_4326 &lt;-\n  zones_madrid_coords_4326 |&gt;\n  mutate(\n    id = name,\n    lon = x,\n    lat = y\n  )\n\nNow we can create the flowmap using the flowmapblue() function. We pass the locations and flows data frames, and we also set the Mapbox access token.\n\nflowmap &lt;- flowmapblue(\n  locations = zones_madrid_coords_4326,\n  flows = total_flow_counts_m,\n  mapboxAccessToken = Sys.getenv(\"MAPBOX_TOKEN\"),\n  darkMode = TRUE, # [!] Also try light mode!\n)\n\nflowmap\n\n# htmlwidgets::saveWidget(\n#   flowmap,\n#   \"media/2-flow-vis/flowmap_widget.html\",\n#   selfcontained = TRUE\n# )",
+    "crumbs": [
+      "2b. 📊 Tutorial: Flows Visualisation"
+    ]
+  },
+  {
+    "objectID": "2-flow-vis-tutorial.html#making-a-basic-flowmap-using-flowmapper",
+    "href": "2-flow-vis-tutorial.html#making-a-basic-flowmap-using-flowmapper",
+    "title": "2b. 📊 Tutorial: Visualization of Mobility Using flowmapper and flowmapblue",
+    "section": "3.1 Making a basic flowmap using flowmapper",
+    "text": "3.1 Making a basic flowmap using flowmapper\nTo start with, we plot the districts.\n\nzones_madrid_plot &lt;-\n  ggplot() +\n  geom_sf(\n    data = zones_madrid_4326,\n    fill = NA,\n    col = \"grey60\",\n    linewidth = 0.3\n  ) +\n  theme_bw() +\n  theme(legend.position = \"none\")\n\nzones_madrid_plot\n\n\n\n\nggplot with outlines of districts around Madrid.\n\n\nThis serves as the canvas on which we create the flowmap. The obvious next step, of course, is to add the flows. To add all the connections between the districts, we can use the add_flowmap() function. This function takes the origin-destination data and the coordinates of the nodes, and it adds the flows to the plot.\n\nzones_madrid_plot_1 &lt;-\n  zones_madrid_plot |&gt;\n  add_flowmap(\n    od = total_flow_counts_m,\n    nodes = zones_madrid_coords_4326,\n  )\nzones_madrid_plot_1\n\n\n\n\nBasic flowmap with many overlapping lines\n\n\nAs we can see, it is very difficult to interpret the flow map when all flows are plotted. The lines overlap and it is hard to see the individual flows.",
+    "crumbs": [
+      "2b. 📊 Tutorial: Flows Visualisation"
+    ]
+  },
+  {
+    "objectID": "2-flow-vis-tutorial.html#making-a-pretty-flowmap",
+    "href": "2-flow-vis-tutorial.html#making-a-pretty-flowmap",
+    "title": "2b. 📊 Tutorial: Visualization of Mobility Using flowmapper and flowmapblue",
+    "section": "3.2 Making a pretty flowmap",
+    "text": "3.2 Making a pretty flowmap\nClearly, there are many ways we can improve this map.\n\n3.2.1 Aggregating nodes into clusters\nTo reduce the number of connections, and make the flow map more interpretable, we can cluster the nodes. This means that we hierarchically merge nearby nodes into clusters, and we only show the flows between the clusters. This reduces the number of lines in the plot and makes it easier to see the overall patterns.\nIn flowmapper, this is done by specifying the parameter k_nodes, where k is the number of nodes that should remain after clustering.\n\nThe choice of k depends on the distribution of the nodes, the size of the map, and the desired visual effect. In our experience, a number between 10 and 30 works fine for general visualizations.\n\n\nzones_madrid_plot_2 &lt;-\n  zones_madrid_plot |&gt;\n  add_flowmap(\n    od = total_flow_counts_m,\n    nodes = zones_madrid_coords_4326,\n    k_nodes = 10\n  )\nzones_madrid_plot_2\n\n\n\n\nclustered flowmap\n\n\n\n\n3.2.2 Changing the visuals of the nodes and edges\nWe can also change the visuals of the nodes and edges. add_flowmap() accepts a wide range of arguments. For example, we can change the color of the edges, the width of the edges, and the color of the nodes. We can also add a legend to the plot.\n\n# add the flows\nzones_madrid_plot |&gt;\n  add_flowmap(\n    od = total_flow_counts_m,\n    nodes = zones_madrid_coords_4326,\n    outline_col = \"NA\",\n    edge_width_factor = 0.8,\n    add_legend = \"right\",\n    legend_gradient = TRUE,\n    k_nodes = 25\n  ) +\n  scale_fill_gradient(\n    low = \"#FABB29\",\n    high = \"#AB061F\"\n  )\n\n\n\n\nCustomized flowmap (ggplot)\n\n\n\n\n3.2.3 Adding a raster base map\nWe can use the basemaps package to add a raster base map to the flow map. This can help to provide context to the flow map and make it more visually appealing.\nThe basemaps are provided in the World Mercator projection (EPSG:3857), so we want to transform the zones to this projection before adding the base map.\n\nzones_madrid_3857 &lt;- zones |&gt;\n  filter(luas_mitma == \"GAU Madrid\") |&gt;\n  st_transform(3857)\n\nzones_madrid_coords_3857 &lt;-\n  zones_madrid_3857 |&gt;\n  st_centroid() |&gt;\n  st_coordinates() |&gt;\n  as.data.frame() |&gt;\n  mutate(name = zones_madrid_3857$id) |&gt;\n  rename(x = X, y = Y)\n\nThen we can use the basemap_ggplot() function to create a base map. We can specify the map service and the map type. In this case, we use a hillshade map from ESRI, which provides a nice background for the flow map. We also set the alpha parameter to make the base map slightly transparent, so that the flow map is more visible.\n\nzones_madrid_plot_with_basemap &lt;-\n  basemap_ggplot(\n    st_buffer(zones_madrid_3857, 15000), # add a buffer to the zones to avoid clipping the edges\n    map_service = \"esri\",\n    map_type = \"world_hillshade\", # [!]  Try basemaps::get_maptypes() and explore some alternative basemaps\n    alpha = 0.9\n  ) +\n  theme_bw() +\n  theme(\n    axis.title = element_blank(),\n    axis.text = element_blank(),\n    axis.ticks = element_blank(),\n    legend.position = \"none\"\n  ) +\n  scale_x_continuous(expand = expansion(0, 0)) +\n  scale_y_continuous(expand = expansion(0, 0)) +\n  ggnewscale::new_scale_fill() +\n  geom_sf(data = zones_madrid_3857, fill = NA, col = \"grey60\", linewidth = 0.3)\n\n\nzones_madrid_plot_with_basemap_flowmap &lt;-\n  zones_madrid_plot_with_basemap |&gt;\n  add_flowmap(\n    od = total_flow_counts_m,\n    nodes = zones_madrid_coords_3857,\n    outline_col = \"NA\",\n    edge_width_factor = 0.7, # [!] What if you set this to the default of 1?\n    k_nodes = 25, # [!] Experiment with different numbers of nodes.\n    add_legend = \"bottom\",\n    legend_col = \"gray30\",\n    legend_gradient = TRUE,\n    legend_nudge_y = -10000\n  ) +\n  scale_fill_gradient(low = \"#FABB29\", high = \"#AB061F\") + # [!] Change the colors here\n  labs(\n    title = \"Mobility in the Madrid Region\",\n    caption = \"Ministerio de Transportes y Movilidad Sostenible MITMS 2024\"\n  )\n\nzones_madrid_plot_with_basemap_flowmap\n\n\n\n\nCustomized flowmap with hillshade basemap",
+    "crumbs": [
+      "2b. 📊 Tutorial: Flows Visualisation"
+    ]
+  },
+  {
+    "objectID": "2-flow-vis-tutorial.html#bonus-comparative-maps",
+    "href": "2-flow-vis-tutorial.html#bonus-comparative-maps",
+    "title": "2b. 📊 Tutorial: Visualization of Mobility Using flowmapper and flowmapblue",
+    "section": "3.3 ! Bonus: Comparative Maps",
+    "text": "3.3 ! Bonus: Comparative Maps\nWe can also create comparative maps, for example, comparing the flows on the two days we have data for.\nBefore, we aggregated the data for both our dates. However, we can also do it separately for each day. To do this, we simply have to add the date column to the grouping in the group_by() function. This will create a separate count for each day.\nWe also again filter down to keep only the flows that involve Madrid districts, as we did before. And then, we split the dataframe into a list of two dataframes, one for each date. This will allow us to create a separate flow map for each day.\n\nflow_counts_by_date &lt;-\n  flows |&gt;\n  group_by(o = id_origin, d = id_destination, date) |&gt;\n  summarise(value = sum(n_trips, na.rm = TRUE), .groups = \"drop\") |&gt;\n  collect() |&gt;\n  arrange(o, d, date, value) |&gt;\n\n  # again, filter down to keep only the ones involving madrid\n  filter(o %in% zones_madrid_3857$id & d %in% zones_madrid_3857$id) |&gt;\n  # split the dataframe by date into a list\n  group_by(date) |&gt;\n  group_split()\n\nWe can then create a list of the coordinates for each date, so that we can use them in the flow maps. As in this case, the nodes do not change their position, we can just repeat the coordinates for each date into a list (of the same length as flow_counts_by_date).\n\n# create a list of the same length as flow_counts_by_date, with each element being zones_madrid_coords_3857\nzones_madrid_coords_3857_list &lt;-\n  rep(list(zones_madrid_coords_3857), length(flow_counts_by_date))\n\nPassing the od and nodes arguments as lists allows us to create a flow map for each date in the list. The add_flowmap_list() function will then create a list of plots with a separate flow map for each date, at a common scale. In this case, we compare two days, so we get a list of two plots.\n\ncomparative_plots &lt;-\n  flowmapper::add_flowmap_list(\n    zones_madrid_plot_with_basemap,\n    od = flow_counts_by_date,\n    nodes = zones_madrid_coords_3857_list,\n    outline_col = \"NA\",\n    edge_width_factor = 0.7,\n    k_nodes = 20,\n    add_legend = \"bottom\",\n    legend_col = \"gray30\",\n    legend_gradient = TRUE,\n    legend_nudge_y = -10000\n  )\n\nA nice way to visualize these two plots is to use the patchwork package, which allows us to combine multiple ggplot objects into one plot. In patchwork syntax, we use the | operator to combine the two plots side by side, and we use the plot_annotation() function to add a title and subtitle to the plot. Plot elements can be added to the plot using the & operator, which allows us to add a color scale to both plots.\n\ncomparative_plot_combined &lt;-\n  (comparative_plots[[1]] | comparative_plots[[2]]) +\n  plot_annotation(\n    title = 'Effect of Holidays on Mobility flows in Madrid',\n    subtitle = \"Left: On Holiday (May 2nd)   Right: Normal Thursday (May 9th)\",\n    caption = \"Ministerio de Transportes y Movilidad Sostenible MITMS 2024\"\n  ) &\n  scale_fill_gradient(low = \"#FABB29\", high = \"#AB061F\", limits = c(0, 500000))\n\ncomparative_plot_combined\n\n\n\n\nComparative flowmap",
+    "crumbs": [
+      "2b. 📊 Tutorial: Flows Visualisation"
+    ]
+  },
+  {
+    "objectID": "2-flow-vis-tutorial.html#exporting-flowmaps-as-spatial-objects",
+    "href": "2-flow-vis-tutorial.html#exporting-flowmaps-as-spatial-objects",
+    "title": "2b. 📊 Tutorial: Visualization of Mobility Using flowmapper and flowmapblue",
+    "section": "3.4 Exporting flowmaps as spatial objects",
+    "text": "3.4 Exporting flowmaps as spatial objects\nggplot is a versatile environment, but it has its limitations. There are other softwares, like GIS, that offer additional visualization methods for geospatial data. These data usually expect spatial objects, such as geopackages.\nWe can create spatial objects from flowmaps using the flowmap_sf() function from the flowmapper package. This function returns a list with two elements: edges and nodes, which are both sf objects.\n\nsf_objects &lt;- flowmap_sf(\n  od = total_flow_counts_m,\n  nodes = zones_madrid_coords_3857,\n  edge_width_factor = 0.8,\n  k_nodes = 10,\n  crs = 3857\n)\nsf_edges &lt;- sf_objects$edges\nsf_nodes &lt;- sf_objects$nodes\n\nWe can write these sf objects in a variety of formats, such as a geopackage with one layer for edges, and one layer for nodes.\n\n# export as a geopackage, one layer for the edges, one for the nodes\nst_write(sf_edges, \"flowmap_madrid.gpkg\", delete_dsn = TRUE, layer = \"edges\")\nst_write(sf_nodes, \"flowmap_madrid.gpkg\", delete_dsn = FALSE, layer = \"nodes\")\n\nNow we can use them in GIS software, such as QGIS!\n\n\n\nFlowmap in QGIS\n\n\nOr visualise with any R package that supports sf objects, such as tmap, leaflet/leafgl, mapsf, or mapgl:\n\nlibrary(tmap)\ntmap_mode(\"view\")\ninteractive_tmap &lt;-\n  tm_shape(sf_edges) +\n  tm_basemap(\"Esri.WorldTopoMap\") +\n  tm_polygons(\n    fill = \"flow\",\n    col_alpha = 0,\n    fill_alpha = 0.8,\n    fill.scale = tm_scale_intervals(values = \"brewer.yl_or_rd\", style = \"jenks\")\n  ) +\n  tm_shape(sf_nodes) +\n  tm_polygons(\n    fill = \"flowsum\",\n    col_alpha = 0,\n    fill_alpha = 0.8,\n    fill.scale = tm_scale_intervals(values = \"brewer.yl_or_rd\", style = \"jenks\")\n  )\ninteractive_tmap",
+    "crumbs": [
+      "2b. 📊 Tutorial: Flows Visualisation"
+    ]
+  },
+  {
+    "objectID": "3-accessibility-vs-mobility-slides-container.html",
+    "href": "3-accessibility-vs-mobility-slides-container.html",
+    "title": "3a. 📽️ Slides: Accessibility and its Relation to Actual Mobility",
+    "section": "",
+    "text": "Click on the slide and press F key to go fullscreen or open the slides in new tab.\n\n\n\nCitationBibTeX citation:@online{kotov2025,\n  author = {Kotov, Egor and Mast, Johannes},\n  title = {IC2S2 2025 {Workshop:} {Mobility} {Flows} and {Accessibility}\n    {Using} {R} and {Big} {Open} {Data}},\n  date = {2025-07-21},\n  url = {https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/3-accessibility-vs-mobility-slides-container.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nKotov, Egor, and Johannes Mast. 2025. “IC2S2 2025 Workshop:\nMobility Flows and Accessibility Using R and Big Open Data.” July\n21, 2025. https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/3-accessibility-vs-mobility-slides-container.html.",
+    "crumbs": [
+      "3a. 📽️ Slides: Accessibility vs Mobility"
+    ]
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#survey-based-human-mobility",
+    "href": "1-mobility-data-slides.html#survey-based-human-mobility",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Survey-based human mobility",
+    "text": "Survey-based human mobility\nEuropean Labour Force Surveys\n\n\nSource: https://ec.europa.eu/eurostat/web/microdata/european-union-labour-force-survey  Image source: https://ec.europa.eu/eurostat/documents/345175/17780010/2021-NUTS-3-map-ES.pdf"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#survey-based-human-mobility-1",
+    "href": "1-mobility-data-slides.html#survey-based-human-mobility-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Survey-based human mobility",
+    "text": "Survey-based human mobility\nGerman Mobility Survey\n\n\nSource: https://www.mobilitaet-in-deutschland.de/"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#census-based-human-mobility",
+    "href": "1-mobility-data-slides.html#census-based-human-mobility",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Census-based human mobility",
+    "text": "Census-based human mobility\nUK Census\n\n\nSource: https://commute.datashine.org.uk/"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#census-based-human-mobility-1",
+    "href": "1-mobility-data-slides.html#census-based-human-mobility-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Census-based human mobility",
+    "text": "Census-based human mobility\nUK Census\n\n\nSource: https://commute.datashine.org.uk/"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#register-based-human-mobility",
+    "href": "1-mobility-data-slides.html#register-based-human-mobility",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Register-based human mobility",
+    "text": "Register-based human mobility\nNetherlands Register Data\n\n\nSource: https://www.flowmap.blue/1Oe3zM219uSfJ3sjdRT90SAK2kU3xIvzdcCW6cwTsAuc  Data: https://opendata.cbs.nl/#/CBS/nl/dataset/83628NED/table?dl=F076"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#iot-gps-data",
+    "href": "1-mobility-data-slides.html#iot-gps-data",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "IOT GPS Data",
+    "text": "IOT GPS Data\nThe Volkswagen leak\n\n\nSource: https://media.ccc.de/v/38c3-wir-wissen-wo-dein-auto-steht-volksdaten-von-volkswagen"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#mobile-apps-mobile-network-gps-data",
+    "href": "1-mobility-data-slides.html#mobile-apps-mobile-network-gps-data",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Mobile Apps + Mobile Network GPS Data",
+    "text": "Mobile Apps + Mobile Network GPS Data\nApp usage by Orange customers in France\n\n\nImage source: Martínez-Durive et al. (2023)"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#mobile-phone-data",
+    "href": "1-mobility-data-slides.html#mobile-phone-data",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Mobile phone data",
+    "text": "Mobile phone data\nFlowminder\n\nMobile phone data for humanitarian and development efforts in low- and middle-income countries\n\nSource: https://www.flowminder.org/what-we-do/population-distribution-and-mobility-analysis#data-applications"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#flowminder-software",
+    "href": "1-mobility-data-slides.html#flowminder-software",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Flowminder Software",
+    "text": "Flowminder Software\nFlowKit - privacy preserving mobile phone data aggregation\n\n\nLearn more: https://github.com/Flowminder/FlowKit,  https://www.flowminder.org/what-we-do/mobile-data-partnerships/flowkit"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanish-open-mobility-big-data-1",
+    "href": "1-mobility-data-slides.html#spanish-open-mobility-big-data-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Spanish Open Mobility Big Data",
+    "text": "Spanish Open Mobility Big Data\n~ 5 years of daily hourly flows\n\n\n\n\n\n\n\nData by Ministerio de Transportes y Movilidad Sostenible (MITMS) (2024)\nBased on 13 million customers of Orange Spain, expanded to full population of Spain\nData interface"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanish-open-mobility-big-data-2",
+    "href": "1-mobility-data-slides.html#spanish-open-mobility-big-data-2",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Spanish Open Mobility Big Data",
+    "text": "Spanish Open Mobility Big Data\n3500+ zones across Spain and beyond\n\n\n\n\n\n\n\nData by Ministerio de Transportes y Movilidad Sostenible (MITMS) (2024)\nBased on 13 million customers of Orange Spain, expanded to full population of Spain\nData interface"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanish-open-mobility-big-data-3",
+    "href": "1-mobility-data-slides.html#spanish-open-mobility-big-data-3",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Spanish Open Mobility Big Data",
+    "text": "Spanish Open Mobility Big Data\n\n\nView the dashboard at https://data.transportes.gob.es/public/mov-diaria-mensual"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanish-open-mobility-big-data-4",
+    "href": "1-mobility-data-slides.html#spanish-open-mobility-big-data-4",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Spanish Open Mobility Big Data",
+    "text": "Spanish Open Mobility Big Data\n\n\nView the dashboard at https://data.transportes.gob.es/public/mov-provincial"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanish-open-mobility-big-data-5",
+    "href": "1-mobility-data-slides.html#spanish-open-mobility-big-data-5",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Spanish Open Mobility Big Data",
+    "text": "Spanish Open Mobility Big Data\n\n\nView the dashboard at https://mapas-movilidad.transportes.gob.es/?date=2025-04-16T22"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanish-open-mobility-big-data-6",
+    "href": "1-mobility-data-slides.html#spanish-open-mobility-big-data-6",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Spanish Open Mobility Big Data",
+    "text": "Spanish Open Mobility Big Data\nAcademic research\n\n\nSource: https://github.com/e-kotov/spanishoddata-paper-supplement  https://doi.org/10.5281/zenodo.15207374"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#multi-mno-project-1",
+    "href": "1-mobility-data-slides.html#multi-mno-project-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Multi-MNO Project",
+    "text": "Multi-MNO Project\n\n\nSource: https://cros.ec.europa.eu/landing-page/multi-mno-project"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#multi-mno-project-2",
+    "href": "1-mobility-data-slides.html#multi-mno-project-2",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Multi-MNO Project",
+    "text": "Multi-MNO Project\nMobility data aggregation using unified methodology\n\n\n\n\n\n\n\nSource: https://cros.ec.europa.eu/system/files/2023-12/20231109_dimeitdg_mnoposition_paper_ricciato_ho%20%281%29.pdf  Learn more: https://ec.europa.eu/eurostat/web/products-statistical-reports/w/ks-ft-23-001"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#multi-mno-project-3",
+    "href": "1-mobility-data-slides.html#multi-mno-project-3",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Multi-MNO Project",
+    "text": "Multi-MNO Project\nHow it works\n\n\nSource https://cros.ec.europa.eu/system/files/2024-02/20240226_MultiMNO_2021-0400-internal-meeting-MNOs-ricciato.pdf"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#multi-mno-software",
+    "href": "1-mobility-data-slides.html#multi-mno-software",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Multi-MNO Software",
+    "text": "Multi-MNO Software\nhttps://github.com/eurostat/multimno\n\n\nSource https://cros.ec.europa.eu/system/files/2024-02/20240226_MultiMNO_2021-0400-internal-meeting-MNOs-ricciato.pdf"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#multi-mno-outputs",
+    "href": "1-mobility-data-slides.html#multi-mno-outputs",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Multi-MNO Outputs",
+    "text": "Multi-MNO Outputs\nWhat to expect?\n\n\nSource https://cros.ec.europa.eu/system/files/2024-02/20240226_MultiMNO_2021-0400-internal-meeting-MNOs-ricciato.pdf"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanishoddata",
+    "href": "1-mobility-data-slides.html#spanishoddata",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "spanishoddata",
+    "text": "spanishoddata\naccess Spanish Open Mobility Big Data from R\n\n\nSource: https://ropenspain.github.io/spanishoddata/articles/v1-2020-2021-mitma-data-codebook.html"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanishoddata---access-open-human-mobility-data",
+    "href": "1-mobility-data-slides.html#spanishoddata---access-open-human-mobility-data",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "spanishoddata - access open human mobility data",
+    "text": "spanishoddata - access open human mobility data\n\n\n\nA package with many companions\n\n  \n  \n    \n  \n\n  \n  \n    \n  \n\n  \n  \n    \n  \n\n\n    \n  \n\n\n\n\n\nDetailed documentation\n\n\n\nLogos are the property of their respective owners."
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanishoddata-use-cases",
+    "href": "1-mobility-data-slides.html#spanishoddata-use-cases",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "spanishoddata use cases",
+    "text": "spanishoddata use cases\nSplit work and non-work trips\n\n\n\n\nSource: https://github.com/e-kotov/2024-30DayMapChallenge"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanishoddata-use-cases-1",
+    "href": "1-mobility-data-slides.html#spanishoddata-use-cases-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "spanishoddata use cases",
+    "text": "spanishoddata use cases\nSplit into different trip types\n\n\nSource: https://github.com/e-kotov/spanishoddata-paper-supplement, https://doi.org/10.5281/zenodo.15207374"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanishoddata-use-cases-2",
+    "href": "1-mobility-data-slides.html#spanishoddata-use-cases-2",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "spanishoddata use cases",
+    "text": "spanishoddata use cases\nSplit into different trip types\n\n\nSource: https://github.com/e-kotov/spanishoddata-paper-supplement, https://doi.org/10.5281/zenodo.15207374"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanishoddata-use-cases-3",
+    "href": "1-mobility-data-slides.html#spanishoddata-use-cases-3",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "spanishoddata use cases",
+    "text": "spanishoddata use cases\nValencia flood (DANA) in October 2024\n\n\nSource: https://github.com/e-kotov/2024-30DayMapChallenge"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanishoddata-use-cases-4",
+    "href": "1-mobility-data-slides.html#spanishoddata-use-cases-4",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "spanishoddata use cases",
+    "text": "spanishoddata use cases\nValencia flood (DANA) in October 2024\n\n\n\nThe share of people who have not spent the night at home.\n\nSource: https://github.com/e-kotov/2024-30DayMapChallenge"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#spanishoddata-use-cases-5",
+    "href": "1-mobility-data-slides.html#spanishoddata-use-cases-5",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "spanishoddata use cases",
+    "text": "spanishoddata use cases\nAnntennas were offline - Facebook shows a slightly different picture\n\n\nSource: https://population-europe.eu/research/policy-insights/harnessing-digital-data-strengthen-disaster-response-valencias-2024-floods"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#get-the-data",
+    "href": "1-mobility-data-slides.html#get-the-data",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Get the data",
+    "text": "Get the data\nDownload one by one?"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#get-the-data-1",
+    "href": "1-mobility-data-slides.html#get-the-data-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Get the data",
+    "text": "Get the data\nWrite your own XML parser?"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#get-the-data-2",
+    "href": "1-mobility-data-slides.html#get-the-data-2",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Get the data",
+    "text": "Get the data\n\n\nTime consuming options\n\n\n\nDownload one by one?\n\n\n\n\n\nWrite your own XML parser?\n\n\n\n\nCustom code to download and import multiple days\nVariable names in Spanish\nNo gurantee of consistent variable types\nLimited by available memory\nSlow data processing (raw csv data)\n\n\n::::"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#get-the-data-3",
+    "href": "1-mobility-data-slides.html#get-the-data-3",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Get the data",
+    "text": "Get the data\n\n\nTime consuming options\n\n\n\nDownload one by one?\n\n\n\n\n\nWrite your own XML parser?\n\n\n\nThe fastest way\nUse {spanishoddata} package\nlibrary(spanishoddata)\nspod_set_data_dir(\"data\")\n\nod_data &lt;- spod_get(\n  type = \"origin-destination\",\n  zones = \"districts\",\n  dates = c(\n    start = \"2022-03-01\",\n    end = \"2022-03-07\"\n  )\n)"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#get-the-flows-data",
+    "href": "1-mobility-data-slides.html#get-the-flows-data",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Get the flows data",
+    "text": "Get the flows data\n\n\nThe fastest way\nUse {spanishoddata} package\nlibrary(spanishoddata)\nspod_set_data_dir(\"data\")\n\nod_data &lt;- spod_get(\n  type = \"origin-destination\",\n  zones = \"districts\",\n  dates = c(\n    start = \"2022-01-01\",\n    end = \"2022-01-04\"\n  )\n)\n\n\nlibrary(dplyr)\nglimpse(od_data)\n\nRows: ??\nColumns: 20          \nDatabase: DuckDB v1.2.1 [root@Darwin 24.4.0:R 4.5.0/:memory:]\n$ date                        &lt;date&gt; 2022-01-04, 2022-01-04, 2…\n$ hour                        &lt;int&gt; 0, 0, 0, 1, 1, 3, 4, 4, 5,…\n$ id_origin                   &lt;fct&gt; 01001, 01001, 01001, 01001…\n$ id_destination              &lt;fct&gt; 01009_AM, 01009_AM, 01009_…\n$ distance                    &lt;fct&gt; 2-10, 2-10, 2-10, 2-10, 2-…\n$ activity_origin             &lt;fct&gt; home, frequent_activity, w…\n$ activity_destination        &lt;fct&gt; frequent_activity, home, h…\n$ study_possible_origin       &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE…\n$ study_possible_destination  &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE…\n$ residence_province_ine_code &lt;fct&gt; 01, 01, 01, 01, 01, 01, 01…\n$ residence_province_name     &lt;fct&gt; \"Araba/Álava\", \"Araba/Álav…\n$ income                      &lt;fct&gt; 10-15, &gt;15, &gt;15, &gt;15, &gt;15,…\n$ age                         &lt;fct&gt; NA, NA, NA, NA, NA, NA, NA…\n$ sex                         &lt;fct&gt; NA, NA, NA, NA, NA, NA, NA…\n$ n_trips                     &lt;dbl&gt; 4.894, 1.779, 1.094, 1.094…\n$ trips_total_length_km       &lt;dbl&gt; 27.966, 5.997, 4.081, 4.16…\n$ year                        &lt;int&gt; 2022, 2022, 2022, 2022, 20…\n$ month                       &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1,…\n$ day                         &lt;int&gt; 4, 4, 4, 4, 4, 4, 4, 4, 4,…"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#get-the-flows-data-1",
+    "href": "1-mobility-data-slides.html#get-the-flows-data-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Get the flows data",
+    "text": "Get the flows data\n\n\nlibrary(dplyr)\nglimpse(od_data)\n\nRows: ??\nColumns: 20          \nDatabase: DuckDB v1.2.1 [root@Darwin 24.4.0:R 4.5.0/:memory:]\n$ date                        &lt;date&gt; 2022-01-04, 2022-01-04, 2…\n$ hour                        &lt;int&gt; 0, 0, 0, 1, 1, 3, 4, 4, 5,…\n$ id_origin                   &lt;fct&gt; 01001, 01001, 01001, 01001…\n$ id_destination              &lt;fct&gt; 01009_AM, 01009_AM, 01009_…\n$ distance                    &lt;fct&gt; 2-10, 2-10, 2-10, 2-10, 2-…\n$ activity_origin             &lt;fct&gt; home, frequent_activity, w…\n$ activity_destination        &lt;fct&gt; frequent_activity, home, h…\n$ study_possible_origin       &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE…\n$ study_possible_destination  &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE…\n$ residence_province_ine_code &lt;fct&gt; 01, 01, 01, 01, 01, 01, 01…\n$ residence_province_name     &lt;fct&gt; \"Araba/Álava\", \"Araba/Álav…\n$ income                      &lt;fct&gt; 10-15, &gt;15, &gt;15, &gt;15, &gt;15,…\n$ age                         &lt;fct&gt; NA, NA, NA, NA, NA, NA, NA…\n$ sex                         &lt;fct&gt; NA, NA, NA, NA, NA, NA, NA…\n$ n_trips                     &lt;dbl&gt; 4.894, 1.779, 1.094, 1.094…\n$ trips_total_length_km       &lt;dbl&gt; 27.966, 5.997, 4.081, 4.16…\n$ year                        &lt;int&gt; 2022, 2022, 2022, 2022, 20…\n$ month                       &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1,…\n$ day                         &lt;int&gt; 4, 4, 4, 4, 4, 4, 4, 4, 4,…\n\nGet the codebook in R or online\nspod_codebook(ver = 2)"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#get-the-boundaries-data",
+    "href": "1-mobility-data-slides.html#get-the-boundaries-data",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Get the boundaries data",
+    "text": "Get the boundaries data\n\n\nzones &lt;- spod_get_zones(\n  zones = \"districts\",\n  ver = 2 # for 2022 data onwards\n)\n\nzones |&gt;\n  sf::st_geometry() |&gt;\n  ggplot2::ggplot() +\n  ggplot2::geom_sf()"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#cite-the-data-and-the-package",
+    "href": "1-mobility-data-slides.html#cite-the-data-and-the-package",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "Cite the data and the package",
+    "text": "Cite the data and the package\nspod_cite()\nPlain text citations:\n---------------------\nTo cite the spanishoddata package:\nKotov E, Lovelace R, Vidal-Tortosa E (2024). spanishoddata.\ndoi:10.32614/CRAN.package.spanishoddata\nhttps://doi.org/10.32614/CRAN.package.spanishoddata,\nhttps://github.com/rOpenSpain/spanishoddata. \n\nTo cite the Ministry's mobility study website:\nMinisterio de Transportes y Movilidad Sostenible (MITMS)\n(2024). “Estudio de la movilidad con Big Data (Study of\nmobility with Big Data).”\nhttps://www.transportes.gob.es/ministerio/proyectos-singulares/estudio-de-movilidad-con-big-data. \n\nTo cite the methodology for 2020-2021 data:\nMinisterio de Transportes, Movilidad y Agenda Urbana (MITMA)\n(2021). Análisis de la movilidad en España con tecnología Big\nData durante el estado de alarma para la gestión de la crisis\ndel COVID-19 (Analysis of mobility in Spain with Big Data\ntechnology during the state of alarm for COVID-19 crisis\nmanagement).\nhttps://cdn.mitma.gob.es/portal-web-drupal/covid-19/bigdata/mitma-estudiomovilidadcovid-19informemetodologico_v3.pdf. \n\nTo cite the methodology for 2022 and onwards data:\nMinisterio de Transportes y Movilidad Sostenible (MITMS)\n(2024). Estudio de movilidad de viajeros de ámbito nacional\naplicando la tecnología Big Data. Informe metodológico (Study\nof National Traveler mobility Using Big Data Technology.\nMethodological Report).\nhttps://www.transportes.gob.es/recursosmfom/paginabasica/recursos/a3informemetodologicoestudiomovilidadmitms_v8.pdf. \n\nNote: A more up-to-date methodology document may be available at https://www.transportes.gob.es/ministerio/proyectos-singulares/estudios-de-movilidad-con-big-data/metodologia-del-estudio-de-movilidad-con-bigdata\n\n\nMarkdown citations:\n-------------------\n**To cite the spanishoddata package:**\nKotov E, Lovelace R, Vidal-Tortosa E (2024). _spanishoddata_.\ndoi:10.32614/CRAN.package.spanishoddata\nhttps://doi.org/10.32614/CRAN.package.spanishoddata,\nhttps://github.com/rOpenSpain/spanishoddata. \n\n**To cite the Ministry's mobility study website:**\nMinisterio de Transportes y Movilidad Sostenible (MITMS)\n(2024). “Estudio de la movilidad con Big Data (Study of\nmobility with Big Data).”\nhttps://www.transportes.gob.es/ministerio/proyectos-singulares/estudio-de-movilidad-con-big-data. \n\n**To cite the methodology for 2020-2021 data:**\nMinisterio de Transportes, Movilidad y Agenda Urbana (MITMA)\n(2021). _Análisis de la movilidad en España con tecnología Big\nData durante el estado de alarma para la gestión de la crisis\ndel COVID-19 (Analysis of mobility in Spain with Big Data\ntechnology during the state of alarm for COVID-19 crisis\nmanagement)_.\nhttps://cdn.mitma.gob.es/portal-web-drupal/covid-19/bigdata/mitma_-_estudio_movilidad_covid-19_informe_metodologico_v3.pdf. \n\n**To cite the methodology for 2022 and onwards data:**\nMinisterio de Transportes y Movilidad Sostenible (MITMS)\n(2024). _Estudio de movilidad de viajeros de ámbito nacional\naplicando la tecnología Big Data. Informe metodológico (Study\nof National Traveler mobility Using Big Data Technology.\nMethodological Report)_.\nhttps://www.transportes.gob.es/recursos_mfom/paginabasica/recursos/a3_informe_metodologico_estudio_movilidad_mitms_v8.pdf. \n\n&gt; **Note:** A more up-to-date methodology document may be available at https://www.transportes.gob.es/ministerio/proyectos-singulares/estudios-de-movilidad-con-big-data/metodologia-del-estudio-de-movilidad-con-bigdata\n\n\nBibTeX citations:\n-----------------\n%% To cite the spanishoddata package\n@Manual{r-spanishoddata,\n  title = {spanishoddata},\n  author = {Egor Kotov and Robin Lovelace and Eugeni Vidal-Tortosa},\n  year = {2024},\n  url = {https://github.com/rOpenSpain/spanishoddata},\n  doi = {10.32614/CRAN.package.spanishoddata},\n}\n\n%% To cite the Ministry's mobility study website\n@Misc{mitms_mobility_web,\n  title = {Estudio de la movilidad con Big Data (Study of mobility with Big Data)},\n  author = {{Ministerio de Transportes y Movilidad Sostenible (MITMS)}},\n  year = {2024},\n  url = {https://www.transportes.gob.es/ministerio/proyectos-singulares/estudio-de-movilidad-con-big-data},\n}\n\n%% To cite the methodology for 2020-2021 data\n@Manual{mitma_methodology_2020_v3,\n  title = {Análisis de la movilidad en España con tecnología Big Data durante el estado de alarma para la gestión de la crisis del COVID-19 (Analysis of mobility in Spain with Big Data technology during the state of alarm for COVID-19 crisis management)},\n  author = {{Ministerio de Transportes, Movilidad y Agenda Urbana (MITMA)}},\n  year = {2021},\n  url = {https://cdn.mitma.gob.es/portal-web-drupal/covid-19/bigdata/mitma_-_estudio_movilidad_covid-19_informe_metodologico_v3.pdf},\n}\n\n%% To cite the methodology for 2022 and onwards data\n@Manual{mitms_methodology_2022_v8,\n  title = {Estudio de movilidad de viajeros de ámbito nacional aplicando la tecnología Big Data. Informe metodológico (Study of National Traveler mobility Using Big Data Technology. Methodological Report)},\n  author = {{Ministerio de Transportes y Movilidad Sostenible (MITMS)}},\n  year = {2024},\n  url = {https://www.transportes.gob.es/recursos_mfom/paginabasica/recursos/a3_informe_metodologico_estudio_movilidad_mitms_v8.pdf},\n}\n\n%% Note: A more up-to-date methodology document may be available at https://www.transportes.gob.es/ministerio/proyectos-singulares/estudios-de-movilidad-con-big-data/metodologia-del-estudio-de-movilidad-con-bigdata"
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#duckdb-in-action",
+    "href": "1-mobility-data-slides.html#duckdb-in-action",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "DuckDB in Action",
+    "text": "DuckDB in Action\nImagine a typical laptop\n\n\n\n\n\n\n\n\n\nLogos are the property of their respective owners.\nOnly for illustration purposes. May not accurately represent actual GB usage and DuckDB operation."
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#duckdb-in-action-1",
+    "href": "1-mobility-data-slides.html#duckdb-in-action-1",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "DuckDB in Action",
+    "text": "DuckDB in Action\nFilter and summary\n\n\n\nlibrary(dplyr)\n\nod_data |&gt;\n  filter(\n    year == 2022,\n    month %in% c(2, 3, 4)\n    ) |&gt;\n  summarise(\n    n_trips = mean(n_trips)\n  ) |&gt;\n  collect()\n\n\n\n\n\n\nLogos are the property of their respective owners.\nOnly for illustration purposes. May not accurately represent actual GB usage and DuckDB operation."
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#duckdb-in-action-2",
+    "href": "1-mobility-data-slides.html#duckdb-in-action-2",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "DuckDB in Action",
+    "text": "DuckDB in Action\nSummary on full data set\n\n\n\nlibrary(dplyr)\n\nod_data |&gt;\n  summarise(\n    n_trips = mean(n_trips)\n  ) |&gt;\n  collect()\n\n\n\n\n\n\nLogos are the property of their respective owners.\nOnly for illustration purposes. May not accurately represent actual GB usage and DuckDB operation."
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#duckdb-in-action-3",
+    "href": "1-mobility-data-slides.html#duckdb-in-action-3",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "DuckDB in Action",
+    "text": "DuckDB in Action\nSummary over multiple groups on full data set\n\n\n\nlibrary(dplyr)\n\nod_data |&gt;\n  group_by(\n    year,\n    month,\n    day,\n    id_origin,\n    id_destination\n  )\n  summarise(\n    n_trips = mean(n_trips)\n  ) |&gt;\n  collect()\n\n\n\n\n\n\nLogos are the property of their respective owners.\nOnly for illustration purposes. May not accurately represent actual GB usage and DuckDB operation."
+  },
+  {
+    "objectID": "1-mobility-data-slides.html#duckdb-in-action-4",
+    "href": "1-mobility-data-slides.html#duckdb-in-action-4",
+    "title": "Mobility Flows and Accessibility Using R and Big Open Data",
+    "section": "DuckDB in Action",
+    "text": "DuckDB in Action\nSummary over multiple groups on full data set\n\n\n\nlibrary(dplyr)\n\nod_data |&gt;\n  group_by(\n    year,\n    month,\n    day,\n    id_origin,\n    id_destination\n  )\n  summarise(\n    n_trips = mean(n_trips)\n  ) |&gt;\n  collect()\n\n\n\n\n\n\nLogos are the property of their respective owners.\nOnly for illustration purposes. May not accurately represent actual GB usage and DuckDB operation."
+  },
+  {
+    "objectID": "0-software-setup.html",
+    "href": "0-software-setup.html",
+    "title": "🛠️ Software setup",
+    "section": "",
+    "text": "To follow the workshop, you should have the following software installed on your computer:\n\nR\nRStudio or another IDE, such as Positron.\n\n\nAlternatively, you can use RStudio in a web browser by launching this Binder instance for free using the link &gt;&gt; , limited by 1-2 GB of RAM and 1 CPU core, which means you will only be able to analyze about 2 days at once. Source repository is at https://github.com/e-kotov/ic2s2-2025-spanishoddata-playground.\n\n\n\n\n1 R packages to install\nPlease install the following R packages with the code below:\n\npackages &lt;- c(\n  \"spanishoddata\",\n  \"flowmapper\",\n  \"flowmapblue\",\n  \"tidyverse\",\n  \"terra\",\n  \"tidyterra\",\n  \"sf\",\n  \"basemaps\",\n  \"ggnewscale\",\n  \"patchwork\",\n  \"scales\",\n  \"tmap\",\n  \"lubridate\",\n  \"mapview\",\n  \"leafgl\"\n)\n\ninstall.packages(packages)\nrm(packages)\n\n\n\n\n\nCitationBibTeX citation:@online{kotov2025,\n  author = {Kotov, Egor and Mast, Johannes},\n  title = {IC2S2 2025 {Workshop:} {Mobility} {Flows} and {Accessibility}\n    {Using} {R} and {Big} {Open} {Data}},\n  date = {2025-07-21},\n  url = {https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/0-software-setup.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nKotov, Egor, and Johannes Mast. 2025. “IC2S2 2025 Workshop:\nMobility Flows and Accessibility Using R and Big Open Data.” July\n21, 2025. https://e-kotov.github.io/spanish-open-mobility-workshop-ic2s2-2025/0-software-setup.html.",
+    "crumbs": [
+      "🛠️ Software Setup"
+    ]
   }
 ]
