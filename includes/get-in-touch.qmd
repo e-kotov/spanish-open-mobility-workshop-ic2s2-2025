@@ -1,0 +1,100 @@
+
+# Get in touch
+
+:::: {.columns style="display: block; align-items: center;justify-content: space-around;"}
+
+<!-- ::: {.column width="50%" style='display: flex; justify-content: center; align-items: center;'} -->
+::: {.column width="50%" class="centered"}
+
+![](media/headshots/Egor_Kotov_portrait_1000x1000.jpg){class="rounded-headshot-smaller"}
+
+**[Egor Kotov](https://www.ekotov.pro/){target="_blank"}**
+
+
+<a class="link-dark me-1" href="https://linkedin.com/in/egorkotov" title="LinkedIn" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
+<a class="link-dark me-1" href="https://github.com/e-kotov" title="github" target="_blank" rel="noopener">{{< fa brands github >}}</a>
+<a class="link-dark me-1" href="https://bsky.app/profile/ekotov.pro" title="Bluesky" target="_blank" rel="noopener">{{< iconify simple-icons bluesky >}}</a>
+<a class="link-dark me-1" href="https://datasci.social/@EgorKotov" title="Mastodon" target="_blank" rel="noopener">{{< fa brands mastodon >}}</a>
+<a class="link-dark me-1" href="https://orcid.org/0000-0001-6690-5345" title="orcid" target="_blank" rel="noopener">{{< ai orcid >}}</a>
+<a class="link-dark me-1" href="https://scholar.google.com/citations?user=lZ2AXMAAAAAJ&hl=en&oi=ao" title="Google Scholar" target="_blank" rel="noopener">{{< ai google-scholar >}}</a>
+<a class="link-dark me-1" href="https://www.researchgate.net/profile/Egor-Kotov" title="ResearchGate" target="_blank" rel="noopener">{{< ai researchgate >}}</a>
+
+
+```{=html}
+<div class="hexBadges">
+  <!-- top-left -->
+  <a href="https://ropenspain.github.io/spanishoddata" target="_blank">
+    <img data-no-scaling class="r0 c1"
+         src="https://ropenspain.github.io/spanishoddata/logo.png"
+         alt="spanishoddata">
+  </a>
+
+  <!-- middle offset -->
+  <a href="https://www.ekotov.pro/rJavaEnv" target="_blank">
+    <img data-no-scaling class="r1 c1"
+         src="https://www.ekotov.pro/rJavaEnv/logo.png"
+         alt="rJavaEnv">
+  </a>
+
+  <!-- top-right -->
+  <a href="https://www.ekotov.pro/rdocdump" target="_blank">
+    <img data-no-scaling class="r0 c2"
+         src="https://www.ekotov.pro/rdocdump/logo.png"
+         alt="rdocdump">
+  </a>
+
+  <a href="https://www.ekotov.pro/software" class="r1 c2 more">more…</a>
+</div>
+```
+
+:::
+
+::: {.column width="50%" class="centered"}
+
+
+![](media/headshots/Johannes_Mast_portrait_1000x1000.jpg){class="rounded-headshot-smaller"}
+
+**[Johannes Mast](https://www.linkedin.com/in/johannes-mast-9bb53b219/){target="_blank"}**
+
+
+<a class="link-dark me-1" href="https://www.linkedin.com/in/johannes-mast-9bb53b219/" title="LinkedIn" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
+<a class="link-dark me-1" href="https://github.com/JohMast" title="github" target="_blank" rel="noopener">{{< fa brands github >}}</a>
+<a class="link-dark me-1" href="https://orcid.org/0000-0001-6595-5834" title="orcid" target="_blank" rel="noopener">{{< ai orcid >}}</a>
+<a class="link-dark me-1" href="https://www.researchgate.net/profile/Johannes-Mast" title="ResearchGate" target="_blank" rel="noopener">{{< ai researchgate >}}</a>
+
+
+```{=html}
+<div class="hexBadges">
+  <!-- top-left -->
+  <a href="https://github.com/JohMast/flowmapper" target="_blank">
+    <img data-no-scaling class="r0 c1"
+         src="https://github.com/JohMast/flowmapper/blob/master/inst/figures/hex.png?raw=true"
+         alt="flowmapper">
+  </a>
+
+  <!-- middle offset -->
+  <a href="https://github.com/JohMast/rtsVis" target="_blank">
+    <img data-no-scaling class="r1 c1"
+         src="https://github.com/JohMast/rtsVis_demo/raw/main/Images/rtsVis_Logo.png?raw=true"
+         alt="rtsVis">
+  </a>
+
+  <!-- top-right -->
+  <a href="https://github.com/JohMast/ImageFusion" target="_blank">
+    <img data-no-scaling class="r0 c2"
+         src="https://github.com/JohMast/ImageFusion/raw/master/.img/logo.svg?raw=true"
+         alt="ImageFusion">
+  </a>
+
+  <a href="https://www.ekotov.pro/software" class="r1 c2 more">more…</a>
+</div>
+```
+
+:::
+
+
+::::
+
+::: footer
+*Logos are the property of their respective owners.*
+:::

@@ -1,0 +1,24 @@
+
+::: {.callout-tip}
+
+Feel free to consult any LLM you prefer for code examples. You can also use the [`{rdocdump}`](https://www.ekotov.pro/rdocdump/) R package to export all documentation and vignettes from `{spanishoddata}` or other packages into a single text file—and then feed that to your model for richer code suggestions. This helps a lot for the packages that are newer then the model training cut-off date, or the ones that were recently updated with new features.
+
+**Quick Start: rdocdump**
+
+```r
+# Install
+install.packages("rdocdump")
+
+# Dump spanishoddata docs + vignettes to TXT
+rdocdump::rdd_to_txt(
+  pkg         = "spanishoddata",
+  file        = "spanishoddata_docs.txt",
+  content     = c("docs", "vignettes"),
+  force_fetch = TRUE,
+  keep_files  = "none"
+)
+```
+
+Now just attach the `spanishoddata_docs.txt` file saved into the current project/working directory to your LLM prompt and ask for code examples using the data from the package.
+
+:::

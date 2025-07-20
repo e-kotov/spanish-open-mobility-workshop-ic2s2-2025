@@ -20,8 +20,8 @@ website:
       border: true
       left: "Authors: Egor Kotov & Johannes Mast" 
       center:
-        - text: "CC0 1.0"
-          href: license.qmd
+        - text: "CC-BY-SA 4.0"
+          href: https://creativecommons.org/licenses/by-sa/4.0/
       right: 
         - icon: github
           href: https://github.com/e-kotov/spanish-open-mobility-workshop-ic2s2-2025
@@ -34,41 +34,24 @@ website:
         text: Github
         href: https://github.com/e-kotov/spanish-open-mobility-workshop-ic2s2-2025
     contents:
-      - index.qmd
+      - text: "👋 Workshop Introduction"
+        href: index.qmd
+      - text: "🛠️ Software Setup"
+        href: 0-software-setup.qmd
+      - text: "1a. 📽️ Slides: Getting and aggregating the data"
+        href: 1-mobility-data-slides-container.qmd
+      - text: "1b. 📊 Tutorial: Getting and aggregating the data"
+        href: 1-mobility-data-tutorial.qmd
+      - text: "2a. 📽️ Slides: Flows Visualisation"
+        href: 2-flow-vis-slides-container.qmd
+      - text: "2b. 📊 Tutorial: Flows Visualisation"
+        href: 2-flow-vis-tutorial.qmd
+      - text: "3a. 📽️ Slides: Accessibility vs Mobility"
+        href: 3-accessibility-vs-mobility-slides-container.qmd
+      - text: "3b. 📊 Tutorial: Accessibility vs Mobility"
+        href: 3-accessibility-vs-mobility-tutorial.qmd
 
 
-
-format:
-  html:
-    link-external-icon: true
-    link-external-newwindow: true
-    link-external-filter: 'ekotov\.pro'
-    theme:
-      light: zephyr
-      dark: slate
-    css: styles.css
-    toc: true
-    toc-depth: 4
-    toc-expand: 4
-    toc-location: right
-    code-overflow: wrap
-    grid:
-      body-width: 800px
-    mermaid:
-      theme: neutral
-
-bibliography: references.bib
-bibliographystyle: apa
-
-editor: source
-
-editor_options:
-  markdown:
-    wrap: 72
-    canonical: true
-
-execute:
-  freeze: auto
 
 
 authors:
@@ -106,3 +89,54 @@ affiliations:
     city: Würzburg
     country: Germany
     url: https://www.uni-wuerzburg.de/en/
+
+
+format:
+  html:
+    link-external-icon: true
+    link-external-newwindow: true
+    link-external-filter: 'ekotov\.pro'
+    include-in-header:
+      - text: |
+          <!-- tell Zotero this is a webpage via Dublin Core -->
+          <meta name="DC.Type" content="WebPage">
+      - file: media/analytics.html
+    theme:
+      light: zephyr
+      dark: slate
+    css: styles.css
+    toc: true
+    toc-depth: 4
+    toc-expand: 4
+    toc-location: right
+    code-overflow: wrap
+    grid:
+      body-width: 800px
+    mermaid:
+      theme: neutral
+
+bibliography: references.bib
+bibliographystyle: apa
+
+citation:
+  type: webpage
+  title: "IC2S2 2025 Workshop: Mobility Flows and Accessibility Using R and Big Open Data"
+  # url: https://www.ekotov.pro/spanish-open-mobility-workshop-ic2s2-2025/
+  # container-title: "IC2S2 2025 Workshop: Mobility Flows and Accessibility Using R and Big Open Data"
+  issued: 2025-07-21
+  # doi: 10.5281/zenodo.15794849 # TODO
+# doi: 10.5281/zenodo.15794849 # TODO
+google-scholar: true
+
+editor: source
+
+editor_options:
+  markdown:
+    wrap: 72
+    canonical: true
+
+execute:
+  eval: false
+  freeze: false
+  warning: false
+  error: false

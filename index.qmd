@@ -1,13 +1,16 @@
 ---
-title: "Workshop Introduction"
-
-bibliography: references.bib
+title: "👋 Workshop Introduction"
+from: markdown+emoji
+code-annotations: hover
+eval: false
+number-sections: false
 ---
 
+------------------------------------------------------------------------
 
 ![](media/card.png){width=70% style="display: block; margin-left: auto; margin-right: auto;"}
 
-This website provides supporting materials for the workshop **Mobility Flows and Accessibility Using R and Big Open Data** which is part of the [11th International Conference on Computational Social Science](https://www.ic2s2-2025.org/){target="_blank"} held in Norrköping, Sweden on July 21-24, 2025. This tutorial is [licensed under CC0](license.qmd).
+This website provides supporting materials for the workshop **Mobility Flows and Accessibility Using R and Big Open Data** which is part of the [11th International Conference on Computational Social Science](https://www.ic2s2-2025.org/){target="_blank"} held in Norrköping, Sweden on July 21-24, 2025. This tutorial is [licensed under CC BY SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/){target="_blank"}.
 
 Large-scale human mobility datasets provide unprecedented opportunities to analyze movement patterns, generating critical insights for many fields of research. Until recently, access to human mobility data was a privilege of a few researchers. Thanks to countries like Spain that pioneered to make high resolution aggregated human mobility data open, such data is becoming increasingly accessible, and similar mobility data may soon be widely available as part of official statistics across the European Union (thanks to the [`Multi-MNO`](https://cros.ec.europa.eu/landing-page/multi-mno-project){target="_blank"} project). However, the complexity and sheer volume of this data present practical challenges related to data acquisition, efficient processing, geographic disaggregation, network representation, and interactive visualization.
 
@@ -43,3 +46,13 @@ Spanish open mobility data is used as a case study. This data contains anonymize
 Workshop participants will use [{spanishoddata}](https://github.com/rOpenSpain/spanishoddata){target="_blank"} R package [@r-spanishoddata] to access open human mobilty flows [@mitms_mobility_web] derived from mobile phones in Spain. They will analyse the data using cutting edge [`{duckdb}`](https://r.duckdb.org/){target="_blank"} [@r-duckdb] and make static and interactive visualisations with [`{flowmapper}`](https://github.com/JohMast/flowmapper){target="_blank"} [@r-flowmapper], [`{flowmapblue}`](https://flowmapblue.github.io/flowmapblue.R/){target="_blank"} [@r-flowmapblue].
 
 Stay tuned for updates!
+
+
+# Projected Timeline
+
+| Activity | Time |
+|----------------------------------------------------|--------------------|
+| 1. [Getting the Open Human Mobility Data in a Reproducible Way using `spanishoddata` and aggregating the data using `duckdb`](1-mobility-data-slides-container.qmd) | 55 |
+| 2. [Visualization of Mobility Flows Using `flowmapper` and `flowmapblue`](2-flow-vis-slides-container.qmd) | 40 |
+| Break | 10 |
+| 3. [Accessibility and its Relation to Actual Mobility](3-accessibility-vs-mobility-slides-container.qmd) | 75 |

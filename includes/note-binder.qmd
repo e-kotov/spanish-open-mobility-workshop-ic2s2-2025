@@ -1,0 +1,3 @@
+::: {.callout-note appearance="simple"}
+If you are using our [provided Binder container](0-software-setup.qmd#binder) in a web browser to follow the tutorial, do not try to analyze more than 2 days at once, as it will likely crash the instance. In this case, even the magic of `DuckDB` does not help overcome the 2GB memory limit. If you computer has 4-8 GB of RAM, you should be good to go.
+:::

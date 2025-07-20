@@ -1,0 +1,359 @@
+---
+title: Mobility Flows and Accessibility Using R and Big Open Data
+subtitle: 3. Accessibility and its Relation to Actual Mobility
+
+resources:
+  - media/accessibility-vs-mobility-slides/*
+
+# title-slide-attributes:
+#   data-background-image: media/flowvis-slides/title-background.png
+#   data-background-size: contain
+#   data-background-opacity: "1"
+  
+
+format: 
+  # Install plugin with quarto install extension grantmcdermott/quarto-revealjs-clean
+  clean-revealjs:
+    allowMultipleBackgrounds: true
+    # mouse-wheel: true
+    menu:
+      side: left
+      width: narrow
+    slide-number: false
+    show-slide-number: print
+    pdf-separate-fragments: true
+    link-external-newwindow: true
+    # chalkboard: true
+    code-block-height: 700px
+    preview-links: false
+    self-contained: true
+    css:
+      - media/mobility-data-slides/slides.css
+
+
+authors:
+  - name: Egor Kotov
+    url: https://www.ekotov.pro/
+    orcid: 0000-0001-6690-5345
+    affiliations:
+      - ref: mpidr
+      - ref: upf
+  - name: Johannes Mast
+    url: https://www.linkedin.com/in/johannes-mast-9bb53b219/
+    orcid: 0000-0001-6595-5834
+    affiliations:
+    - ref: dlr
+    - ref: jmu
+
+affiliations:
+  - id: mpidr
+    name: Max Planck Institute for Demographic Research
+    city: Rostock
+    country: Germany
+    url: https://www.demogr.mpg.de/en
+  - id: upf
+    name: Universitat Pompeu Fabra
+    city: Barcelona
+    country: Spain
+    url: https://www.upf.edu/en/web/politiques/home
+  - id: dlr
+    name: The German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt, DLR)
+    city: Munich
+    country: Germany
+    url: https://www.dlr.de
+  - id: jmu
+    name: Julius-Maximilians-Universität Würzburg (JMU)
+    city: Würzburg
+    country: Germany
+    url: https://www.uni-wuerzburg.de/en/
+
+date: 2025-07-21
+bibliography: references.bib
+execute: 
+  cache: true
+  warning: false
+  error: false
+---
+
+<!-- ===== Time vs Distance ===== -->
+
+## Distance vs Time
+
+<div style="position: relative; left: -10%; width: 110%;">
+![](media/accessibility-vs-mobility-slides/msk-dist.png){fig-align="center"}
+</div>
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+
+## Distance vs Time
+<div style="position: relative; left: -10%; width: 110%;">
+![](media/accessibility-vs-mobility-slides/msk-time.png){fig-align="center"}
+</div>
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+
+## Distance based urban density
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<div style="position: relative; left: -10%; width: 110%;">
+![](media/accessibility-vs-mobility-slides/msk-dist.png){data-id="msk-dist"}
+</div>
+:::
+
+::: {.column width="50%" .fragment}
+<div style="position: relative; left: -10%; width: 110%;">
+![](media/accessibility-vs-mobility-slides/density-dist.png){data-id="density-dist"}
+</div>
+:::
+
+::::
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+
+## Time based urban density
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<div style="position: relative; left: -10%; width: 110%;">
+![](media/accessibility-vs-mobility-slides/msk-time.png){data-id="msk-time"}
+</div>
+:::
+
+::: {.column width="50%"}
+<div style="position: relative; left: -10%; width: 110%;">
+![](media/accessibility-vs-mobility-slides/density-time.png){data-id="density-time"}
+</div>
+:::
+
+::::
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+
+<!-- car accessibility -->
+
+## 🚗 Accessibility in 2019
+
+### Number of people reachable by 🚗 in X minutes, no traffic
+
+![](media/accessibility-vs-mobility-slides/acc-multiples-car-maps.png)
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+## 🚗 Accessibility in 2019
+
+### Number of people reachable by 🚗 in X minutes, no traffic
+
+![](media/accessibility-vs-mobility-slides/acc-multiples-car-maps-to-hists.png)
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+## 🚗 Accessibility in 2019
+
+### Number of people reachable by 🚗 in X minutes, no traffic
+
+![](media/accessibility-vs-mobility-slides/acc-multiples-car-hists.png)
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+<!-- public transit accessibility -->
+
+## 🚇+🚌 Accessibility in 2019
+
+### Number of people reachable by 🚇+🚌 in X minutes, no traffic
+
+![](media/accessibility-vs-mobility-slides/acc-multiples-pt-maps.png)
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+## 🚇+🚌 Accessibility in 2019
+
+### Number of people reachable by 🚇+🚌 in X minutes, no traffic
+
+![](media/accessibility-vs-mobility-slides/acc-multiples-pt-maps-to-hists.png)
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+## 🚇+🚌 Accessibility in 2019
+
+### Number of people reachable by 🚇+🚌 in X minutes, no traffic
+
+![](media/accessibility-vs-mobility-slides/acc-multiples-pt-hists.png)
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+<!-- Car vs Public Transit Accessibility -->
+
+
+## 🚗 vs 🚇+🚌 Accessibility in 2019: 30 minutes
+
+![](media/accessibility-vs-mobility-slides/acc-car-vs-pt-30.png)
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+
+## 🚗 vs 🚇+🚌 Accessibility in 2019: 50 minutes
+
+![](media/accessibility-vs-mobility-slides/acc-car-vs-pt-50.png)
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+## 🚗 vs 🚇+🚌 Accessibility in 2019: 30 vs 70 minutes
+
+![](media/accessibility-vs-mobility-slides/acc-car-vs-pt-30-70.png)
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+<!-- ===== Variations in accessibility ===== -->
+
+
+## Variations in accessibility
+
+![](media/accessibility-vs-mobility-slides/acc-compare-masked-days.png)
+
+::: footer
+*Calculations and images by Egor Kotov and Ruslan Goncharov*
+:::
+
+
+## Variations in accessibility by time of day
+
+![](media/accessibility-vs-mobility-slides/acc-compare.png)
+
+::: footer
+*Calculations and images by Egor Kotov and Ruslan Goncharov*
+:::
+
+<!-- Reiterate again how accessiblity influences the jobs residences match -->
+
+## Time based urban density
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<div style="position: relative; left: -10%; width: 110%;">
+![](media/accessibility-vs-mobility-slides/msk-time.png){data-id="msk-time"}
+</div>
+:::
+
+::: {.column width="50%"}
+<div style="position: relative; left: -10%; width: 110%;">
+![](media/accessibility-vs-mobility-slides/density-time.png){data-id="density-time"}
+</div>
+:::
+
+::::
+
+::: footer
+*Calculations and images by Egor Kotov*
+:::
+
+
+
+<!-- ===== Transport Poverty Hub ===== -->
+
+## Transport Poverty Hub
+
+![](media/accessibility-vs-mobility-slides/tph-landing.png){fig-align="center"}
+
+::: footer
+CC BY 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/voila/render/mobitrans/transportpoverty/TransportPovertyHub.ipynb)
+:::
+
+
+## Transport Poverty Hub
+
+### Accessibility (Opportunities) with Public Transport
+
+![](media/accessibility-vs-mobility-slides/tph-overview.png){fig-align="center"}
+
+::: footer
+CC BY-SA 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/voila/render/mobitrans/transportpoverty/TransportPovertyHub.ipynb) #TODO
+:::
+
+## Transport Poverty Hub
+
+### Accessibility (Opportunities) with Public Transport in Norrköping
+
+![](media/accessibility-vs-mobility-slides/tph-norrk.png){fig-align="center"}
+
+
+::: footer
+CC BY-SA 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/voila/render/mobitrans/transportpoverty/TransportPovertyHub.ipynb) #TODO
+:::
+
+## Transport Poverty Hub
+
+### Accessibility (Opportunities) with Public Transport in Madrid
+
+![](media/accessibility-vs-mobility-slides/tph-madrid.png){fig-align="center"}
+
+
+::: footer
+CC BY-SA 4.0, [Transport poverty hub](https://jeodpp.jrc.ec.europa.eu/eu/vaas/voila/render/mobitrans/transportpoverty/TransportPovertyHub.ipynb) #TODO
+:::
+
+# A few words about rasters
+
+## Raster geospatial data
+
+![](media/accessibility-vs-mobility-slides/raster-concept.gif){fig-align="center"}
+
+::: footer
+*Ldecola, CC BY-SA 3.0 [https://creativecommons.org/licenses/by-sa/3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons*
+:::
+
+
+## Raster geospatial data
+
+![](media/3-accessibility-vs-mobility/p_acc.png){fig-align="center"}
+
+## Raster geospatial data cube
+
+![](media/accessibility-vs-mobility-slides/raster-cube-apache.png){fig-align="center"}
+
+::: footer
+*Image: Pebesma E, Bivand R (2023). Spatial Data Science: With applications in R. Chapman and Hall/CRC, London. doi:10.1201/9780429459016, https://r-spatial.org/book/. Warning, the image license is Apache.*
+:::
+
+
+
+# References {.scrollable}
+
+::: {#refs}
+:::
+
+**Transport Poverty Hub:**
+© European Union, 1995-2025. The Commission's reuse policy is implemented by the [Commission Decision of 12 December 2011 on the reuse of Commission documents](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011D0833). Unless otherwise indicated (e.g. in individual copyright notices), content owned by the EU on this website is licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) licence](https://creativecommons.org/licenses/by/4.0/). This means that reuse is allowed, provided appropriate credit is given and changes are indicated.

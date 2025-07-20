@@ -1,0 +1,32 @@
+---
+title: "3a. 📽️ Slides: Accessibility and its Relation to Actual Mobility"
+format:
+  html:
+    include-in-header:
+      - text: |
+          <style>
+          .quarto-title-meta-heading {
+            display: none;
+          }
+          .quarto-title-meta-contents {
+            display: none;
+          }
+          .abstract  {
+            display: none;
+          }
+          </style>
+---
+
+::: {.column-body}
+<iframe
+  src="3-accessibility-vs-mobility-slides.html"
+  style="
+    display: block;
+    width: 100%;
+    height: calc(100vh - 300px);
+    border: 1px solid lightgrey;
+  "
+></iframe>
+:::
+
+*Click on the slide and press `F` key to go fullscreen or [open the slides in new tab](3-accessibility-vs-mobility-slides.html){target="_blank" .external}.*

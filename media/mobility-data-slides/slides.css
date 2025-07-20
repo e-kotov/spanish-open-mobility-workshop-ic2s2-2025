@@ -1,0 +1,154 @@
+:root {
+  --hex-width: 120px;
+  --hex-height: 140px;
+  --hex-gap: 5px;
+  --hex-offset-x: calc(var(--hex-width) + var(--hex-gap));
+  --hex-offset-y: calc(var(--hex-height) * 0.75 + var(--hex-gap)); /* staggered rows */
+}
+
+
+/* Optional: a faint grey top-border *only* on slides with an attribution */
+.reveal .slides section .attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.2); */
+  padding: 4px 10px;
+  font-size: 0.5em;
+  color: #666;
+  /* background: rgba(255,255,255,0.8); */
+  box-sizing: border-box;
+  pointer-events: none;
+  text-align: left;   /* or left, center… */
+}
+
+.rounded-headshot {
+  /* Make it a perfect circle */
+  border-radius: 50%;
+  /* Force cropping to fill the circle */
+  object-fit: cover;
+  /* Adjust to your desired size */
+  width: 200px;
+  height: 200px;
+  align-self: center;
+  /* Optional: add a subtle border or shadow */
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.rounded-headshot-smaller {
+  /* Make it a perfect circle */
+  border-radius: 50%;
+  /* Force cropping to fill the circle */
+  object-fit: cover;
+  /* Adjust to your desired size */
+  width: 170px;
+  height: 170px;
+  align-self: center;
+  /* Optional: add a subtle border or shadow */
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+
+
+/* hex badges */
+
+
+/* 1. allow overflow so badges can escape the slide box */
+.reveal .slides section {
+  overflow: visible !important;
+}
+
+/* 2. prevent Reveal’s max-width/height from shrinking svg/png */
+.reveal img[data-no-scaling] {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* 3. hexBadges rules */
+.hexBadges {
+  position: relative;
+  width: 0%;
+  height: 350px;
+  margin: 0 auto;    /* center horizontally */
+  z-index: 10;
+  transform: translate(5px, 5px); /* adds 5px spacing all around */
+}
+
+.hexBadges img {
+  position: absolute;
+  width: 120px !important;
+  height: 140px !important;
+  margin: 0 !important;
+  pointer-events: auto !important;
+}
+
+.hexBadges .r0.c0 { top: 0; left: 0; }
+.hexBadges .r0.c1 { top: 0; left: var(--hex-offset-x); }
+.hexBadges .r0.c2 { top: 0; left: calc(var(--hex-offset-x) * 2); }
+
+.hexBadges .r1.c0 { top: var(--hex-offset-y); left: calc(var(--hex-offset-x) / 2); }
+.hexBadges .r1.c1 { top: var(--hex-offset-y); left: calc(var(--hex-offset-x) * 1.5); }
+.hexBadges .r1.c2 { top: var(--hex-offset-y); left: calc(var(--hex-offset-x) * 2.5); }
+
+.hexBadges .r2.c0 { top: calc(var(--hex-offset-y) * 2); left: 0; }
+.hexBadges .r2.c1 { top: calc(var(--hex-offset-y) * 2); left: var(--hex-offset-x); }
+.hexBadges .r2.c2 { top: calc(var(--hex-offset-y) * 2); left: calc(var(--hex-offset-x) * 2); }
+
+
+.hexBadges .more {
+  /* same sizing as your images */
+  width: 120px;
+  height: 140px;
+
+  /* position it exactly like .r2.c2, but shifted one slot right */
+  position: absolute;
+  top: 208.5px;
+  left: 326px; /* 240px + 120px from .r2.c2 */
+
+  /* clip to a hexagon */
+  clip-path: polygon(
+    50%   0%,   /* top point */
+    100%  25%,  /* top-right side */
+    100%  75%,  /* bottom-right side */
+    50%   100%, /* bottom point */
+    0%    75%,  /* bottom-left side */
+    0%    25%   /* top-left side */
+  );
+
+  
+  /* style the fill and text */
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  pointer-events: auto !important;
+}
+
+@media print {
+  .reveal pre code {
+    overflow: visible !important;
+    max-height: none !important;
+  }
+}
+
+section#get-in-touch p,
+section#get-in-touch .columns > * {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  line-height: 1;
+}

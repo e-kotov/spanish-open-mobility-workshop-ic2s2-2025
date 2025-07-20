@@ -1,0 +1,12 @@
+::: {.callout-note collapse="true"}
+### If you are using our pre-converted data from SSD
+
+If you are using the files copied from the SSD passed around during the workshop (kindly, remember to return it), you can instead use `spod_connect()` function to load the pre-converted data in `DuckDB` format that is optimized for speed. In this case you will be able to quickly analyze multiple dates available in respective folders of the SSD. Open the `*.Rproj` file in the root of the folder you copied and see some starter code in `start-here.R` to point the `spod_connect()` towards a `*.duckdb` file.
+
+| Folder                          | Dates                         |
+|---------------------------------|-------------------------------|
+| 5GB_2023_15-aug-15-sep_od_distr | 15 August — 15 September 2023 |
+| 10GB_2023_aug-sep_od_distr      | 1 August — 30 September 2023  |
+| 15GB_2023_jul-aug-sep_od_distr  | 1 July — 30 September 2023    |
+| 60GB_2023_od_distr              | 1 January — 31 December 2023  |
+:::

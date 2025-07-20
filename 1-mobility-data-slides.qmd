@@ -1,0 +1,1152 @@
+---
+title: Mobility Flows and Accessibility Using R and Big Open Data
+subtitle: 1. Getting the Spanish Open Human Mobility Data in a Reproducible Way using [`{spanishoddata}`](https://ropenspain.github.io/spanishoddata){target="_blank"} and aggregating it with [`{duckdb}`](https://r.duckdb.org/){target="_blank"}
+
+format: 
+  # Install plugin with quarto install extension grantmcdermott/quarto-revealjs-clean
+  clean-revealjs:
+    # mouse-wheel: true
+    menu:
+      side: left
+      width: narrow
+    slide-number: false
+    show-slide-number: print
+    pdf-separate-fragments: true
+    link-external-newwindow: true
+    # chalkboard: true
+    code-block-height: 700px
+    preview-links: false
+    self-contained: true
+    css: media/mobility-data-slides/slides.css
+
+
+authors:
+  - name: Egor Kotov
+    url: https://www.ekotov.pro/
+    orcid: 0000-0001-6690-5345
+    affiliations:
+      - ref: mpidr
+      - ref: upf
+  - name: Johannes Mast
+    url: https://www.linkedin.com/in/johannes-mast-9bb53b219/
+    orcid: 0000-0001-6595-5834
+    affiliations:
+    - ref: dlr
+    - ref: jmu
+
+affiliations:
+  - id: mpidr
+    name: Max Planck Institute for Demographic Research
+    city: Rostock
+    country: Germany
+    url: https://www.demogr.mpg.de/en
+  - id: upf
+    name: Universitat Pompeu Fabra
+    city: Barcelona
+    country: Spain
+    url: https://www.upf.edu/en/web/politiques/home
+  - id: dlr
+    name: The German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt, DLR)
+    city: Munich
+    country: Germany
+    url: https://www.dlr.de
+  - id: jmu
+    name: Julius-Maximilians-Universität Würzburg (JMU)
+    city: Würzburg
+    country: Germany
+    url: https://www.uni-wuerzburg.de/en/
+
+date: 2025-07-21
+bibliography: references.bib
+execute: 
+  cache: true
+  warning: false
+  error: false
+---
+
+
+{{< include includes/get-in-touch.qmd >}}
+
+# Workshop overview
+
+```{=html}
+<style>
+.reveal table thead th, .reveal .slides table tr:last-child td, .reveal .slides table {
+    border-bottom: none;
+}
+</style>
+```
+
+|  |  |
+|----------------|-----------------------------------------------------|
+| 13:30 — 14:20 | Getting the Open Human Mobility Data in a Reproducible Way using [`spanishoddata`](https://ropenspain.github.io/spanishoddata){target="_blank"} R package and aggregating the data using [`duckdb`](https://r.duckdb.org/){target="_blank"} |
+| 14:20 — 15:00 | Visualization of Mobility using [`flowmapper`](https://github.com/JohMast/flowmapper){target="_blank"} and [`flowmapblue`](https://flowmapblue.github.io/flowmapblue.R/){target="_blank"} |
+| 15:00 — 15:30 | Break |
+| 15:30 — 17:00 | Accessibility and its relation to actual mobility |
+
+: {tbl-colwidths="[20,80]"}
+
+
+# Getting the Spanish Open Human Mobility Data in a Reproducible Way using [`{spanishoddata}`](https://ropenspain.github.io/spanishoddata){target="_blank"} and aggregating it with [`{duckdb}`](https://r.duckdb.org/){target="_blank"}
+
+
+
+# Contents
+
+::: {.incremental}
+
+- What did we know about human mobility?
+
+- Spanish Open Mobility Big Data [@mitms_mobility_web]
+
+- [`{spanishoddata}`](https://ropenspain.github.io/spanishoddata){target="_blank"} R package to get the data [@r-spanishoddata]
+
+- Big data analysis with [`DuckDB`](https://duckdb.org/){target="_blank"} [@Raasveldt_DuckDB] and [`duckdb`](https://r.duckdb.org/) R package [@r-duckdb]
+:::
+
+
+## Survey-based human mobility
+
+### European Labour Force Surveys
+
+![](media/mobility-data-slides/SP-nuts3.png){fig-align="center"}
+
+
+::: footer
+*Source: [https://ec.europa.eu/eurostat/web/microdata/european-union-labour-force-survey](https://ec.europa.eu/eurostat/web/microdata/european-union-labour-force-survey){target="_blank"} <br> Image source: [https://ec.europa.eu/eurostat/documents/345175/17780010/2021-NUTS-3-map-ES.pdf](https://ec.europa.eu/eurostat/documents/345175/17780010/2021-NUTS-3-map-ES.pdf)*
+:::
+
+## Survey-based human mobility
+
+### German Mobility Survey
+
+![](media/mobility-data-slides/de-mobility-survey.png){fig-align="center"}
+
+
+::: footer
+*Source: [https://www.mobilitaet-in-deutschland.de/](https://www.mobilitaet-in-deutschland.de/){target="_blank"}*
+:::
+
+## Census-based human mobility
+
+### UK Census
+
+![](media/mobility-data-slides/uk-commuting1.jpg){fig-align="center"}
+
+
+::: footer
+*Source: [https://commute.datashine.org.uk/](https://commute.datashine.org.uk/){target="_blank"}*
+:::
+
+## Census-based human mobility
+
+### UK Census
+
+![](media/mobility-data-slides/uk-commuting2.jpg){fig-align="center"}
+
+
+::: footer
+*Source: [https://commute.datashine.org.uk/](https://commute.datashine.org.uk/){target="_blank"}*
+:::
+
+
+
+## Register-based human mobility
+
+### Netherlands Register Data
+
+![](media/mobility-data-slides/NL-commuting.png){fig-align="center"}
+
+
+::: footer
+*Source: [https://www.flowmap.blue/1Oe3zM219uSfJ3sjdRT90SAK2kU3xIvzdcCW6cwTsAuc](https://www.flowmap.blue/1Oe3zM219uSfJ3sjdRT90SAK2kU3xIvzdcCW6cwTsAuc){target="_blank"} <br> Data: [https://opendata.cbs.nl/#/CBS/nl/dataset/83628NED/table?dl=F076](https://opendata.cbs.nl/#/CBS/nl/dataset/83628NED/table?dl=F076){target="_blank"}*
+:::
+
+## IOT GPS Data
+
+### The Volkswagen leak
+
+![](media/mobility-data-slides/ccc-vw.png){fig-align="center"}
+
+
+::: footer
+*Source: [https://media.ccc.de/v/38c3-wir-wissen-wo-dein-auto-steht-volksdaten-von-volkswagen](https://media.ccc.de/v/38c3-wir-wissen-wo-dein-auto-steht-volksdaten-von-volkswagen){target="_blank"}*
+:::
+
+
+## Mobile Apps + Mobile Network GPS Data
+
+### App usage by Orange customers in France
+
+![](media/mobility-data-slides/netmob23.png){fig-align="center"}
+
+
+::: footer
+*Image source: @martnez-durive.mishra.ea2023*
+:::
+
+
+
+
+## Mobile phone data
+
+### Flowminder
+
+![](media/mobility-data-slides/flowminder1.png){fig-align="center"}
+
+
+Mobile phone data for humanitarian and development efforts in low- and middle-income countries
+
+::: footer
+
+*Source: [https://www.flowminder.org/what-we-do/population-distribution-and-mobility-analysis#data-applications](https://www.flowminder.org/what-we-do/population-distribution-and-mobility-analysis#data-applications){target="_blank"}*
+
+:::
+
+
+## Flowminder Software
+
+### FlowKit - privacy preserving mobile phone data aggregation
+
+![](media/mobility-data-slides/flowkit.png){fig-align="center"}
+
+
+
+::: footer
+
+*Learn more: [https://github.com/Flowminder/FlowKit](https://github.com/Flowminder/FlowKit){target="_blank"}, <br> [https://www.flowminder.org/what-we-do/mobile-data-partnerships/flowkit](https://www.flowminder.org/what-we-do/mobile-data-partnerships/flowkit){target="_blank"}*
+
+:::
+
+
+# Spanish Open Mobility Big Data
+
+## Spanish Open Mobility Big Data
+
+### ~ 5 years of daily hourly flows
+
+::::: columns
+:::: {.column width="85%"}
+
+```{=html}
+<video width="90%" height="50%" style="display: block; margin: 0 auto;"
+controls loop data-muted data-loop data-autoplay>
+<source src="media/mobility-data-slides/flowmapblue-standard-time.mp4" type="video/mp4">
+</video>
+```
+
+::::
+
+:::: {.column width="15%"}
+::: {style="font-size: 11pt;"}
+Data by @mitms_mobility_web
+
+Based on 13 million customers of Orange Spain, expanded to full population of Spain
+
+*Data interface*
+[![](media/mobility-data-slides/spanishoddata-logo.png){width=80%}](https://ropenspain.github.io/spanishoddata/){target="_blank"}
+
+:::
+::::
+
+
+:::::
+
+
+
+## Spanish Open Mobility Big Data
+
+### 3500+ zones across Spain and beyond
+
+::::: columns
+:::: {.column width="85%"}
+
+```{=html}
+<video width="90%" height="50%" style="display: block; margin: 0 auto;"
+controls loop data-muted data-loop data-autoplay>
+<source src="media/mobility-data-slides/spain-folding-flows.mp4" type="video/mp4">
+</video>
+```
+
+::::
+
+:::: {.column width="15%"}
+::: {style="font-size: 11pt;"}
+Data by @mitms_mobility_web
+
+Based on 13 million customers of Orange Spain, expanded to full population of Spain
+
+*Data interface*
+[![](media/mobility-data-slides/spanishoddata-logo.png){width=80%}](https://ropenspain.github.io/spanishoddata/){target="_blank"}
+
+:::
+::::
+
+
+:::::
+
+
+
+## Spanish Open Mobility Big Data
+
+![](media/mobility-data-slides/mitms-dash-1.png){fig-align="center"}
+
+
+::: footer
+*View the dashboard at [https://data.transportes.gob.es/public/mov-diaria-mensual](https://data.transportes.gob.es/public/mov-diaria-mensual){target="_blank"}*
+:::
+
+
+
+## Spanish Open Mobility Big Data
+
+![](media/mobility-data-slides/mitms-dash-2.png){fig-align="center"}
+
+
+::: footer
+*View the dashboard at [https://data.transportes.gob.es/public/mov-provincial](https://data.transportes.gob.es/public/mov-provincial){target="_blank"}*
+:::
+
+## Spanish Open Mobility Big Data
+
+![](media/mobility-data-slides/mitms-dash-3.png){fig-align="center"}
+
+
+::: footer
+*View the dashboard at [https://mapas-movilidad.transportes.gob.es/?date=2025-04-16T22](https://mapas-movilidad.transportes.gob.es/?date=2025-04-16T22%3A00%3A00.000Z&metric=JOURNEYS&distances=%5B%22D_05_2%22%2C%22D_2_10%22%2C%22D_10_50%22%2C%22D_50%22%5D&v=40.266184%2C-3.264749%2C7.75%2C0%2C25&ms=CARTO_WHITE&loc_type=MUNICIPALITIES&o_dis=%5B%5D&o_mun=%5B%5D&o_prov=%5B%5D&d_dis=%5B%5D&d_mun=%5B%5D&d_prov=%5B%5D){target="_blank"}*
+:::
+
+
+
+## Spanish Open Mobility Big Data
+
+### Academic research
+
+![](media/mobility-data-slides/article-topics.png){fig-align="center"}
+
+
+::: footer
+*Source: [https://github.com/e-kotov/spanishoddata-paper-supplement](https://github.com/e-kotov/spanishoddata-paper-supplement){target="_blank"} <br> [https://doi.org/10.5281/zenodo.15207374](https://doi.org/10.5281/zenodo.15207374){target="_blank"}*
+:::
+
+
+
+
+# Multi-MNO Project
+
+## Multi-MNO Project
+
+![](media/mobility-data-slides/multi-mno.png){fig-align="center"}
+
+
+::: footer
+*Source: [https://cros.ec.europa.eu/landing-page/multi-mno-project](https://cros.ec.europa.eu/landing-page/multi-mno-project){target="_blank"}*
+:::
+
+## Multi-MNO Project
+
+### Mobility data aggregation using unified methodology
+
+::::: columns
+:::: {.column width="80%"}
+
+![](media/mobility-data-slides/mmno-single-methodology.png)
+
+::::
+:::: {.column width="20%"}
+
+![](media/mobility-data-slides/tf-mno-position-paper.png)
+::::
+
+:::::
+
+
+::: footer
+*Source: [https://cros.ec.europa.eu/system/files/2023-12/20231109_dimeitdg_mnoposition_paper_ricciato_ho%20%281%29.pdf](https://cros.ec.europa.eu/system/files/2023-12/20231109_dimeitdg_mnoposition_paper_ricciato_ho%20%281%29.pdf){target="_blank"} <br> Learn more: [https://ec.europa.eu/eurostat/web/products-statistical-reports/w/ks-ft-23-001](https://ec.europa.eu/eurostat/web/products-statistical-reports/w/ks-ft-23-001){target="_blank"}*
+:::
+
+
+
+## Multi-MNO Project
+
+### How it works
+
+![](media/mobility-data-slides/mmno-schema-1.png){fig-align="center"}
+
+
+
+::: footer
+*Source [https://cros.ec.europa.eu/system/files/2024-02/20240226_MultiMNO_2021-0400-internal-meeting-MNOs-ricciato.pdf](https://cros.ec.europa.eu/system/files/2024-02/20240226_MultiMNO_2021-0400-internal-meeting-MNOs-ricciato.pdf){target="_blank"}*
+:::
+
+
+## Multi-MNO Software
+
+### [https://github.com/eurostat/multimno](https://github.com/eurostat/multimno){target="_blank"}
+
+
+![](media/mobility-data-slides/mmno-schema-2.png){fig-align="center"}
+
+
+::: footer
+*Source [https://cros.ec.europa.eu/system/files/2024-02/20240226_MultiMNO_2021-0400-internal-meeting-MNOs-ricciato.pdf](https://cros.ec.europa.eu/system/files/2024-02/20240226_MultiMNO_2021-0400-internal-meeting-MNOs-ricciato.pdf){target="_blank"}*
+:::
+
+## Multi-MNO Outputs
+
+### What to expect?
+
+
+![](media/mobility-data-slides/mmno-outputs.png){fig-align="center"}
+
+
+::: footer
+*Source [https://cros.ec.europa.eu/system/files/2024-02/20240226_MultiMNO_2021-0400-internal-meeting-MNOs-ricciato.pdf](https://cros.ec.europa.eu/system/files/2024-02/20240226_MultiMNO_2021-0400-internal-meeting-MNOs-ricciato.pdf){target="_blank"}*
+:::
+
+
+
+# `spanishoddata` R package
+
+## `spanishoddata`
+
+### access Spanish Open Mobility Big Data from R
+
+![](media/mobility-data-slides/spod-bcn.png){fig-align="center"}
+
+
+::: footer
+*Source: [https://ropenspain.github.io/spanishoddata/articles/v1-2020-2021-mitma-data-codebook.html](https://ropenspain.github.io/spanishoddata/articles/v1-2020-2021-mitma-data-codebook.html){target="_blank"}* 
+:::
+
+## `spanishoddata` - access open human mobility data
+
+:::: {.columns style='display: flex !important; height: 90%;'}
+
+
+<!-- ::: {.column width="50%" style='display: flex; justify-content: center; align-items: center;'} -->
+::: {.column width="60%" class="centered"}
+
+<br>
+
+### A package with many companions
+
+```{=html}
+<div class="hexBadges">
+  <!-- top-left -->
+  <a href="https://ropenspain.github.io/spanishoddata" target="_blank">
+    <img data-no-scaling class="r0 c1"
+         src="https://ropenspain.github.io/spanishoddata/logo.png"
+         alt="spanishoddata">
+  </a>
+
+  <!-- middle offset -->
+  <a href="https://flowmapblue.github.io/flowmapblue.R" target="_blank">
+    <img data-no-scaling class="r1 c1"
+         src="https://flowmapblue.github.io/flowmapblue.R/logo.svg"
+         alt="flowmapblue">
+  </a>
+
+  <!-- top-right -->
+  <a href="https://github.com/JohMast/flowmapper" target="_blank">
+    <img data-no-scaling class="r0 c2"
+         src="https://github.com/JohMast/flowmapper/blob/master/inst/figures/hex.png?raw=true"
+         alt="flowmapper">
+  </a>
+
+<a href="https://duckdb.org/" target="_blank">
+    <img data-no-scaling class="r2 c2"
+         src="https://duckdb.org/images/logo-dl/DuckDB_Logo-horizontal.svg"
+         alt="duckdb">
+  </a>
+
+
+</div>
+```
+
+:::
+
+::: {.column width="40%" class="centered"}
+
+<br>
+
+### [Detailed documentation](https://ropenspain.github.io/spanishoddata/articles/flowmaps-interactive.html){target="_blank"}
+
+![](media/mobility-data-slides/spod-guide-1.png){width=100%}
+
+
+:::
+
+::::
+
+::: footer
+*Logos are the property of their respective owners.*
+:::
+
+
+## `spanishoddata` use cases
+
+### Split work and non-work trips
+
+```{=html}
+<video width="90%" height="70%" style="display: block; margin: 0 auto;"
+controls loop data-muted data-loop data-autoplay>
+<source src="media/mobility-data-slides/13-a-new-tool.mp4" type="video/mp4">
+</video>
+```
+
+::: footer
+*Source: [https://github.com/e-kotov/2024-30DayMapChallenge](https://github.com/e-kotov/2024-30DayMapChallenge){target="_blank"}*
+:::
+
+## `spanishoddata` use cases
+
+### Split into different trip types
+
+![](media/mobility-data-slides/fig-02-madrid-1.jpeg){fig-align="center" width=100%}
+
+
+::: footer
+*Source: [https://github.com/e-kotov/spanishoddata-paper-supplement](https://github.com/e-kotov/spanishoddata-paper-supplement){target="_blank"}, [https://doi.org/10.5281/zenodo.15207374](https://doi.org/10.5281/zenodo.15207374){target="_blank"}*
+:::
+
+## `spanishoddata` use cases
+
+### Split into different trip types
+
+![](media/mobility-data-slides/fig-02-madrid-2.jpeg){fig-align="center" width=100%}
+
+
+::: footer
+*Source: [https://github.com/e-kotov/spanishoddata-paper-supplement](https://github.com/e-kotov/spanishoddata-paper-supplement){target="_blank"}, [https://doi.org/10.5281/zenodo.15207374](https://doi.org/10.5281/zenodo.15207374){target="_blank"}*
+:::
+
+
+
+## `spanishoddata` use cases
+
+### Valencia flood (DANA) in October 2024
+
+![](media/mobility-data-slides/12-time-and-space.png)
+
+
+::: footer
+*Source: [https://github.com/e-kotov/2024-30DayMapChallenge](https://github.com/e-kotov/2024-30DayMapChallenge){target="_blank"}*
+:::
+
+## `spanishoddata` use cases
+
+### Valencia flood (DANA) in October 2024
+
+```{=html}
+<video width="90%" height="70%" style="display: block; margin: 0 auto;"
+controls loop data-muted data-loop data-autoplay>
+<source src="media/mobility-data-slides/16-choropleth.mp4" type="video/mp4">
+</video>
+```
+
+The share of people who have not spent the night at home.
+
+::: footer
+*Source: [https://github.com/e-kotov/2024-30DayMapChallenge](https://github.com/e-kotov/2024-30DayMapChallenge){target="_blank"}*
+:::
+
+## `spanishoddata` use cases
+
+### Anntennas were offline - Facebook shows a slightly different picture
+
+![](media/mobility-data-slides/popeu-31.png)
+
+
+::: footer
+*Source: [https://population-europe.eu/research/policy-insights/harnessing-digital-data-strengthen-disaster-response-valencias-2024-floods](https://population-europe.eu/research/policy-insights/harnessing-digital-data-strengthen-disaster-response-valencias-2024-floods){target="_blank"}*
+:::
+
+
+
+# Get the data with `{spanishoddata}`
+
+## Get the data
+
+### Download one by one?
+![](media/mobility-data-slides/mitms-down-manual.png){fig-align="center" width=80%}
+
+
+## Get the data
+
+### Write your own XML parser?
+
+![](media/mobility-data-slides/mitms-down-xml.png){fig-align="center" width=80%}
+
+
+
+## Get the data
+
+:::: {.columns}
+
+<!-- ::: {.column width="50%" .centered} -->
+::: {.column width="58%"}
+### Time consuming options
+![Download one by one?](media/mobility-data-slides/mitms-down-manual.png){width=70%}
+
+![Write your own XML parser?](media/mobility-data-slides/mitms-down-xml.png){width=70%}
+
+:::
+
+::: {.column width="42%"}
+
+
+::: {.incremental}
+- Custom code to download and import multiple days
+- Variable names in Spanish
+- No gurantee of consistent variable types
+- Limited by available memory
+- Slow data processing (raw csv data)
+:::
+
+:::
+:::
+
+::::
+
+
+## Get the data {auto-animate="true"}
+
+:::: {.columns}
+
+<!-- ::: {.column width="50%" .centered} -->
+::: {.column width="58%"}
+### Time consuming options
+![Download one by one?](media/mobility-data-slides/mitms-down-manual.png){width=70%}
+
+![Write your own XML parser?](media/mobility-data-slides/mitms-down-xml.png){width=70%}
+
+:::
+
+::: {.column width="42%" data-id="code1"}
+
+
+### The fastest way
+
+Use [`{spanishoddata}`](https://ropenspain.github.io/spanishoddata){target="_blank"} package
+```{.r data-id="code2"}
+library(spanishoddata)
+spod_set_data_dir("data")
+
+od_data <- spod_get(
+  type = "origin-destination",
+  zones = "districts",
+  dates = c(
+    start = "2022-03-01",
+    end = "2022-03-07"
+  )
+)
+```
+
+:::
+
+::::
+
+
+
+## Get the flows data {auto-animate="true"}
+
+:::: {.columns data-id="code1"}
+
+<!-- ::: {.column width="50%" .centered} -->
+::: {.column width="42%"}
+
+### The fastest way
+
+Use [`{spanishoddata}`](https://ropenspain.github.io/spanishoddata){target="_blank"} package
+```{.r data-id="code2"}
+library(spanishoddata)
+spod_set_data_dir("data")
+
+od_data <- spod_get(
+  type = "origin-destination",
+  zones = "districts",
+  dates = c(
+    start = "2022-01-01",
+    end = "2022-01-04"
+  )
+)
+
+```
+
+:::
+::: {.column width="58%"}
+
+::: {.fragment}
+```{.r}
+library(dplyr)
+glimpse(od_data)
+
+Rows: ??
+Columns: 20          
+Database: DuckDB v1.2.1 [root@Darwin 24.4.0:R 4.5.0/:memory:]
+$ date                        <date> 2022-01-04, 2022-01-04, 2…
+$ hour                        <int> 0, 0, 0, 1, 1, 3, 4, 4, 5,…
+$ id_origin                   <fct> 01001, 01001, 01001, 01001…
+$ id_destination              <fct> 01009_AM, 01009_AM, 01009_…
+$ distance                    <fct> 2-10, 2-10, 2-10, 2-10, 2-…
+$ activity_origin             <fct> home, frequent_activity, w…
+$ activity_destination        <fct> frequent_activity, home, h…
+$ study_possible_origin       <lgl> FALSE, FALSE, FALSE, FALSE…
+$ study_possible_destination  <lgl> FALSE, FALSE, FALSE, FALSE…
+$ residence_province_ine_code <fct> 01, 01, 01, 01, 01, 01, 01…
+$ residence_province_name     <fct> "Araba/Álava", "Araba/Álav…
+$ income                      <fct> 10-15, >15, >15, >15, >15,…
+$ age                         <fct> NA, NA, NA, NA, NA, NA, NA…
+$ sex                         <fct> NA, NA, NA, NA, NA, NA, NA…
+$ n_trips                     <dbl> 4.894, 1.779, 1.094, 1.094…
+$ trips_total_length_km       <dbl> 27.966, 5.997, 4.081, 4.16…
+$ year                        <int> 2022, 2022, 2022, 2022, 20…
+$ month                       <int> 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ day                         <int> 4, 4, 4, 4, 4, 4, 4, 4, 4,…
+```
+:::
+
+:::
+
+::::
+
+
+## Get the flows data {auto-animate="true"}
+
+:::: {.columns data-id="code1"}
+
+::: {.column width="42%"}
+
+```{.r}
+library(dplyr)
+glimpse(od_data)
+
+Rows: ??
+Columns: 20          
+Database: DuckDB v1.2.1 [root@Darwin 24.4.0:R 4.5.0/:memory:]
+$ date                        <date> 2022-01-04, 2022-01-04, 2…
+$ hour                        <int> 0, 0, 0, 1, 1, 3, 4, 4, 5,…
+$ id_origin                   <fct> 01001, 01001, 01001, 01001…
+$ id_destination              <fct> 01009_AM, 01009_AM, 01009_…
+$ distance                    <fct> 2-10, 2-10, 2-10, 2-10, 2-…
+$ activity_origin             <fct> home, frequent_activity, w…
+$ activity_destination        <fct> frequent_activity, home, h…
+$ study_possible_origin       <lgl> FALSE, FALSE, FALSE, FALSE…
+$ study_possible_destination  <lgl> FALSE, FALSE, FALSE, FALSE…
+$ residence_province_ine_code <fct> 01, 01, 01, 01, 01, 01, 01…
+$ residence_province_name     <fct> "Araba/Álava", "Araba/Álav…
+$ income                      <fct> 10-15, >15, >15, >15, >15,…
+$ age                         <fct> NA, NA, NA, NA, NA, NA, NA…
+$ sex                         <fct> NA, NA, NA, NA, NA, NA, NA…
+$ n_trips                     <dbl> 4.894, 1.779, 1.094, 1.094…
+$ trips_total_length_km       <dbl> 27.966, 5.997, 4.081, 4.16…
+$ year                        <int> 2022, 2022, 2022, 2022, 20…
+$ month                       <int> 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ day                         <int> 4, 4, 4, 4, 4, 4, 4, 4, 4,…
+```
+:::
+
+
+
+<!-- ::: {.column width="50%" .centered} -->
+::: {.column width="58%"}
+
+### Get the codebook in R or [online](https://ropenspain.github.io/spanishoddata/articles/v2-2022-onwards-mitma-data-codebook.html)
+
+
+```{.r}
+spod_codebook(ver = 2)
+```
+
+![](media/mobility-data-slides/spod-codebook.png){fig-align="center" width=100%}
+
+
+:::
+
+::::
+
+## Get the boundaries data
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+```{.r}
+zones <- spod_get_zones(
+  zones = "districts",
+  ver = 2 # for 2022 data onwards
+)
+
+zones |>
+  sf::st_geometry() |>
+  ggplot2::ggplot() +
+  ggplot2::geom_sf()
+```
+
+:::
+
+::: {.column width="60%"}
+![](media/1-mobility-data/mitms-district-zones.png)
+:::
+
+
+
+::::
+
+
+
+
+## Cite the data and the package
+
+```{.r}
+spod_cite()
+```
+
+```
+Plain text citations:
+---------------------
+To cite the spanishoddata package:
+Kotov E, Lovelace R, Vidal-Tortosa E (2024). spanishoddata.
+doi:10.32614/CRAN.package.spanishoddata
+https://doi.org/10.32614/CRAN.package.spanishoddata,
+https://github.com/rOpenSpain/spanishoddata. 
+
+To cite the Ministry's mobility study website:
+Ministerio de Transportes y Movilidad Sostenible (MITMS)
+(2024). “Estudio de la movilidad con Big Data (Study of
+mobility with Big Data).”
+https://www.transportes.gob.es/ministerio/proyectos-singulares/estudio-de-movilidad-con-big-data. 
+
+To cite the methodology for 2020-2021 data:
+Ministerio de Transportes, Movilidad y Agenda Urbana (MITMA)
+(2021). Análisis de la movilidad en España con tecnología Big
+Data durante el estado de alarma para la gestión de la crisis
+del COVID-19 (Analysis of mobility in Spain with Big Data
+technology during the state of alarm for COVID-19 crisis
+management).
+https://cdn.mitma.gob.es/portal-web-drupal/covid-19/bigdata/mitma-estudiomovilidadcovid-19informemetodologico_v3.pdf. 
+
+To cite the methodology for 2022 and onwards data:
+Ministerio de Transportes y Movilidad Sostenible (MITMS)
+(2024). Estudio de movilidad de viajeros de ámbito nacional
+aplicando la tecnología Big Data. Informe metodológico (Study
+of National Traveler mobility Using Big Data Technology.
+Methodological Report).
+https://www.transportes.gob.es/recursosmfom/paginabasica/recursos/a3informemetodologicoestudiomovilidadmitms_v8.pdf. 
+
+Note: A more up-to-date methodology document may be available at https://www.transportes.gob.es/ministerio/proyectos-singulares/estudios-de-movilidad-con-big-data/metodologia-del-estudio-de-movilidad-con-bigdata
+
+
+Markdown citations:
+-------------------
+**To cite the spanishoddata package:**
+Kotov E, Lovelace R, Vidal-Tortosa E (2024). _spanishoddata_.
+doi:10.32614/CRAN.package.spanishoddata
+https://doi.org/10.32614/CRAN.package.spanishoddata,
+https://github.com/rOpenSpain/spanishoddata. 
+
+**To cite the Ministry's mobility study website:**
+Ministerio de Transportes y Movilidad Sostenible (MITMS)
+(2024). “Estudio de la movilidad con Big Data (Study of
+mobility with Big Data).”
+https://www.transportes.gob.es/ministerio/proyectos-singulares/estudio-de-movilidad-con-big-data. 
+
+**To cite the methodology for 2020-2021 data:**
+Ministerio de Transportes, Movilidad y Agenda Urbana (MITMA)
+(2021). _Análisis de la movilidad en España con tecnología Big
+Data durante el estado de alarma para la gestión de la crisis
+del COVID-19 (Analysis of mobility in Spain with Big Data
+technology during the state of alarm for COVID-19 crisis
+management)_.
+https://cdn.mitma.gob.es/portal-web-drupal/covid-19/bigdata/mitma_-_estudio_movilidad_covid-19_informe_metodologico_v3.pdf. 
+
+**To cite the methodology for 2022 and onwards data:**
+Ministerio de Transportes y Movilidad Sostenible (MITMS)
+(2024). _Estudio de movilidad de viajeros de ámbito nacional
+aplicando la tecnología Big Data. Informe metodológico (Study
+of National Traveler mobility Using Big Data Technology.
+Methodological Report)_.
+https://www.transportes.gob.es/recursos_mfom/paginabasica/recursos/a3_informe_metodologico_estudio_movilidad_mitms_v8.pdf. 
+
+> **Note:** A more up-to-date methodology document may be available at https://www.transportes.gob.es/ministerio/proyectos-singulares/estudios-de-movilidad-con-big-data/metodologia-del-estudio-de-movilidad-con-bigdata
+
+
+BibTeX citations:
+-----------------
+%% To cite the spanishoddata package
+@Manual{r-spanishoddata,
+  title = {spanishoddata},
+  author = {Egor Kotov and Robin Lovelace and Eugeni Vidal-Tortosa},
+  year = {2024},
+  url = {https://github.com/rOpenSpain/spanishoddata},
+  doi = {10.32614/CRAN.package.spanishoddata},
+}
+
+%% To cite the Ministry's mobility study website
+@Misc{mitms_mobility_web,
+  title = {Estudio de la movilidad con Big Data (Study of mobility with Big Data)},
+  author = {{Ministerio de Transportes y Movilidad Sostenible (MITMS)}},
+  year = {2024},
+  url = {https://www.transportes.gob.es/ministerio/proyectos-singulares/estudio-de-movilidad-con-big-data},
+}
+
+%% To cite the methodology for 2020-2021 data
+@Manual{mitma_methodology_2020_v3,
+  title = {Análisis de la movilidad en España con tecnología Big Data durante el estado de alarma para la gestión de la crisis del COVID-19 (Analysis of mobility in Spain with Big Data technology during the state of alarm for COVID-19 crisis management)},
+  author = {{Ministerio de Transportes, Movilidad y Agenda Urbana (MITMA)}},
+  year = {2021},
+  url = {https://cdn.mitma.gob.es/portal-web-drupal/covid-19/bigdata/mitma_-_estudio_movilidad_covid-19_informe_metodologico_v3.pdf},
+}
+
+%% To cite the methodology for 2022 and onwards data
+@Manual{mitms_methodology_2022_v8,
+  title = {Estudio de movilidad de viajeros de ámbito nacional aplicando la tecnología Big Data. Informe metodológico (Study of National Traveler mobility Using Big Data Technology. Methodological Report)},
+  author = {{Ministerio de Transportes y Movilidad Sostenible (MITMS)}},
+  year = {2024},
+  url = {https://www.transportes.gob.es/recursos_mfom/paginabasica/recursos/a3_informe_metodologico_estudio_movilidad_mitms_v8.pdf},
+}
+
+%% Note: A more up-to-date methodology document may be available at https://www.transportes.gob.es/ministerio/proyectos-singulares/estudios-de-movilidad-con-big-data/metodologia-del-estudio-de-movilidad-con-bigdata
+
+```
+
+
+
+# Big Data on a Small Laptop {.centered}
+
+![](media/mobility-data-slides/big-data-small-laptop.png){fig-align="center" width=80%}
+
+
+::: footer
+OpenAI. (2025). A digital image of stacked hard drives on a MacBook representing big data [AI-generated image]. Created using DALL·E. https://openai.com/dall-e
+:::
+
+## DuckDB in Action {auto-animate="true"}
+### Imagine a typical laptop
+
+:::: {.columns}
+
+::: {.column width="38%"}
+
+:::
+
+::: {.column width="62%"}
+```{=html}
+<video width="100%" style="display: block; margin: 0 auto;"
+data-muted>
+<source src="media/mobility-data-slides/duckdb-0-1.mp4" type="video/mp4">
+</video>
+```
+:::
+
+::::
+
+
+::: footer
+*Logos are the property of their respective owners.*
+
+*Only for illustration purposes. May not accurately represent actual GB usage and DuckDB operation.*
+:::
+
+
+
+## DuckDB in Action {auto-animate="true"}
+
+### Filter and summary
+
+
+:::: {.columns}
+
+
+::: {.column width="38%"}
+
+<!-- ```{.r data-id="code-duck" code-line-numbers="|4-7|8-10|11|"} -->
+```{.r data-id="code-duck"}
+library(dplyr)
+
+od_data |>
+  filter(
+    year == 2022,
+    month %in% c(2, 3, 4)
+    ) |>
+  summarise(
+    n_trips = mean(n_trips)
+  ) |>
+  collect()
+```
+
+:::
+
+::: {.column width="62%"}
+
+```{=html}
+<video width="100%" style="display: block; margin: 0 auto;"
+data-muted data-autoplay>
+<source src="media/mobility-data-slides/duckdb-0-1.mp4" type="video/mp4">
+</video>
+```
+
+:::
+
+::::
+
+
+::: footer
+*Logos are the property of their respective owners.*
+
+*Only for illustration purposes. May not accurately represent actual GB usage and DuckDB operation.*
+:::
+
+
+## DuckDB in Action
+
+### Summary on full data set
+
+
+:::: {.columns}
+
+
+::: {.column width="38%"}
+
+<!-- ```{.r data-id="code-duck" code-line-numbers="|4-6|7|"} -->
+```{.r data-id="code-duck"}
+library(dplyr)
+
+od_data |>
+  summarise(
+    n_trips = mean(n_trips)
+  ) |>
+  collect()
+```
+
+:::
+
+::: {.column width="62%"}
+
+```{=html}
+<video width="100%" style="display: block; margin: 0 auto;"
+data-muted data-autoplay>
+<source src="media/mobility-data-slides/duckdb-1-2.mp4" type="video/mp4">
+</video>
+```
+
+:::
+
+::::
+
+
+::: footer
+*Logos are the property of their respective owners.*
+
+*Only for illustration purposes. May not accurately represent actual GB usage and DuckDB operation.*
+:::
+
+
+## DuckDB in Action {auto-animate="true"}
+
+### Summary over multiple groups on full data set
+
+
+:::: {.columns}
+
+
+::: {.column width="38%"}
+
+<!-- ```{.r data-id="code-duck" code-line-numbers="|4-10|11-13|14|"} -->
+```{.r data-id="code-duck"}
+library(dplyr)
+
+od_data |>
+  group_by(
+    year,
+    month,
+    day,
+    id_origin,
+    id_destination
+  )
+  summarise(
+    n_trips = mean(n_trips)
+  ) |>
+  collect()
+```
+
+:::
+
+::: {.column width="62%"}
+
+```{=html}
+<video width="100%" style="display: block; margin: 0 auto;"
+data-muted data-autoplay>
+<source src="media/mobility-data-slides/duckdb-2-3.mp4" type="video/mp4">
+</video>
+```
+
+:::
+
+::::
+
+::: footer
+*Logos are the property of their respective owners.*
+
+*Only for illustration purposes. May not accurately represent actual GB usage and DuckDB operation.*
+:::
+
+
+## DuckDB in Action
+
+### Summary over multiple groups on full data set
+
+
+:::: {.columns}
+
+
+::: {.column width="38%"}
+
+<!-- ```{.r data-id="code-duck" code-line-numbers="|4-10|11-13|14|"} -->
+```{.r data-id="code-duck"}
+library(dplyr)
+
+od_data |>
+  group_by(
+    year,
+    month,
+    day,
+    id_origin,
+    id_destination
+  )
+  summarise(
+    n_trips = mean(n_trips)
+  ) |>
+  collect()
+```
+
+:::
+
+::: {.column width="62%"}
+
+```{=html}
+<video width="100%" style="display: block; margin: 0 auto;"
+data-muted data-autoplay>
+<source src="media/mobility-data-slides/duckdb-3-4.mp4" type="video/mp4">
+</video>
+```
+
+:::
+
+::::
+
+::: footer
+*Logos are the property of their respective owners.*
+
+*Only for illustration purposes. May not accurately represent actual GB usage and DuckDB operation.*
+:::
+
+
+
+
+# References {.scrollable}
+
+::: {#refs}
+:::

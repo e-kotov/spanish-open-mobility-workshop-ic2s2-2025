@@ -1,0 +1,560 @@
+---
+title: Mobility Flows and Accessibility Using R and Big Open Data
+subtitle: 2. Visualization of Mobility Flows Using [`flowmapper`](https://github.com/JohMast/flowmapper) and [`flowmapblue`](https://flowmapblue.github.io/flowmapblue.R/)
+
+resources:
+  - media/flowvis-slides/*
+
+title-slide-attributes:
+  data-background-image: media/flowvis-slides/title-background.png
+  data-background-size: contain
+  data-background-opacity: "1"
+  
+
+format: 
+  # Install plugin with quarto install extension grantmcdermott/quarto-revealjs-clean
+  clean-revealjs:
+    allowMultipleBackgrounds: true
+    # mouse-wheel: true
+    menu:
+      side: left
+      width: narrow
+    slide-number: false
+    show-slide-number: print
+    pdf-separate-fragments: true
+    link-external-newwindow: true
+    # chalkboard: true
+    code-block-height: 700px
+    preview-links: false
+    self-contained: true
+    css:
+      - media/mobility-data-slides/slides.css
+      - media/flowvis-slides/slides.css
+
+
+authors:
+  - name: Egor Kotov
+    url: https://www.ekotov.pro/
+    orcid: 0000-0001-6690-5345
+    affiliations:
+      - ref: mpidr
+      - ref: upf
+  - name: Johannes Mast
+    url: https://www.linkedin.com/in/johannes-mast-9bb53b219/
+    orcid: 0000-0001-6595-5834
+    affiliations:
+    - ref: dlr
+    - ref: jmu
+
+affiliations:
+  - id: mpidr
+    name: Max Planck Institute for Demographic Research
+    city: Rostock
+    country: Germany
+    url: https://www.demogr.mpg.de/en
+  - id: upf
+    name: Universitat Pompeu Fabra
+    city: Barcelona
+    country: Spain
+    url: https://www.upf.edu/en/web/politiques/home
+  - id: dlr
+    name: The German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt, DLR)
+    city: Munich
+    country: Germany
+    url: https://www.dlr.de
+  - id: jmu
+    name: Julius-Maximilians-Universität Würzburg (JMU)
+    city: Würzburg
+    country: Germany
+    url: https://www.uni-wuerzburg.de/en/
+
+date: 2025-07-21
+bibliography: references.bib
+execute: 
+  cache: true
+  warning: false
+  error: false
+---
+
+
+
+# Agenda
+
+1. Visualization Options of Flow Data<div style="height:30px;"></div>
+
+2. Interactive Visualizations using [`{flowmapblue}`](https://flowmapblue.github.io/flowmapblue.R/) <a href="https://flowmapblue.github.io/flowmapblue.R/"><img src="https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/7df5b42787cee7ec3b9faad3f88198dbb3ea63ae/man/figures/logo.svg" alt="flowmapblue" height="150px" style="vertical-align:middle; margin-left:0.5em"></a>
+
+3. Static Visualizations using [`{flowmapper}`](https://github.com/JohMast/flowmapper) <a href="https://github.com/JohMast/flowmapper"><img src="https://github.com/JohMast/flowmapper/blob/master/inst/figures/hex.png?raw=true" alt="flowmapper" height="150px" style="vertical-align:middle; margin-left:0.5em"></a>
+
+
+# Visualisations of Flow Data
+
+::: lead
+<div style="font-size:3rem; line-height:1.2">
+A non-comprehensive overview
+</div>
+:::
+
+
+## Flow graphs
+
+![](media/flowvis-slides/flow-graphs.png){fig-align="center"}
+
+::: footer
+By Jarfuls of Tweed - Own work, CC BY-SA 4.0, [https://commons.wikimedia.org/w/index.php?curid=130341554](https://commons.wikimedia.org/w/index.php?curid=130341554)
+:::
+
+## Flow graphs
+
+![](media/flowvis-slides/metro-map.png){fig-align="center"}
+
+::: footer
+CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=625398](https://commons.wikimedia.org/w/index.php?curid=625398)
+:::
+
+## Line plots
+
+![](media/flowvis-slides/line-plot.png){fig-align="center"}
+
+::: footer
+[https://ropenspain.github.io/spanishoddata](https://ropenspain.github.io/spanishoddata)
+:::
+
+
+## Edge Bundling of Individual Tracks
+
+:::: {.columns}
+
+::: {.column width="65%"}
+
+![](media/flowvis-slides/edgebundle-us.png)
+
+:::
+
+::: {.column width="35%"}
+
+
+[![](media/flowvis-slides/edgebundle-logo.png){fig-align="center"}](https://schochastics.github.io/edgebundle/){target="_blank"}
+
+<div style="font-size:1.5rem; line-height:1.2">
+[`{edgebundle}`](https://schochastics.github.io/edgebundle/){target="_blank"} - an R package for edge-bundle visualisations
+</div>
+
+![](media/flowvis-slides/edgebundle-us-example.png)
+
+
+:::
+
+::::
+
+::: footer
+[https://schochastics.github.io/edgebundle/](https://schochastics.github.io/edgebundle/)
+:::
+
+## Animation of Individual Tracks
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+```{=html}
+<video width="100%" height="100%" style="display: block; margin: 0 auto;"
+data-muted data-autoplay>
+<source src="media/flowvis-slides/moveVis.mp4" type="video/mp4">
+</video>
+```
+
+:::
+
+::: {.column width="40%"}
+
+[![](media/flowvis-slides/moveVis-logo.png){fig-align="center"}](https://movevis.org/){target="_blank"}
+
+[`{moveVis}`](https://movevis.org/){target="_blank"} - an R package for animal movement, can also be used to illustrate
+
+
+:::
+
+::::
+
+::: footer
+[https://movevis.org/](https://movevis.org/)
+:::
+
+
+## {background-image="media/flowvis-slides/flows-anim-earth-frame.png" data-background-color="black"}
+
+## {background-image="media/flowvis-slides/flows-anim-1st-frame.png" data-background-color="black"}
+
+## {data-background-video="media/flowvis-slides/flows-anim.mp4" data-background-video-loop="true" data-background-video-muted="true" data-background-color="black"}
+
+
+
+## {background-image="media/flowvis-slides/flows-anim-last-frame.png" data-background-color="black"}
+
+
+## Flow maps
+
+### *"[may well be] the best statistical graphic ever drawn"* – E. Tufte
+
+![](media/flowvis-slides/napoleon-map.jpg){fig-align="center"}
+
+
+
+::: footer
+By Charles Minard (1781–1870) - see upload log, Public Domain, [https://commons.wikimedia.org/w/index.php?curid=297925](https://commons.wikimedia.org/w/index.php?curid=297925)
+:::
+
+
+## Flow maps
+
+:::: {.columns}
+
+::: {.column width="55%"}
+Visualization of Origin-Destination Data.
+
+Directed edges between nodes.
+
+Positions of nodes correspond to geographic space.
+
+Variations express differences in flow strength
+
+- size / thickness
+
+- color
+
+- …
+
+:::
+
+::: {.column width="45%"}
+
+<div style="position: relative; left: -10%; width: 130%;">
+![](media/flowvis-slides/flowmap-nodes-edges-0.png){fig-align="center" width="100%"}
+</div>
+:::
+
+::::
+
+::: {.notes}
+Often bidirectional.
+
+Positions of nodes correspond to geographic space – this makes it different than flow graphs or diagrams. And it allows to express very intuitively the spatial dimension of mobility, making it useful for geographic applications.
+:::
+
+
+## Flow maps
+
+:::: {.columns}
+
+::: {.column width="55%"}
+Visualization of Origin-Destination Data.
+
+Directed edges between nodes.
+
+Positions of nodes correspond to geographic space.
+
+Variations express differences in flow strength
+
+- size / thickness
+
+- color
+
+- …
+
+:::
+
+::: {.column width="45%"}
+
+<div style="position: relative; left: -10%; width: 130%;">
+![](media/flowvis-slides/flowmap-nodes-edges-1.png){fig-align="center" width="100%"}
+</div>
+:::
+
+::::
+
+::: {.notes}
+Often bidirectional.
+
+Positions of nodes correspond to geographic space – this makes it different than flow graphs or diagrams. And it allows to express very intuitively the spatial dimension of mobility, making it useful for geographic applications.
+:::
+
+## `{flowmapblue}`
+
+
+:::: {.columns}
+::: {.column width="50%"}
+- Available as a [web version](https://www.flowmap.blue/) and as an [R package](https://flowmapblue.github.io/flowmapblue.R/)
+
+- Interactive visualisations
+
+- Part of the flowmap suite, continously developed
+
+![](https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/7df5b42787cee7ec3b9faad3f88198dbb3ea63ae/man/figures/logo.svg){fig-align="center" width="50%"}
+
+:::
+
+::: {.column width="50%"}
+
+[![](media/flowvis-slides/flowmapblue-stack.png){fig-align="center"}](https://flowmapblue.github.io/flowmapblue.R/){target="_blank"}
+
+```{=html}
+<video width="75%" height="35%" style="display: block; margin: 0 auto;"
+controls loop data-muted data-loop data-autoplay>
+<source src="media/mobility-data-slides/spain-folding-flows.mp4" type="video/mp4">
+</video>
+```
+
+:::
+
+::::
+
+
+## `{flowmapper}`
+
+:::: {.columns}
+::: {.column width="50%"}
+
+- Inspired by `{flowmapblue}`
+
+- Static visualisations within the [`{ggplot2}`](https://ggplot2.tidyverse.org) framework
+
+- Capacity to export as spatial objects
+
+[![](https://github.com/JohMast/flowmapper/blob/master/inst/figures/hex.png?raw=true){fig-align="center" width="50%"}](https://github.com/JohMast/flowmapper){target="_blank"}
+
+:::
+
+::: {.column width="50%"}
+
+<div style="position: relative; left: -10%; width: 110%;">
+![](media/flowvis-slides/flowmapper-madrid.png){fig-align="center"}
+</div>
+
+:::
+
+::::
+
+
+## flowmapper – ggplot2 framework {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+![](media/flowvis-slides/flowmapper-00.png)
+:::
+
+<!-- div.column {
+    display: inline-block;
+    overflow-x: initial;
+    vertical-align: middle;
+    /* width: 50%; */
+} -->
+
+::: {.column width="10%" .fragment data-fragment-index=1}
+```{=html}
+<div style="text-align: center; pointer-events: none;">
+  <br><br><br><br><br><br>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="222.048 169.707 127.774 58.387" width="100%" height="60px" xmlns:bx="https://boxy-svg.com">
+      <path d="M 222.048 187.6155 H 305.773 L 305.773 169.707 L 349.822 198.9005 L 305.773 228.094 L 305.773 210.1855 H 222.048 V 187.6155 Z" bx:shape="arrow 222.048 169.707 127.774 58.387 22.57 44.049 0 1@57fba436" style="fill: rgb(93, 149, 206); fill-rule: nonzero; paint-order: stroke; stroke: rgba(0, 0, 0, 0);" transform="matrix(1, 0, 0, 1, 7.105427357601002e-15, 0)"/>
+    </svg>
+  </div>
+```
+:::
+
+::: {.column width="45%"}
+![](media/flowvis-slides/flowmapper-01.png){.fragment data-id="flowmapper-01" data-fragment-index=1}
+:::
+
+::::
+
+
+## flowmapper – Clustering {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+![](media/flowvis-slides/flowmapper-01.png){data-id="flowmapper-01"}
+:::
+
+<!-- div.column {
+    display: inline-block;
+    overflow-x: initial;
+    vertical-align: middle;
+    /* width: 50%; */
+} -->
+
+::: {.column width="10%" .fragment data-fragment-index=1 data-id="flowmapper-02"}
+```{=html}
+<div style="text-align: center; pointer-events: none;">
+  <br><br><br><br><br><br>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="222.048 169.707 127.774 58.387" width="100%" height="60px" xmlns:bx="https://boxy-svg.com">
+      <path d="M 222.048 187.6155 H 305.773 L 305.773 169.707 L 349.822 198.9005 L 305.773 228.094 L 305.773 210.1855 H 222.048 V 187.6155 Z" bx:shape="arrow 222.048 169.707 127.774 58.387 22.57 44.049 0 1@57fba436" style="fill: rgb(93, 149, 206); fill-rule: nonzero; paint-order: stroke; stroke: rgba(0, 0, 0, 0);" transform="matrix(1, 0, 0, 1, 7.105427357601002e-15, 0)"/>
+    </svg>
+  </div>
+```
+:::
+
+::: {.column width="45%"}
+![](media/flowvis-slides/flowmapper-02.png){.fragment data-id="flowmapper-02" data-fragment-index=1}
+:::
+
+::::
+
+## flowmapper – Customization {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+![](media/flowvis-slides/flowmapper-02.png){data-id="flowmapper-02"}
+:::
+
+<!-- div.column {
+    display: inline-block;
+    overflow-x: initial;
+    vertical-align: middle;
+    /* width: 50%; */
+} -->
+
+::: {.column width="10%" .fragment data-fragment-index=1 data-id="flowmapper-03"}
+```{=html}
+<div style="text-align: center; pointer-events: none;">
+  <br><br><br><br><br><br>
+  <svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="222.048 169.707 127.774 58.387"
+    width="100%" height="60px">
+
+  <defs>
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <!-- start at your original blue -->
+      <stop offset="0%" stop-color="rgb(93,149,206)" />
+      <!-- end at #C47C62 -->
+      <stop offset="100%" stop-color="#C47C62" />
+    </linearGradient>
+  </defs>
+
+  <path
+    d="M 222.048 187.6155 H 305.773 L 305.773 169.707 L 349.822 198.9005 L 305.773 228.094 L 305.773 210.1855 H 222.048 V 187.6155 Z"
+    fill="url(#arrowGradient)"
+    fill-rule="nonzero"
+    paint-order="stroke"
+    stroke="none"
+    transform="matrix(1, 0, 0, 1, 0, 0)"
+  />
+  </svg>
+  </div>
+```
+:::
+
+::: {.column width="45%"}
+![](media/flowvis-slides/flowmapper-03.png){.fragment data-id="flowmapper-03" data-fragment-index=1}
+:::
+
+::::
+
+
+
+## flowmapper – Adding Raster Basemaps {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+![](media/flowvis-slides/flowmapper-03.png){data-id="flowmapper-03"}
+:::
+
+
+::: {.column width="10%" .fragment data-fragment-index=1 data-id="flowmapper-04"}
+```{=html}
+<div style="text-align: center; pointer-events: none;">
+  <br><br><br><br><br><br>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="222.048 169.707 127.774 58.387" width="100%" height="60px" xmlns:bx="https://boxy-svg.com">
+        <path d="M 222.048 187.6155 H 305.773 L 305.773 169.707 L 349.822 198.9005 L 305.773 228.094 L 305.773 210.1855 H 222.048 V 187.6155 Z" bx:shape="arrow 222.048 169.707 127.774 58.387 22.57 44.049 0 1@57fba436" style="fill: #A83F49; fill-rule: nonzero; paint-order: stroke; stroke: rgba(0, 0, 0, 0);" transform="matrix(1, 0, 0, 1, 7.105427357601002e-15, 0)"/>
+    </svg>
+  </div>
+```
+:::
+
+::: {.column width="45%"}
+![](media/flowvis-slides/flowmapper-madrid.png){.fragment data-id="flowmapper-04" data-fragment-index=1}
+:::
+
+::::
+
+## Flowmapper - Comparative Flow Maps {auto-animate=true}
+
+![](media/flowvis-slides/flowmapper-compare.jpg){fig-align="center"}
+
+## Flowmapper - Exporting as Spatial Object
+<!-- <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+![](media/flowvis-slides/flomapper-to-spatial.png){fig-align="center"}
+</div> -->
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<br><br><br>
+![](media/flowvis-slides/r-to-qgis.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+<br>
+![](media/flowvis-slides/qgis.png){fig-align="center"}
+:::
+
+
+::::
+
+::: footer
+*Logos are the property of their respective owners.*
+:::
+
+
+
+## Hands-on example {data-background-image="media/flowvis-slides/madrid-view.png" data-background-size="cover"}
+
+Location: 
+
+  - Madrid, Spain
+
+
+Time:
+
+  - May 2nd, 2024 
+
+  - May 9th, 2024
+  
+
+::: footer
+Photo credit: Justraveling.com, [https://www.justraveling.com/free-photos-5/](https://www.justraveling.com/free-photos-5/)
+:::
+
+
+## Let's get started! {data-background-image="media/flowvis-slides/madrid-view-packages.png" data-background-size="cover"}
+
+
+::: footer
+Photo credit: Justraveling.com, [https://www.justraveling.com/free-photos-5/](https://www.justraveling.com/free-photos-5/)
+
+*Logos are the property of their respective owners.*
+:::
+
+
+<!-- ## {data-background-color="black"}
+
+<style>
+.reveal section[data-background-color="black"] .container {
+  padding: 0 !important;
+}
+</style>
+
+<video autoplay muted loop playsinline
+       style="width:100%; height:100%; object-fit:cover;">
+  <source src="media/flowvis-slides/flows-anim.mp4" type="video/mp4">
+</video> -->
+
+
+
+<!-- # References {.scrollable}
+
+::: {#refs}
+::: -->

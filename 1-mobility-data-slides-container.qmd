@@ -1,0 +1,32 @@
+---
+title: "1a. 📽️ Slides: Getting the Open Human Mobility Data in a Reproducible Way using `spanishoddata` and aggregating it with `duckdb`"
+format:
+  html:
+    include-in-header:
+      - text: |
+          <style>
+          .quarto-title-meta-heading {
+            display: none;
+          }
+          .quarto-title-meta-contents {
+            display: none;
+          }
+          .abstract  {
+            display: none;
+          }
+          </style>
+---
+
+::: {.column-body}
+<iframe
+  src="1-mobility-data-slides.html"
+  style="
+    display: block;
+    width: 100%;
+    height: calc(100vh - 300px);
+    border: 1px solid lightgrey;
+  "
+></iframe>
+:::
+
+*Click on the slide and press `F` key to go fullscreen or [open the slides in new tab](1-mobility-data-slides.html){target="_blank" .external}.*
