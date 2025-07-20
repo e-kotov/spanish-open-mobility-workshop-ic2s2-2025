@@ -86,7 +86,6 @@
          alt="ImageFusion">
   </a>
 
-  <a href="https://www.ekotov.pro/software" class="r1 c2 more">more…</a>
 </div>
 ```
 
