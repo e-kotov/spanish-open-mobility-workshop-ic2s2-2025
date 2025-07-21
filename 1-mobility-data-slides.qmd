@@ -923,6 +923,15 @@ BibTeX citations:
 OpenAI. (2025). A digital image of stacked hard drives on a MacBook representing big data [AI-generated image]. Created using DALL·E. https://openai.com/dall-e
 :::
 
+## DuckDB Format Advantages
+
+![](media/mobility-data-slides/duckdb-speed.png){fig-align="center" width=80%}
+
+
+::: footer
+Source: *[https://github.com/e-kotov/spanishoddata-paper-supplement/blob/main/plots/supplement-plots/12_analysis-speed.pdf](https://github.com/e-kotov/spanishoddata-paper-supplement/blob/main/plots/supplement-plots/12_analysis-speed.pdf)*
+:::
+
 ## DuckDB in Action {auto-animate="true"}
 ### Imagine a typical laptop
 
