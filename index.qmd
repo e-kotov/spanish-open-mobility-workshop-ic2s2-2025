@@ -52,7 +52,7 @@ Stay tuned for updates!
 
 | Activity | Time |
 |----------------------------------------------------|--------------------|
-| 1. [Getting the Open Human Mobility Data in a Reproducible Way using `spanishoddata` and aggregating the data using `duckdb`](1-mobility-data-slides-container.qmd) | 55 |
-| 2. [Visualization of Mobility Flows Using `flowmapper` and `flowmapblue`](2-flow-vis-slides-container.qmd) | 40 |
-| Break | 10 |
-| 3. [Accessibility and its Relation to Actual Mobility](3-accessibility-vs-mobility-slides-container.qmd) | 75 |
+| 1. [Getting the Open Human Mobility Data in a Reproducible Way using `spanishoddata` and aggregating the data using `duckdb`](1-mobility-data-slides-container.qmd) |  13:30 - |
+| 2. [Visualization of Mobility Flows Using `flowmapper` and `flowmapblue`](2-flow-vis-slides-container.qmd) |  |
+| Official Coffee Break | 15:00 — 15:30 |
+| 3. [Accessibility and its Relation to Actual Mobility](3-accessibility-vs-mobility-slides-container.qmd) | – 17:00 |

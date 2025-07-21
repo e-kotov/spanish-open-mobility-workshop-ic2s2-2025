@@ -79,10 +79,10 @@ execute:
 
 |  |  |
 |----------------|-----------------------------------------------------|
-| 13:30 — 14:20 | Getting the Open Human Mobility Data in a Reproducible Way using [`spanishoddata`](https://ropenspain.github.io/spanishoddata){target="_blank"} R package and aggregating the data using [`duckdb`](https://r.duckdb.org/){target="_blank"} |
-| 14:20 — 15:00 | Visualization of Mobility using [`flowmapper`](https://github.com/JohMast/flowmapper){target="_blank"} and [`flowmapblue`](https://flowmapblue.github.io/flowmapblue.R/){target="_blank"} |
-| 15:00 — 15:30 | Break |
-| 15:30 — 17:00 | Accessibility and its relation to actual mobility |
+| 13:30 — | Getting the Open Human Mobility Data in a Reproducible Way using [`spanishoddata`](https://ropenspain.github.io/spanishoddata){target="_blank"} R package and aggregating the data using [`duckdb`](https://r.duckdb.org/){target="_blank"} |
+|  | Visualization of Mobility using [`flowmapper`](https://github.com/JohMast/flowmapper){target="_blank"} and [`flowmapblue`](https://flowmapblue.github.io/flowmapblue.R/){target="_blank"} |
+| 15:00 — 15:30 | Official Coffee Break |
+| — 17:00 | Accessibility and its relation to actual mobility |
 
 : {tbl-colwidths="[20,80]"}
 
